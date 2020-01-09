@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
+		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
+		8542B21523C5D7CF0052E441 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21423C5D7CF0052E441 /* ViewController.m */; };
+		8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542B21623C5D7CF0052E441 /* Main.storyboard */; };
+		8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8542B21923C5D7D00052E441 /* Assets.xcassets */; };
+		8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */; };
+		8542B22023C5D7D00052E441 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21F23C5D7D00052E441 /* main.m */; };
+		8542B22723C5D8370052E441 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8542B22623C5D8370052E441 /* readme.md */; };
+		85C54F7023C7069600518820 /* CHFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F6E23C7069600518820 /* CHFileManage.m */; };
+		85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F7823C708A200518820 /* FileManageViewController.m */; };
+		85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F7923C708A200518820 /* FileManageViewController.xib */; };
+		85C54F8223C7108800518820 /* 小知识点.docx in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F8123C7108800518820 /* 小知识点.docx */; };
+		85C54F8623C7134800518820 /* CHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F8523C7134800518820 /* CHHash.m */; };
+		85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F8823C714B000518820 /* CHHashTableViewController.m */; };
+		85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F8923C714B000518820 /* CHHashTableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8542B20D23C5D7CF0052E441 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8542B20E23C5D7CF0052E441 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8542B21023C5D7CF0052E441 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8542B21123C5D7CF0052E441 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8542B21323C5D7CF0052E441 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8542B21423C5D7CF0052E441 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8542B21723C5D7CF0052E441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8542B21923C5D7D00052E441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8542B21C23C5D7D00052E441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8542B21E23C5D7D00052E441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8542B21F23C5D7D00052E441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8542B22623C5D8370052E441 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = ../../readme.md; sourceTree = "<group>"; };
+		85C54F6E23C7069600518820 /* CHFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFileManage.m; sourceTree = "<group>"; };
+		85C54F6F23C7069600518820 /* CHFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFileManage.h; sourceTree = "<group>"; };
+		85C54F7723C708A200518820 /* FileManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManageViewController.h; sourceTree = "<group>"; };
+		85C54F7823C708A200518820 /* FileManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManageViewController.m; sourceTree = "<group>"; };
+		85C54F7923C708A200518820 /* FileManageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileManageViewController.xib; sourceTree = "<group>"; };
+		85C54F8123C7108800518820 /* 小知识点.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "小知识点.docx"; sourceTree = "<group>"; };
+		85C54F8423C7134800518820 /* CHHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHash.h; sourceTree = "<group>"; };
+		85C54F8523C7134800518820 /* CHHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHash.m; sourceTree = "<group>"; };
+		85C54F8723C714B000518820 /* CHHashTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHashTableViewController.h; sourceTree = "<group>"; };
+		85C54F8823C714B000518820 /* CHHashTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHashTableViewController.m; sourceTree = "<group>"; };
+		85C54F8923C714B000518820 /* CHHashTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHHashTableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8542B20723C5D7CF0052E441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8542B20123C5D7CF0052E441 = {
+			isa = PBXGroup;
+			children = (
+				8542B20C23C5D7CF0052E441 /* CHOCTool */,
+				8542B20B23C5D7CF0052E441 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8542B20B23C5D7CF0052E441 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8542B20A23C5D7CF0052E441 /* CHOCTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8542B20C23C5D7CF0052E441 /* CHOCTool */ = {
+			isa = PBXGroup;
+			children = (
+				8542B22623C5D8370052E441 /* readme.md */,
+				8542B20D23C5D7CF0052E441 /* AppDelegate.h */,
+				8542B20E23C5D7CF0052E441 /* AppDelegate.m */,
+				8542B21023C5D7CF0052E441 /* SceneDelegate.h */,
+				8542B21123C5D7CF0052E441 /* SceneDelegate.m */,
+				8542B21323C5D7CF0052E441 /* ViewController.h */,
+				8542B21423C5D7CF0052E441 /* ViewController.m */,
+				8542B21623C5D7CF0052E441 /* Main.storyboard */,
+				8542B21923C5D7D00052E441 /* Assets.xcassets */,
+				8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */,
+				8542B21E23C5D7D00052E441 /* Info.plist */,
+				8542B21F23C5D7D00052E441 /* main.m */,
+				85C54F7C23C70B0600518820 /* Resources */,
+				85C54F7123C7073E00518820 /* Controller */,
+				85C54F8323C7132F00518820 /* CHHash */,
+				85C54F6D23C7069600518820 /* CHFileManage */,
+			);
+			path = CHOCTool;
+			sourceTree = "<group>";
+		};
+		85C54F6D23C7069600518820 /* CHFileManage */ = {
+			isa = PBXGroup;
+			children = (
+				85C54F6F23C7069600518820 /* CHFileManage.h */,
+				85C54F6E23C7069600518820 /* CHFileManage.m */,
+			);
+			path = CHFileManage;
+			sourceTree = "<group>";
+		};
+		85C54F7123C7073E00518820 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85C54F7723C708A200518820 /* FileManageViewController.h */,
+				85C54F7823C708A200518820 /* FileManageViewController.m */,
+				85C54F7923C708A200518820 /* FileManageViewController.xib */,
+				85C54F8723C714B000518820 /* CHHashTableViewController.h */,
+				85C54F8823C714B000518820 /* CHHashTableViewController.m */,
+				85C54F8923C714B000518820 /* CHHashTableViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85C54F7C23C70B0600518820 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85C54F8123C7108800518820 /* 小知识点.docx */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85C54F8323C7132F00518820 /* CHHash */ = {
+			isa = PBXGroup;
+			children = (
+				85C54F8423C7134800518820 /* CHHash.h */,
+				85C54F8523C7134800518820 /* CHHash.m */,
+			);
+			path = CHHash;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8542B20923C5D7CF0052E441 /* CHOCTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8542B22323C5D7D00052E441 /* Build configuration list for PBXNativeTarget "CHOCTool" */;
+			buildPhases = (
+				8542B20623C5D7CF0052E441 /* Sources */,
+				8542B20723C5D7CF0052E441 /* Frameworks */,
+				8542B20823C5D7CF0052E441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHOCTool;
+			productName = CHOCTool;
+			productReference = 8542B20A23C5D7CF0052E441 /* CHOCTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8542B20223C5D7CF0052E441 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = com.qingtiantree;
+				TargetAttributes = {
+					8542B20923C5D7CF0052E441 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8542B20523C5D7CF0052E441 /* Build configuration list for PBXProject "CHOCTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8542B20123C5D7CF0052E441;
+			productRefGroup = 8542B20B23C5D7CF0052E441 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8542B20923C5D7CF0052E441 /* CHOCTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8542B20823C5D7CF0052E441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C54F8223C7108800518820 /* 小知识点.docx in Resources */,
+				8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */,
+				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
+				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
+				85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */,
+				8542B22723C5D8370052E441 /* readme.md in Resources */,
+				8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8542B20623C5D7CF0052E441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8542B21523C5D7CF0052E441 /* ViewController.m in Sources */,
+				85C54F8623C7134800518820 /* CHHash.m in Sources */,
+				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
+				85C54F7023C7069600518820 /* CHFileManage.m in Sources */,
+				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
+				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
+				8542B22023C5D7D00052E441 /* main.m in Sources */,
+				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8542B21623C5D7CF0052E441 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8542B21723C5D7CF0052E441 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8542B21C23C5D7D00052E441 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8542B22123C5D7D00052E441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8542B22223C5D7D00052E441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8542B22423C5D7D00052E441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAJ95MG23S;
+				INFOPLIST_FILE = CHOCTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-01.CHOCTool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8542B22523C5D7D00052E441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAJ95MG23S;
+				INFOPLIST_FILE = CHOCTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-01.CHOCTool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8542B20523C5D7CF0052E441 /* Build configuration list for PBXProject "CHOCTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8542B22123C5D7D00052E441 /* Debug */,
+				8542B22223C5D7D00052E441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8542B22323C5D7D00052E441 /* Build configuration list for PBXNativeTarget "CHOCTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8542B22423C5D7D00052E441 /* Debug */,
+				8542B22523C5D7D00052E441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8542B20223C5D7CF0052E441 /* Project object */;
+}
