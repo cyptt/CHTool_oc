@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850A206B240E3AEE0036E2FD /* JYTLoadingView.m */; };
 		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
 		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
 		8542B21523C5D7CF0052E441 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21423C5D7CF0052E441 /* ViewController.m */; };
@@ -22,9 +23,14 @@
 		85C54F8623C7134800518820 /* CHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F8523C7134800518820 /* CHHash.m */; };
 		85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F8823C714B000518820 /* CHHashTableViewController.m */; };
 		85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F8923C714B000518820 /* CHHashTableViewController.xib */; };
+		85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */; };
+		85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEE2427824F003B91E3 /* CHClassInfo.m */; };
+		85C67CF224278289003B91E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C67CF124278289003B91E3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		850A206A240E3AEE0036E2FD /* JYTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTLoadingView.h; sourceTree = "<group>"; };
+		850A206B240E3AEE0036E2FD /* JYTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTLoadingView.m; sourceTree = "<group>"; };
 		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8542B20D23C5D7CF0052E441 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8542B20E23C5D7CF0052E441 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		85C54F8723C714B000518820 /* CHHashTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHashTableViewController.h; sourceTree = "<group>"; };
 		85C54F8823C714B000518820 /* CHHashTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHashTableViewController.m; sourceTree = "<group>"; };
 		85C54F8923C714B000518820 /* CHHashTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHHashTableViewController.xib; sourceTree = "<group>"; };
+		85C67CEA2427824F003B91E3 /* CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHModel.h; sourceTree = "<group>"; };
+		85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CHModel.m"; sourceTree = "<group>"; };
+		85C67CEC2427824F003B91E3 /* CHClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHClassInfo.h; sourceTree = "<group>"; };
+		85C67CED2427824F003B91E3 /* NSObject+CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHModel.h"; sourceTree = "<group>"; };
+		85C67CEE2427824F003B91E3 /* CHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHClassInfo.m; sourceTree = "<group>"; };
+		85C67CF124278289003B91E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850A2069240E3AEE0036E2FD /* CHToast */ = {
+			isa = PBXGroup;
+			children = (
+				850A206A240E3AEE0036E2FD /* JYTLoadingView.h */,
+				850A206B240E3AEE0036E2FD /* JYTLoadingView.m */,
+			);
+			path = CHToast;
+			sourceTree = "<group>";
+		};
 		8542B20123C5D7CF0052E441 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +116,8 @@
 				8542B21F23C5D7D00052E441 /* main.m */,
 				85C54F7C23C70B0600518820 /* Resources */,
 				85C54F7123C7073E00518820 /* Controller */,
+				850A2069240E3AEE0036E2FD /* CHToast */,
+				85C67CE92427824F003B91E3 /* CHModel */,
 				85C54F8323C7132F00518820 /* CHHash */,
 				85C54F6D23C7069600518820 /* CHFileManage */,
 			);
@@ -138,6 +161,19 @@
 				85C54F8523C7134800518820 /* CHHash.m */,
 			);
 			path = CHHash;
+			sourceTree = "<group>";
+		};
+		85C67CE92427824F003B91E3 /* CHModel */ = {
+			isa = PBXGroup;
+			children = (
+				85C67CEA2427824F003B91E3 /* CHModel.h */,
+				85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */,
+				85C67CEC2427824F003B91E3 /* CHClassInfo.h */,
+				85C67CED2427824F003B91E3 /* NSObject+CHModel.h */,
+				85C67CEE2427824F003B91E3 /* CHClassInfo.m */,
+				85C67CF124278289003B91E3 /* README.md */,
+			);
+			path = CHModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +239,7 @@
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
 				85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */,
 				8542B22723C5D8370052E441 /* readme.md in Resources */,
+				85C67CF224278289003B91E3 /* README.md in Resources */,
 				8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +254,10 @@
 				8542B21523C5D7CF0052E441 /* ViewController.m in Sources */,
 				85C54F8623C7134800518820 /* CHHash.m in Sources */,
 				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
+				85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */,
 				85C54F7023C7069600518820 /* CHFileManage.m in Sources */,
+				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
+				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
