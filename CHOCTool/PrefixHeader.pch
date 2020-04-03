@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  CHOCTool
+//
+//  Created by cyptt on 2020/4/3.
+//  Copyright © 2020 com.qingtiantree. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define WEAKSELF_CA __weak typeof(&*self) weakSelf = self;
+
+#endif /* PrefixHeader_pch */

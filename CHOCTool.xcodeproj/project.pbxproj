@@ -18,6 +18,8 @@
 		8542B22723C5D8370052E441 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8542B22623C5D8370052E441 /* readme.md */; };
 		8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D80A2436CD160083091A /* CHProgressHUD.m */; };
 		8545D8102436CF520083091A /* CHAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D80E2436CF520083091A /* CHAlertController.m */; };
+		8545D8142436D0050083091A /* TestAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D8122436D0050083091A /* TestAlertViewController.m */; };
+		8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8545D8132436D0050083091A /* TestAlertViewController.xib */; };
 		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
 		85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BB242AFCA600D96524 /* CHKVStorage.m */; };
 		85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */; };
@@ -54,6 +56,10 @@
 		8545D80B2436CD160083091A /* CHProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHProgressHUD.h; sourceTree = "<group>"; };
 		8545D80E2436CF520083091A /* CHAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAlertController.m; sourceTree = "<group>"; };
 		8545D80F2436CF520083091A /* CHAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAlertController.h; sourceTree = "<group>"; };
+		8545D8112436D0050083091A /* TestAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAlertViewController.h; sourceTree = "<group>"; };
+		8545D8122436D0050083091A /* TestAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAlertViewController.m; sourceTree = "<group>"; };
+		8545D8132436D0050083091A /* TestAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAlertViewController.xib; sourceTree = "<group>"; };
+		8545D8162436D2B00083091A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		85A4F3BA242AFCA600D96524 /* CHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCache.m; sourceTree = "<group>"; };
 		85A4F3BB242AFCA600D96524 /* CHKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKVStorage.m; sourceTree = "<group>"; };
 		85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMemoryCache.m; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 				85C67CE92427824F003B91E3 /* CHModel */,
 				85C54F8323C7132F00518820 /* CHHash */,
 				85C54F6D23C7069600518820 /* CHFileManage */,
+				8545D8162436D2B00083091A /* PrefixHeader.pch */,
 			);
 			path = CHOCTool;
 			sourceTree = "<group>";
@@ -197,6 +204,9 @@
 				85C54F8723C714B000518820 /* CHHashTableViewController.h */,
 				85C54F8823C714B000518820 /* CHHashTableViewController.m */,
 				85C54F8923C714B000518820 /* CHHashTableViewController.xib */,
+				8545D8112436D0050083091A /* TestAlertViewController.h */,
+				8545D8122436D0050083091A /* TestAlertViewController.m */,
+				8545D8132436D0050083091A /* TestAlertViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C54F8223C7108800518820 /* 小知识点.docx in Resources */,
+				8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */,
 				8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */,
 				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
@@ -317,6 +328,7 @@
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
+				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
@@ -464,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAJ95MG23S;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CHOCTool/PrefixHeader.pch";
 				INFOPLIST_FILE = CHOCTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAJ95MG23S;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CHOCTool/PrefixHeader.pch";
 				INFOPLIST_FILE = CHOCTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

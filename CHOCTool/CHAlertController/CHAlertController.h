@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CAAlertModel : NSObject
 @property(nonatomic,strong)NSString * name;
 @property(nonatomic,strong)NSString * ID;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,7 +11,7 @@
 #import "CHHashTableViewController.h"
 #import "JYTLoadingView.h"
 #import "CHProgressHUD.h"
-#import "CHAlertController.h"
+#import "TestAlertViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
 }
@@ -25,7 +25,7 @@
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert"];
     }
     return _dataSourceArr;
 }
@@ -72,6 +72,11 @@
         
         hud.label.text = @"CHProgressHUD";
         [hud hideAnimated:YES afterDelay:2];
+    }
+    if ([name isEqualToString:@"CHAlert"]) {
+        TestAlertViewController * vc = [[TestAlertViewController alloc]init];
+        
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
