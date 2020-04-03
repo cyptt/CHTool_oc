@@ -34,11 +34,12 @@
     self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor clearColor];
     
-    self.logoImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loadingLogo"]];
+    self.logoImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loading_bg"]];
     self.logoImage.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.logoImage];
     
-    self.circleImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"anim_circle"]];
+    self.circleImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loading"]];
+
     self.circleImage.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.circleImage];
     
@@ -55,9 +56,9 @@
         }
     }
     self.frame = CGRectMake(rect.origin.x, offsetY, rect.size.width, rect.size.height - offsetY);
-    self.logoImage.frame = CGRectMake(0, 0, 26, 26);
+    self.logoImage.frame = CGRectMake(0, 0, 48, 48);
     self.logoImage.center = CGPointMake(self.superview.center.x, self.frame.size.height / 2.0);
-    self.circleImage.frame = CGRectMake(0, 0, 40, 40);
+    self.circleImage.frame = CGRectMake(0, 0, 48, 48);
     self.circleImage.center = self.logoImage.center;
 }
 

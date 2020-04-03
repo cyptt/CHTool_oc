@@ -16,6 +16,12 @@
 		8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */; };
 		8542B22023C5D7D00052E441 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21F23C5D7D00052E441 /* main.m */; };
 		8542B22723C5D8370052E441 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8542B22623C5D8370052E441 /* readme.md */; };
+		8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D80A2436CD160083091A /* CHProgressHUD.m */; };
+		8545D8102436CF520083091A /* CHAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D80E2436CF520083091A /* CHAlertController.m */; };
+		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
+		85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BB242AFCA600D96524 /* CHKVStorage.m */; };
+		85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */; };
+		85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BF242AFCA600D96524 /* CHDiskCache.m */; };
 		85C54F7023C7069600518820 /* CHFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F6E23C7069600518820 /* CHFileManage.m */; };
 		85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F7823C708A200518820 /* FileManageViewController.m */; };
 		85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F7923C708A200518820 /* FileManageViewController.xib */; };
@@ -44,6 +50,18 @@
 		8542B21E23C5D7D00052E441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8542B21F23C5D7D00052E441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8542B22623C5D8370052E441 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = ../../readme.md; sourceTree = "<group>"; };
+		8545D80A2436CD160083091A /* CHProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHProgressHUD.m; sourceTree = "<group>"; };
+		8545D80B2436CD160083091A /* CHProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHProgressHUD.h; sourceTree = "<group>"; };
+		8545D80E2436CF520083091A /* CHAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAlertController.m; sourceTree = "<group>"; };
+		8545D80F2436CF520083091A /* CHAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAlertController.h; sourceTree = "<group>"; };
+		85A4F3BA242AFCA600D96524 /* CHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCache.m; sourceTree = "<group>"; };
+		85A4F3BB242AFCA600D96524 /* CHKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKVStorage.m; sourceTree = "<group>"; };
+		85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMemoryCache.m; sourceTree = "<group>"; };
+		85A4F3BD242AFCA600D96524 /* CHDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDiskCache.h; sourceTree = "<group>"; };
+		85A4F3BE242AFCA600D96524 /* CHMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMemoryCache.h; sourceTree = "<group>"; };
+		85A4F3BF242AFCA600D96524 /* CHDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDiskCache.m; sourceTree = "<group>"; };
+		85A4F3C0242AFCA600D96524 /* CHKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKVStorage.h; sourceTree = "<group>"; };
+		85A4F3C1242AFCA600D96524 /* CHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCache.h; sourceTree = "<group>"; };
 		85C54F6E23C7069600518820 /* CHFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFileManage.m; sourceTree = "<group>"; };
 		85C54F6F23C7069600518820 /* CHFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFileManage.h; sourceTree = "<group>"; };
 		85C54F7723C708A200518820 /* FileManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManageViewController.h; sourceTree = "<group>"; };
@@ -116,12 +134,49 @@
 				8542B21F23C5D7D00052E441 /* main.m */,
 				85C54F7C23C70B0600518820 /* Resources */,
 				85C54F7123C7073E00518820 /* Controller */,
+				8545D80D2436CF520083091A /* CHAlertController */,
+				8545D8092436CD160083091A /* CHProgrossHUD */,
+				85A4F3AD242AFC9100D96524 /* CHCache */,
 				850A2069240E3AEE0036E2FD /* CHToast */,
 				85C67CE92427824F003B91E3 /* CHModel */,
 				85C54F8323C7132F00518820 /* CHHash */,
 				85C54F6D23C7069600518820 /* CHFileManage */,
 			);
 			path = CHOCTool;
+			sourceTree = "<group>";
+		};
+		8545D8092436CD160083091A /* CHProgrossHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8545D80B2436CD160083091A /* CHProgressHUD.h */,
+				8545D80A2436CD160083091A /* CHProgressHUD.m */,
+			);
+			path = CHProgrossHUD;
+			sourceTree = "<group>";
+		};
+		8545D80D2436CF520083091A /* CHAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				8545D80F2436CF520083091A /* CHAlertController.h */,
+				8545D80E2436CF520083091A /* CHAlertController.m */,
+			);
+			name = CHAlertController;
+			path = CHOCTool/CHAlertController;
+			sourceTree = SOURCE_ROOT;
+		};
+		85A4F3AD242AFC9100D96524 /* CHCache */ = {
+			isa = PBXGroup;
+			children = (
+				85A4F3C1242AFCA600D96524 /* CHCache.h */,
+				85A4F3BA242AFCA600D96524 /* CHCache.m */,
+				85A4F3BD242AFCA600D96524 /* CHDiskCache.h */,
+				85A4F3BF242AFCA600D96524 /* CHDiskCache.m */,
+				85A4F3C0242AFCA600D96524 /* CHKVStorage.h */,
+				85A4F3BB242AFCA600D96524 /* CHKVStorage.m */,
+				85A4F3BE242AFCA600D96524 /* CHMemoryCache.h */,
+				85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */,
+			);
+			path = CHCache;
 			sourceTree = "<group>";
 		};
 		85C54F6D23C7069600518820 /* CHFileManage */ = {
@@ -166,11 +221,11 @@
 		85C67CE92427824F003B91E3 /* CHModel */ = {
 			isa = PBXGroup;
 			children = (
-				85C67CEA2427824F003B91E3 /* CHModel.h */,
-				85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */,
 				85C67CEC2427824F003B91E3 /* CHClassInfo.h */,
-				85C67CED2427824F003B91E3 /* NSObject+CHModel.h */,
 				85C67CEE2427824F003B91E3 /* CHClassInfo.m */,
+				85C67CEA2427824F003B91E3 /* CHModel.h */,
+				85C67CED2427824F003B91E3 /* NSObject+CHModel.h */,
+				85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */,
 				85C67CF124278289003B91E3 /* README.md */,
 			);
 			path = CHModel;
@@ -251,17 +306,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */,
 				8542B21523C5D7CF0052E441 /* ViewController.m in Sources */,
+				85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */,
 				85C54F8623C7134800518820 /* CHHash.m in Sources */,
 				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
 				85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */,
 				85C54F7023C7069600518820 /* CHFileManage.m in Sources */,
+				8545D8102436CF520083091A /* CHAlertController.m in Sources */,
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
+				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
+				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
+				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAJ95MG23S;
 				INFOPLIST_FILE = CHOCTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAJ95MG23S;
 				INFOPLIST_FILE = CHOCTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

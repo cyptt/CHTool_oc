@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "FileManageViewController.h"
 #import "CHHashTableViewController.h"
+#import "JYTLoadingView.h"
+#import "CHProgressHUD.h"
+#import "CHAlertController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
 }
@@ -22,7 +25,7 @@
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD"];
     }
     return _dataSourceArr;
 }
@@ -58,6 +61,17 @@
     if ([name isEqualToString:@"CHHash"]) {
         CHHashTableViewController * VC = [[CHHashTableViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:@"JYTLoding"]) {
+        [[JYTLoadingView sharedInstance]startLoadingWithView:self.view];
+        
+        [[JYTLoadingView sharedInstance] hudDismissWithSeconds:2];
+    }
+    if ([name isEqualToString:@"CHProgressHUD"]) {
+        CHProgressHUD * hud = [CHProgressHUD showHUDAddedTo:self.view animated:YES];
+        
+        hud.label.text = @"CHProgressHUD";
+        [hud hideAnimated:YES afterDelay:2];
     }
 }
 
