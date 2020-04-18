@@ -27,6 +27,14 @@
                         <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="y1U-U5-4nO"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLo-Ee-b9A">
+                    <rect key="frame" x="88" y="309" width="209" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="alertCenter"/>
+                    <connections>
+                        <action selector="alertCenterClick:" destination="-1" eventType="touchUpInside" id="3jj-Q1-cAj"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

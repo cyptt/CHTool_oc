@@ -125,7 +125,7 @@ static NSString * const CHAlertControllerCELLID = @"CHAlertControllerCELLID";
 }
 
 -(void)setUp{
- 
+
     UILabel * label = [[UILabel alloc]init];
  
     
@@ -146,6 +146,8 @@ static NSString * const CHAlertControllerCELLID = @"CHAlertControllerCELLID";
     [super layoutSubviews];
     self.contentL.frame = self.bounds;
     self.lineView.frame = CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1);
+    
+    
 }
 
 @end

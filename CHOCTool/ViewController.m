@@ -12,11 +12,16 @@
 #import "JYTLoadingView.h"
 #import "CHProgressHUD.h"
 #import "TestAlertViewController.h"
+#import "CHStatusViewController.h"
+
+ NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property(nonatomic,strong)NSArray * dataSourceArr;;
+
+
 @end
 
 
@@ -25,7 +30,7 @@
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"statusTest"];
     }
     return _dataSourceArr;
 }
@@ -35,9 +40,30 @@
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
     
+//   self.view.backgroundColor = [UIColor redColor];
+
+//
+   
+    
+//      UIBarButtonItem * bar1 = [[UIBarButtonItem alloc]init];
+//
+//      [bar1 setImage:[UIImage imageNamed:@"back_grey_scca"]];
+//      self.navigationItem.backBarButtonItem = bar1;
+    
+    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage new]];
+    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
+     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back_grey_scca"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(didClick)];
+
+     
     
 }
 
+-(void)didClick{
+    NSLog(@"%@",@"ddfd");
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+ 
+}
 #pragma mark -- UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSourceArr.count;
@@ -48,6 +74,8 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"CELL"];
     }
     cell.textLabel.text = self.dataSourceArr[indexPath.row];
+    
+    NSLog(@"-----%lf---%lf",cell.textLabel.center.x,cell.textLabel.center.y);
     return cell;
 }
 #pragma mark --UITableViewDelegate
@@ -77,6 +105,12 @@
         TestAlertViewController * vc = [[TestAlertViewController alloc]init];
         
         [self.navigationController pushViewController:vc animated:YES];
+    }
+    if ([name isEqualToString:@"statusTest"]) {
+        CHStatusViewController *VC = [[CHStatusViewController alloc ]initWithName:@"dddd" nibName:NSStringFromClass([CHStatusViewController class]) bundle:[NSBundle mainBundle]];
+       
+      
+        [self.navigationController pushViewController:VC animated:YES];
     }
 }
 

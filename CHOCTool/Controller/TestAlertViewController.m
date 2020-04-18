@@ -8,10 +8,21 @@
 
 #import "TestAlertViewController.h"
 #import "CHAlertController.h"
+#import "CHCenterAlertController.h"
 #import "CHModel.h"
+#import "ViewController.h"
+
+#define Fuc4(a) [self test4:(a)]
+typedef void(^block3) (void);
+
+typedef NSString * Str;
 @interface TestAlertViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property(nonatomic,strong)NSMutableArray * dataSourceArr;
+
+@property(nonatomic,strong)void(^block2)(void);
+
+
 @end
 
 
@@ -32,10 +43,31 @@
     }
     return _dataSourceArr;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
  
+ 
+    NSLog(@"%@",Fuc4(@"dddd"));
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+ 
+      void (^block)(void)=^{
+         NSLog(@"ddd");
+     };
     
+ 
+    
+
+}
+
+-(NSString *)test4:(NSString *)sr{
+    return sr;
+}
+-(void)test:(void(^)(NSString * name))block name:(NSString *)name1{
+    if (block) {
+        block(name1);
+    }
 }
 - (IBAction)clickBtn:(id)sender {
     
@@ -46,6 +78,12 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+- (IBAction)alertCenterClick:(UIButton *)sender {
+    CHCenterAlertController * VC = [[CHCenterAlertController alloc]initAlertControllerWithDataSource:self.dataSourceArr completion:^(CAAlertModel * _Nonnull alertModel) {
+        [sender setTitle:alertModel.name forState:UIControlStateNormal];
+    }];
+    [self presentViewController:VC animated:YES completion:nil];
+}
 
 
 @end
