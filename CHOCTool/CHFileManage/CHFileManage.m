@@ -14,7 +14,15 @@
     NSString * path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
     return path;
 }
-
++(BOOL )createDocumentDirWithName:(NSString *)fileName{
+    if (fileName.length ==0) {
+        return NO;
+    }
+    NSString * path = [[CHFileManage getDocumentPath]stringByAppendingPathComponent:fileName];
+    NSLog(@"createDocumentDirWithName ---path---%@",path);
+    BOOL isSucess = [CHFileManage createDir:path];
+    return isSucess;
+}
 +(BOOL)createDir:(NSString *)path{
     if (path.length==0) {
         return NO;

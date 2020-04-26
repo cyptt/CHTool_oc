@@ -20,10 +20,11 @@
  */
 +(NSString *)getDocumentPath;
 
-
+//创建Documen文件夹根据文件夹名称
++(BOOL )createDocumentDirWithName:(NSString *)fileName;
 /**
- 创建文件夹
- @param path  要创建的文件路径 
+ 创建文件夹根据路径
+ @param path  要创建的文件夹路径 
  */
 
 +(BOOL)createDir:(NSString *)path;

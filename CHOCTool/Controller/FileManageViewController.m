@@ -15,7 +15,7 @@
 @implementation FileManageViewController
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"getDocumentPath",@"writeToFile"];
+        _dataSourceArr = @[@"getDocumentPath",@"createDocumentDirWithName",@"createDir",@"credeFile",@"writeToFile"];
     }
     return _dataSourceArr;
 }
@@ -35,6 +35,18 @@
        NSString * filePath = [[[CHFileManage getDocumentPath]stringByAppendingPathComponent:@"CHTest"]stringByAppendingPathComponent:@"小知识点.docx"];
        [CHFileManage writeToFile:filePath contents:data];
     
+}
+
+-(void)createDir{
+    NSString * filepath = [[CHFileManage getDocumentPath] stringByAppendingPathComponent:@"choo1"];
+    NSLog(@"%@",filepath);
+    [CHFileManage createDir:filepath];
+}
+-(void)createFile{
+    
+}
+-(void)createDocumentDirWithName{
+    [CHFileManage createDocumentDirWithName:@"chooo2/001"];
 }
 #pragma mark - Table view data source
 
@@ -60,9 +72,14 @@
       
         [self getDocumentPath];
     
-    }
-    if ([name isEqualToString:@"writeToFile"]) {
+    }else if ([name isEqualToString:@"writeToFile"]) {
         [self writeToFile];
+    }else if ([name isEqualToString:@"createDir"]){
+        [self createDir];
+    }else if ([name isEqualToString:@"credeFile"]){
+        [self createFile];
+    }else if ([name isEqualToString:@"createDocumentDirWithName"]){
+        [self createDocumentDirWithName];
     }
 }
 
