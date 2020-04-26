@@ -69,6 +69,7 @@ static NSString * const CHAlertControllerCELLID = @"CHAlertControllerCELLID";
     self.view.alpha = 1;
     
     [self.view addSubview:self.alertContentView];
+ 
 
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -80,6 +81,9 @@ static NSString * const CHAlertControllerCELLID = @"CHAlertControllerCELLID";
 
 -(UIView *)alertContentView{
     if (!_alertContentView) {
+    
+        
+    
         _alertContentView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-self.contentH, self.view.frame.size.width, self.contentH)];
         _alertContentView.backgroundColor = [UIColor whiteColor];
         _alertContentView.alpha=1;
