@@ -15,7 +15,7 @@
 @implementation FileManageViewController
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"getDocumentPath",@"createDocumentDirWithName",@"createDir",@"credeFile",@"writeToFile"];
+        _dataSourceArr = @[@"getDocumentPath",@"createDocumentDirWithName",@"createDir",@"credeFile",@"writeToFile",@"removeFile"];
     }
     return _dataSourceArr;
 }
@@ -47,6 +47,13 @@
 }
 -(void)createDocumentDirWithName{
     [CHFileManage createDocumentDirWithName:@"chooo2/001"];
+}
+
+-(void)removeFile{
+     NSString * filepath = [[CHFileManage getDocumentPath] stringByAppendingPathComponent:@"000000/小知识点.docx"];
+    [CHFileManage removeFile:filepath];
+    
+    
 }
 #pragma mark - Table view data source
 
@@ -80,6 +87,8 @@
         [self createFile];
     }else if ([name isEqualToString:@"createDocumentDirWithName"]){
         [self createDocumentDirWithName];
+    }else if([name isEqualToString:@"removeFile"]){
+        [self removeFile];
     }
 }
 

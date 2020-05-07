@@ -12,7 +12,7 @@
 #import "JYTLoadingView.h"
 #import "CHProgressHUD.h"
 #import "TestAlertViewController.h"
-#import "CHStatusViewController.h"
+#import "CHButtonController.h"
 
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -30,7 +30,7 @@
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"statusTest"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton"];
     }
     return _dataSourceArr;
 }
@@ -106,10 +106,9 @@
         
         [self.navigationController pushViewController:vc animated:YES];
     }
-    if ([name isEqualToString:@"statusTest"]) {
-        CHStatusViewController *VC = [[CHStatusViewController alloc ]initWithName:@"dddd" nibName:NSStringFromClass([CHStatusViewController class]) bundle:[NSBundle mainBundle]];
+    if ([name isEqualToString:@"CHButton"]) {
+        CHButtonController *VC = [[CHButtonController alloc]init];
        
-      
         [self.navigationController pushViewController:VC animated:YES];
     }
 }
