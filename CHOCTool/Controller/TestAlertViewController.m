@@ -11,6 +11,7 @@
 #import "CHCenterAlertController.h"
 #import "CHModel.h"
 #import "ViewController.h"
+#import "CHTitleAlertController.h"
 
 #define Fuc4(a) [self test4:(a)]
 typedef void(^block3) (void);
@@ -83,6 +84,12 @@ typedef NSString * Str;
         [sender setTitle:alertModel.name forState:UIControlStateNormal];
     }];
     [self presentViewController:VC animated:YES completion:nil];
+}
+- (IBAction)titleBtnClick:(UIButton *)sender {
+    
+    CHTitleAlertController * VC = [[CHTitleAlertController alloc]initAlertControllerWithTitle:@"你哈哈哈哈，哈哈哈哈哈哈哈哈对方的回复可视电话，疯狂的事快点恢复可视电话反馈收到回复说肯定会发生的匡扶，汉室的开放后上看到回复都是客户。" isSigle:NO completion:nil];
+      [self presentViewController:VC animated:NO completion:nil];
+      [VC setSingleBtnTitle:@"重新注册登录"];
 }
 
 

@@ -21,12 +21,11 @@
 		8545D8102436CF520083091A /* CHAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D80E2436CF520083091A /* CHAlertController.m */; };
 		8545D8142436D0050083091A /* TestAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D8122436D0050083091A /* TestAlertViewController.m */; };
 		8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8545D8132436D0050083091A /* TestAlertViewController.xib */; };
-		8545D81A243708740083091A /* CHStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8545D818243708740083091A /* CHStatusViewController.m */; };
-		8545D81D243710CC0083091A /* CHStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8545D81C243710CC0083091A /* CHStatusViewController.xib */; };
 		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
 		85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BB242AFCA600D96524 /* CHKVStorage.m */; };
 		85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */; };
 		85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BF242AFCA600D96524 /* CHDiskCache.m */; };
+		85BDAC4F246A71E500B9E5B8 /* CHTitleAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BDAC4E246A71E500B9E5B8 /* CHTitleAlertController.m */; };
 		85C54F7023C7069600518820 /* CHFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F6E23C7069600518820 /* CHFileManage.m */; };
 		85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F7823C708A200518820 /* FileManageViewController.m */; };
 		85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F7923C708A200518820 /* FileManageViewController.xib */; };
@@ -37,6 +36,8 @@
 		85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */; };
 		85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEE2427824F003B91E3 /* CHClassInfo.m */; };
 		85C67CF224278289003B91E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C67CF124278289003B91E3 /* README.md */; };
+		85DBD5A12463A386007922A0 /* CHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBD5A02463A386007922A0 /* CHButton.m */; };
+		85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBD5A92463A43F007922A0 /* CHButtonController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,9 +66,6 @@
 		8545D8122436D0050083091A /* TestAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAlertViewController.m; sourceTree = "<group>"; };
 		8545D8132436D0050083091A /* TestAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAlertViewController.xib; sourceTree = "<group>"; };
 		8545D8162436D2B00083091A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		8545D817243708740083091A /* CHStatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHStatusViewController.h; sourceTree = "<group>"; };
-		8545D818243708740083091A /* CHStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHStatusViewController.m; sourceTree = "<group>"; };
-		8545D81C243710CC0083091A /* CHStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHStatusViewController.xib; sourceTree = "<group>"; };
 		85A4F3BA242AFCA600D96524 /* CHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCache.m; sourceTree = "<group>"; };
 		85A4F3BB242AFCA600D96524 /* CHKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKVStorage.m; sourceTree = "<group>"; };
 		85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMemoryCache.m; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		85A4F3BF242AFCA600D96524 /* CHDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDiskCache.m; sourceTree = "<group>"; };
 		85A4F3C0242AFCA600D96524 /* CHKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKVStorage.h; sourceTree = "<group>"; };
 		85A4F3C1242AFCA600D96524 /* CHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCache.h; sourceTree = "<group>"; };
+		85BDAC4D246A71E500B9E5B8 /* CHTitleAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTitleAlertController.h; sourceTree = "<group>"; };
+		85BDAC4E246A71E500B9E5B8 /* CHTitleAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTitleAlertController.m; sourceTree = "<group>"; };
 		85C54F6E23C7069600518820 /* CHFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFileManage.m; sourceTree = "<group>"; };
 		85C54F6F23C7069600518820 /* CHFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFileManage.h; sourceTree = "<group>"; };
 		85C54F7723C708A200518820 /* FileManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManageViewController.h; sourceTree = "<group>"; };
@@ -93,6 +93,10 @@
 		85C67CED2427824F003B91E3 /* NSObject+CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHModel.h"; sourceTree = "<group>"; };
 		85C67CEE2427824F003B91E3 /* CHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHClassInfo.m; sourceTree = "<group>"; };
 		85C67CF124278289003B91E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		85DBD59F2463A386007922A0 /* CHButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHButton.h; sourceTree = "<group>"; };
+		85DBD5A02463A386007922A0 /* CHButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHButton.m; sourceTree = "<group>"; };
+		85DBD5A82463A43F007922A0 /* CHButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHButtonController.h; sourceTree = "<group>"; };
+		85DBD5A92463A43F007922A0 /* CHButtonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHButtonController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				85C67CE92427824F003B91E3 /* CHModel */,
 				85C54F8323C7132F00518820 /* CHHash */,
 				85C54F6D23C7069600518820 /* CHFileManage */,
+				85DBD59E2463A379007922A0 /* CHButton */,
 				8545D8162436D2B00083091A /* PrefixHeader.pch */,
 			);
 			path = CHOCTool;
@@ -172,6 +177,8 @@
 		8545D80D2436CF520083091A /* CHAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				85BDAC4D246A71E500B9E5B8 /* CHTitleAlertController.h */,
+				85BDAC4E246A71E500B9E5B8 /* CHTitleAlertController.m */,
 				8523323A244AF7380008048A /* CHCenterAlertController.h */,
 				8523323B244AF7380008048A /* CHCenterAlertController.m */,
 				8545D80F2436CF520083091A /* CHAlertController.h */,
@@ -217,9 +224,8 @@
 				8545D8112436D0050083091A /* TestAlertViewController.h */,
 				8545D8122436D0050083091A /* TestAlertViewController.m */,
 				8545D8132436D0050083091A /* TestAlertViewController.xib */,
-				8545D817243708740083091A /* CHStatusViewController.h */,
-				8545D818243708740083091A /* CHStatusViewController.m */,
-				8545D81C243710CC0083091A /* CHStatusViewController.xib */,
+				85DBD5A82463A43F007922A0 /* CHButtonController.h */,
+				85DBD5A92463A43F007922A0 /* CHButtonController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,6 +258,15 @@
 				85C67CF124278289003B91E3 /* README.md */,
 			);
 			path = CHModel;
+			sourceTree = "<group>";
+		};
+		85DBD59E2463A379007922A0 /* CHButton */ = {
+			isa = PBXGroup;
+			children = (
+				85DBD59F2463A386007922A0 /* CHButton.h */,
+				85DBD5A02463A386007922A0 /* CHButton.m */,
+			);
+			path = CHButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C54F8223C7108800518820 /* 小知识点.docx in Resources */,
-				8545D81D243710CC0083091A /* CHStatusViewController.xib in Resources */,
 				8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */,
 				8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */,
 				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
@@ -335,17 +349,19 @@
 				8542B21523C5D7CF0052E441 /* ViewController.m in Sources */,
 				85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */,
 				85C54F8623C7134800518820 /* CHHash.m in Sources */,
+				85BDAC4F246A71E500B9E5B8 /* CHTitleAlertController.m in Sources */,
 				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
 				85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */,
 				85C54F7023C7069600518820 /* CHFileManage.m in Sources */,
 				8545D8102436CF520083091A /* CHAlertController.m in Sources */,
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
+				85DBD5A12463A386007922A0 /* CHButton.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
-				8545D81A243708740083091A /* CHStatusViewController.m in Sources */,
+				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
