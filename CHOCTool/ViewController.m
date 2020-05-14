@@ -13,6 +13,8 @@
 #import "CHProgressHUD.h"
 #import "TestAlertViewController.h"
 #import "CHButtonController.h"
+#import "CHGCDViewController.h"
+#import "CHLabelViewController.h"
 
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -30,7 +32,7 @@
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle"];
     }
     return _dataSourceArr;
 }
@@ -109,6 +111,15 @@
     if ([name isEqualToString:@"CHButton"]) {
         CHButtonController *VC = [[CHButtonController alloc]init];
        
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:@"GCD"]) {
+        CHGCDViewController *VC =[[CHGCDViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    
+    if ([name isEqualToString:@"LableStyle"]) {
+        CHLabelViewController * VC = [[CHLabelViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

@@ -98,13 +98,7 @@
 }
 
 -(CGFloat)textHeight:(NSString *)str{
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineBreakMode = NSLineBreakByCharWrapping;
-    //Attribute传和label设定的一样
-    NSDictionary * attributes = @{
-                                  NSFontAttributeName:[UIFont systemFontOfSize:15.f],
-                                  NSParagraphStyleAttributeName: paragraphStyle
-                                  };
+    NSDictionary * attributes = [self attributes];
    //这里的size，width传label的宽，高默认都传MAXFLOAT
     CGSize textRect = CGSizeMake([UIScreen mainScreen].bounds.size.width - 30, MAXFLOAT);
     CGFloat textHeight = [str boundingRectWithSize: textRect
@@ -113,7 +107,17 @@
                                            context:nil].size.height;
     return textHeight+20;
 }
-
+-(NSDictionary *)attributes{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+       paragraphStyle.lineSpacing = 10;
+       paragraphStyle.lineBreakMode = NSLineBreakByCharWrapping;
+       //Attribute传和label设定的一样
+       NSDictionary * attributes = @{
+                                     NSFontAttributeName:[UIFont systemFontOfSize:15.f],
+                                     NSParagraphStyleAttributeName: paragraphStyle
+                                     };
+    return attributes;
+}
 -(void)setContentTitleColor:(UIColor *)color{
     [self.showLablel setTextColor:color];
 }
@@ -182,6 +186,7 @@
         }else{
             _showLablel.textAlignment = NSTextAlignmentCenter;
         }
+            [_showLablel setValue:@(20) forKey:@"lineSpacing"];
         
         _showLablel.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _showLablel.font = [UIFont systemFontOfSize:15];
