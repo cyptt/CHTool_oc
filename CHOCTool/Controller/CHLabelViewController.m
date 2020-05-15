@@ -9,6 +9,7 @@
 #import "CHLabelViewController.h"
 
 @interface CHLabelViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *testL;
 
 @end
 
@@ -26,35 +27,75 @@
             NSLog(@"\t|- %@",fontName);
         }
     }
+    
+    self.label1.font = [UIFont fontWithName:@"Helvetica-Bold" size:17];
+    
+    self.label2.font = [UIFont fontWithName:@"Helvetica-BoldOblique" size:17];
+    
+    NSString * str1 = @"你的风好大货到付款的好方法";
+    if (   [str1 rangeOfString:@"你的风d"].location !=NSNotFound) {
+        NSLog(@"dddfdfd");
+    }
+ 
+   NSString * str2=  [str1 substringWithRange:NSMakeRange(3, 4)];
+    
+    NSLog(@"str2-----%@",str2);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-       self.label1.font = [UIFont fontWithName:@"Helvetica-Bold" size:17];
+    NSMutableAttributedString * mutableString = [[NSMutableAttributedString alloc]initWithString:@"123456fg90df江东父老撒法兰多拉会发生手榴弹啊登录分哈伦裤撒谎法拉第好啊舒服多啦可视电话烦死啦啊的好福利卡坏了"];
+ 
+    NSRange range = NSMakeRange(3, 3);
+    [mutableString replaceCharactersInRange:range withString:@"***"];
     
-    self.label2.font = [UIFont boldSystemFontOfSize:17];
+    NSRange range2 = NSMakeRange(6, 30);
+    //段落样式
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+       
+    paragraphStyle.paragraphSpacing = 20;
+    paragraphStyle.lineSpacing = 5;
+    paragraphStyle.firstLineHeadIndent = 30;
+        
+    NSDictionary * attributesDic = @{NSForegroundColorAttributeName:[UIColor redColor],
+                                     NSBackgroundColorAttributeName:[UIColor yellowColor],
+                                     NSFontAttributeName:[UIFont systemFontOfSize:17],
+                                     NSParagraphStyleAttributeName:paragraphStyle,
+//                                     NSObliquenessAttributeName:@(1),
+//                                     NSExpansionAttributeName:@(1),
+//                                     NSKernAttributeName:@(10),
+//                                     NSUnderlineStyleAttributeName:@(1),
+//                                     NSUnderlineColorAttributeName:[UIColor blueColor],
+    };
     
+    [mutableString setAttributes:attributesDic range:NSMakeRange(0, mutableString.string.length)];
+
+    [mutableString setAttributes:attributesDic range:range2];
+    
+    
+    NSRange range3 = NSMakeRange(8, 1);
+    [mutableString addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:range3];
+    
+     
+    
+    [self.testL setAttributedText:mutableString];;
+   
 
     
-//    UILabel *label = [[UILabel alloc] init];
-//      label.frame = CGRectMake(60,99.5,87.5,14.5);
-//      label.numberOfLines = 0;
-//      [self.view addSubview:label];
-//
-//       NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"请先进行实名认证" attributes:@{NSFontAttributeName: [UIFont fontWithName:@"SourceHanSansCN-Medium" size: 16],NSForegroundColorAttributeName: [UIColor colorWithRed:34/255.0 green:38/255.0 blue:44/255.0 alpha:1.0]}];
-//
-//
-//      label.attributedText = string;
+    CGFloat lableH = [self lableH:mutableString.string size:CGSizeMake(self.testL.frame.size.width, MAXFLOAT) attributes:attributesDic];
+    
+    NSLog(@"---%lf",lableH);
+
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)lableH:(NSString *)str size:(CGSize)size attributes:(NSDictionary<NSAttributedStringKey,id> *)attributes{
+    
+  CGSize boundSize=  [str boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:attributes context:nil].size;
+    
+    return boundSize.height;
 }
-*/
+
+
 
 @end
