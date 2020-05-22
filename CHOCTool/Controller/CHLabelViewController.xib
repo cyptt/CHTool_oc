@@ -14,6 +14,7 @@
                 <outlet property="label2" destination="DRa-RJ-loD" id="Mh4-tA-xhc"/>
                 <outlet property="label3" destination="SEO-ua-WAE" id="NYH-Ui-2z7"/>
                 <outlet property="testL" destination="Obc-4K-q1i" id="QgX-DR-aSO"/>
+                <outlet property="textView" destination="Fyx-OU-TS3" id="LVD-Aq-GgX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -178,23 +179,27 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1p-Et-Zt5">
-                    <rect key="frame" x="11" y="390" width="324" height="60"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fyx-OU-TS3">
+                    <rect key="frame" x="0.0" y="502" width="355" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="EOw-6y-kTC"/>
+                        <constraint firstAttribute="height" constant="200" id="Vwb-AH-rCj"/>
                     </constraints>
-                </view>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Obc-4K-q1i" secondAttribute="trailing" constant="20" id="JgP-py-Je8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Fyx-OU-TS3" secondAttribute="trailing" id="MT2-ky-HmY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Fyx-OU-TS3" secondAttribute="bottom" id="Mqq-Ob-U5g"/>
                 <constraint firstItem="Obc-4K-q1i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="390" id="NvZ-rL-cx7"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="D1p-Et-Zt5" secondAttribute="trailing" constant="20" id="OsK-h3-6iN"/>
-                <constraint firstItem="D1p-Et-Zt5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="11" id="ZYg-1b-hb6"/>
+                <constraint firstItem="Fyx-OU-TS3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="SXM-KT-gtT"/>
                 <constraint firstItem="gtf-Ze-RVo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="aP8-fQ-122"/>
                 <constraint firstItem="gtf-Ze-RVo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="bGg-4n-9kg"/>
-                <constraint firstItem="D1p-Et-Zt5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="390" id="pK9-6v-ECE"/>
                 <constraint firstItem="Obc-4K-q1i" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="y0h-r2-6Bn"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gtf-Ze-RVo" secondAttribute="trailing" constant="20" id="zaP-lg-tlt"/>
             </constraints>
