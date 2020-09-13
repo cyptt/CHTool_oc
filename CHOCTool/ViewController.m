@@ -15,7 +15,8 @@
 #import "CHButtonController.h"
 #import "CHGCDViewController.h"
 #import "CHLabelViewController.h"
-
+#import "CHDelegateViewController.h"
+#import "CHSingleChioseViewController.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -32,7 +33,7 @@
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose"];
     }
     return _dataSourceArr;
 }
@@ -41,6 +42,8 @@
    
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
+    
+    NSLog(@"%s",__func__);
     
 //   self.view.backgroundColor = [UIColor redColor];
 
@@ -121,6 +124,16 @@
     if ([name isEqualToString:@"LableStyle"]) {
         CHLabelViewController * VC = [[CHLabelViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
+    }
+    
+    if ([name isEqualToString:@"Delegate"]) {
+        CHDelegateViewController * VC = [[CHDelegateViewController alloc]init];
+        
+        [self.navigationController pushViewController:VC animated:YES];
+    }if ([name isEqualToString:@"CHSingleChiose"]) {
+        CHSingleChioseViewController * VC = [[CHSingleChioseViewController alloc]init];
+               
+               [self.navigationController pushViewController:VC animated:YES];
     }
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850A206B240E3AEE0036E2FD /* JYTLoadingView.m */; };
+		851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */; };
+		851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */; };
+		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
 		8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8523323B244AF7380008048A /* CHCenterAlertController.m */; };
 		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
 		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
@@ -23,6 +26,11 @@
 		8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8545D8132436D0050083091A /* TestAlertViewController.xib */; };
 		85631E53246B98FF00AC6F74 /* CHGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631E51246B98FF00AC6F74 /* CHGCDViewController.m */; };
 		85631E54246B98FF00AC6F74 /* CHGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85631E52246B98FF00AC6F74 /* CHGCDViewController.xib */; };
+		857022E32480DF48000C8D82 /* CHDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857022E02480DF48000C8D82 /* CHDelegateViewController.xib */; };
+		857022E42480DF48000C8D82 /* CHDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022E22480DF48000C8D82 /* CHDelegateViewController.m */; };
+		857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022E62480E07E000C8D82 /* CHDelegateNextViewController.m */; };
+		857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857022E72480E07E000C8D82 /* CHDelegateNextViewController.xib */; };
+		857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022EE2480F848000C8D82 /* CHDelegateManage.m */; };
 		858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C8CED246D444E00738236 /* CHLabelViewController.m */; };
 		858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858C8CEE246D444E00738236 /* CHLabelViewController.xib */; };
 		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
@@ -47,6 +55,11 @@
 /* Begin PBXFileReference section */
 		850A206A240E3AEE0036E2FD /* JYTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTLoadingView.h; sourceTree = "<group>"; };
 		850A206B240E3AEE0036E2FD /* JYTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTLoadingView.m; sourceTree = "<group>"; };
+		851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseViewController.h; sourceTree = "<group>"; };
+		851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseViewController.m; sourceTree = "<group>"; };
+		851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHSingleChioseViewController.xib; sourceTree = "<group>"; };
+		851DDD16250E114B007A806E /* CHSingleChioseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseView.h; sourceTree = "<group>"; };
+		851DDD17250E114B007A806E /* CHSingleChioseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseView.m; sourceTree = "<group>"; };
 		8523323A244AF7380008048A /* CHCenterAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCenterAlertController.h; sourceTree = "<group>"; };
 		8523323B244AF7380008048A /* CHCenterAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCenterAlertController.m; sourceTree = "<group>"; };
 		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +86,15 @@
 		85631E50246B98FF00AC6F74 /* CHGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHGCDViewController.h; sourceTree = "<group>"; };
 		85631E51246B98FF00AC6F74 /* CHGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHGCDViewController.m; sourceTree = "<group>"; };
 		85631E52246B98FF00AC6F74 /* CHGCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHGCDViewController.xib; sourceTree = "<group>"; };
+		857022E02480DF48000C8D82 /* CHDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHDelegateViewController.xib; sourceTree = "<group>"; };
+		857022E12480DF48000C8D82 /* CHDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDelegateViewController.h; sourceTree = "<group>"; };
+		857022E22480DF48000C8D82 /* CHDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDelegateViewController.m; sourceTree = "<group>"; };
+		857022E52480E07E000C8D82 /* CHDelegateNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegateNextViewController.h; sourceTree = "<group>"; };
+		857022E62480E07E000C8D82 /* CHDelegateNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDelegateNextViewController.m; sourceTree = "<group>"; };
+		857022E72480E07E000C8D82 /* CHDelegateNextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHDelegateNextViewController.xib; sourceTree = "<group>"; };
+		857022EA2480F34F000C8D82 /* CHDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegate.h; sourceTree = "<group>"; };
+		857022ED2480F848000C8D82 /* CHDelegateManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegateManage.h; sourceTree = "<group>"; };
+		857022EE2480F848000C8D82 /* CHDelegateManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDelegateManage.m; sourceTree = "<group>"; };
 		858C8CEC246D444E00738236 /* CHLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLabelViewController.h; sourceTree = "<group>"; };
 		858C8CED246D444E00738236 /* CHLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLabelViewController.m; sourceTree = "<group>"; };
 		858C8CEE246D444E00738236 /* CHLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHLabelViewController.xib; sourceTree = "<group>"; };
@@ -129,6 +151,16 @@
 			path = CHToast;
 			sourceTree = "<group>";
 		};
+		851DDD10250E10AE007A806E /* CHSingleChiose */ = {
+			isa = PBXGroup;
+			children = (
+				851DDD16250E114B007A806E /* CHSingleChioseView.h */,
+				851DDD17250E114B007A806E /* CHSingleChioseView.m */,
+			);
+			name = CHSingleChiose;
+			path = CHOCTool/CHSingleChiose;
+			sourceTree = SOURCE_ROOT;
+		};
 		8542B20123C5D7CF0052E441 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +202,8 @@
 				85C54F8323C7132F00518820 /* CHHash */,
 				85C54F6D23C7069600518820 /* CHFileManage */,
 				85DBD59E2463A379007922A0 /* CHButton */,
+				857022DF2480DF05000C8D82 /* CHDelegate */,
+				851DDD10250E10AE007A806E /* CHSingleChiose */,
 				8545D8162436D2B00083091A /* PrefixHeader.pch */,
 			);
 			path = CHOCTool;
@@ -196,6 +230,23 @@
 			);
 			name = CHAlertController;
 			path = CHOCTool/CHAlertController;
+			sourceTree = SOURCE_ROOT;
+		};
+		857022DF2480DF05000C8D82 /* CHDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				857022E12480DF48000C8D82 /* CHDelegateViewController.h */,
+				857022E22480DF48000C8D82 /* CHDelegateViewController.m */,
+				857022E02480DF48000C8D82 /* CHDelegateViewController.xib */,
+				857022E52480E07E000C8D82 /* CHDelegateNextViewController.h */,
+				857022E62480E07E000C8D82 /* CHDelegateNextViewController.m */,
+				857022E72480E07E000C8D82 /* CHDelegateNextViewController.xib */,
+				857022EA2480F34F000C8D82 /* CHDelegate.h */,
+				857022ED2480F848000C8D82 /* CHDelegateManage.h */,
+				857022EE2480F848000C8D82 /* CHDelegateManage.m */,
+			);
+			name = CHDelegate;
+			path = CHOCTool/CHDelegate;
 			sourceTree = SOURCE_ROOT;
 		};
 		85A4F3AD242AFC9100D96524 /* CHCache */ = {
@@ -242,6 +293,9 @@
 				858C8CEC246D444E00738236 /* CHLabelViewController.h */,
 				858C8CED246D444E00738236 /* CHLabelViewController.m */,
 				858C8CEE246D444E00738236 /* CHLabelViewController.xib */,
+				851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */,
+				851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */,
+				851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,11 +401,14 @@
 				8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */,
 				858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */,
 				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
+				857022E32480DF48000C8D82 /* CHDelegateViewController.xib in Resources */,
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
 				85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */,
+				851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */,
 				8542B22723C5D8370052E441 /* readme.md in Resources */,
 				85C67CF224278289003B91E3 /* README.md in Resources */,
 				85631E54246B98FF00AC6F74 /* CHGCDViewController.xib in Resources */,
+				857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */,
 				8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +425,7 @@
 				85631E53246B98FF00AC6F74 /* CHGCDViewController.m in Sources */,
 				85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */,
 				85C54F8623C7134800518820 /* CHHash.m in Sources */,
+				857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */,
 				85BDAC4F246A71E500B9E5B8 /* CHTitleAlertController.m in Sources */,
 				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
 				85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */,
@@ -378,12 +436,16 @@
 				858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
+				857022E42480DF48000C8D82 /* CHDelegateViewController.m in Sources */,
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
+				851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */,
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
+				857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */,
 				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
+				851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
