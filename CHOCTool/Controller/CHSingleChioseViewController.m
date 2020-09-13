@@ -29,18 +29,23 @@
     [super viewDidAppear:animated];
     [self.view addSubview:self.singleChioseView];
     
-    [self.singleChioseView setTitleArr:@[@"001",@"002"] defaultColor:[UIColor grayColor] selectedColor:[UIColor yellowColor]];
+    [self.singleChioseView setTitleArr:@[@"001",@"0020000",@"个人中心"] defaultColor:[UIColor grayColor] selectedColor:[UIColor yellowColor] titleSize:17];
     
     [self.singleChioseView setBtnClickBlock:^(void * _Nonnull title) {
         
         NSLog(@"%@",title);
     }];
+    [self.singleChioseView hideLineView];
+    
+
   
     
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
       [self.singleChioseView setButtonTitleSize:20];
+
+    
 }
 #pragma mark --lazy
 -(CHSingleChioseView *)singleChioseView{
