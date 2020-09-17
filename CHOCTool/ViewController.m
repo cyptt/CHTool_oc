@@ -17,23 +17,26 @@
 #import "CHLabelViewController.h"
 #import "CHDelegateViewController.h"
 #import "CHSingleChioseViewController.h"
+#import "CHScrolleTestViewController.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
 }
+
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property(nonatomic,strong)NSArray * dataSourceArr;;
 
 
 @end
 
+NSString * LOGCHNESE = @"打印中文";
 
 
 @implementation ViewController
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose"];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE];
     }
     return _dataSourceArr;
 }
@@ -134,6 +137,13 @@
         CHSingleChioseViewController * VC = [[CHSingleChioseViewController alloc]init];
                
                [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:@"ScrollTest"]) {
+        CHScrolleTestViewController * VC = [[CHScrolleTestViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:LOGCHNESE]) {
+      //NSObject+Logutils
     }
 }
 

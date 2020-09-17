@@ -11,6 +11,8 @@
 		851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */; };
 		851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */; };
 		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
+		851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD1D250E4BCD007A806E /* CHScrolleTestViewController.m */; };
+		851DDD20250E4BCD007A806E /* CHScrolleTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD1E250E4BCD007A806E /* CHScrolleTestViewController.xib */; };
 		8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8523323B244AF7380008048A /* CHCenterAlertController.m */; };
 		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
 		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
@@ -31,6 +33,7 @@
 		857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022E62480E07E000C8D82 /* CHDelegateNextViewController.m */; };
 		857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857022E72480E07E000C8D82 /* CHDelegateNextViewController.xib */; };
 		857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022EE2480F848000C8D82 /* CHDelegateManage.m */; };
+		858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55DD251357B300C1F503 /* NSObject+LogUtils.m */; };
 		858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C8CED246D444E00738236 /* CHLabelViewController.m */; };
 		858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858C8CEE246D444E00738236 /* CHLabelViewController.xib */; };
 		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
@@ -60,6 +63,9 @@
 		851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHSingleChioseViewController.xib; sourceTree = "<group>"; };
 		851DDD16250E114B007A806E /* CHSingleChioseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseView.h; sourceTree = "<group>"; };
 		851DDD17250E114B007A806E /* CHSingleChioseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseView.m; sourceTree = "<group>"; };
+		851DDD1C250E4BCD007A806E /* CHScrolleTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHScrolleTestViewController.h; sourceTree = "<group>"; };
+		851DDD1D250E4BCD007A806E /* CHScrolleTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHScrolleTestViewController.m; sourceTree = "<group>"; };
+		851DDD1E250E4BCD007A806E /* CHScrolleTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHScrolleTestViewController.xib; sourceTree = "<group>"; };
 		8523323A244AF7380008048A /* CHCenterAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCenterAlertController.h; sourceTree = "<group>"; };
 		8523323B244AF7380008048A /* CHCenterAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCenterAlertController.m; sourceTree = "<group>"; };
 		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,8 @@
 		857022EA2480F34F000C8D82 /* CHDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegate.h; sourceTree = "<group>"; };
 		857022ED2480F848000C8D82 /* CHDelegateManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegateManage.h; sourceTree = "<group>"; };
 		857022EE2480F848000C8D82 /* CHDelegateManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDelegateManage.m; sourceTree = "<group>"; };
+		858A55DD251357B300C1F503 /* NSObject+LogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LogUtils.m"; sourceTree = "<group>"; };
+		858A55DE251357B300C1F503 /* NSObject+LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LogUtils.h"; sourceTree = "<group>"; };
 		858C8CEC246D444E00738236 /* CHLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLabelViewController.h; sourceTree = "<group>"; };
 		858C8CED246D444E00738236 /* CHLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLabelViewController.m; sourceTree = "<group>"; };
 		858C8CEE246D444E00738236 /* CHLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHLabelViewController.xib; sourceTree = "<group>"; };
@@ -193,6 +201,7 @@
 				8542B21E23C5D7D00052E441 /* Info.plist */,
 				8542B21F23C5D7D00052E441 /* main.m */,
 				85C54F7C23C70B0600518820 /* Resources */,
+				858A55DC251357B300C1F503 /* Category */,
 				85C54F7123C7073E00518820 /* Controller */,
 				8545D80D2436CF520083091A /* CHAlertController */,
 				8545D8092436CD160083091A /* CHProgrossHUD */,
@@ -249,6 +258,15 @@
 			path = CHOCTool/CHDelegate;
 			sourceTree = SOURCE_ROOT;
 		};
+		858A55DC251357B300C1F503 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				858A55DD251357B300C1F503 /* NSObject+LogUtils.m */,
+				858A55DE251357B300C1F503 /* NSObject+LogUtils.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		85A4F3AD242AFC9100D96524 /* CHCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +314,9 @@
 				851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */,
 				851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */,
 				851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */,
+				851DDD1C250E4BCD007A806E /* CHScrolleTestViewController.h */,
+				851DDD1D250E4BCD007A806E /* CHScrolleTestViewController.m */,
+				851DDD1E250E4BCD007A806E /* CHScrolleTestViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -402,6 +423,7 @@
 				858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */,
 				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
 				857022E32480DF48000C8D82 /* CHDelegateViewController.xib in Resources */,
+				851DDD20250E4BCD007A806E /* CHScrolleTestViewController.xib in Resources */,
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
 				85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */,
 				851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */,
@@ -443,11 +465,13 @@
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
 				857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */,
 				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
+				858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
 				851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
+				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

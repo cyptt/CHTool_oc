@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CHSingleChioseView : UIView
 @property(nonatomic,strong)NSArray * titleArr;
+
+
 -(void)setTitleArr:(NSArray *)titleArr defaultColor:(UIColor *)defaultColor selectedColor:(UIColor *)selectedColor titleSize:(CGFloat)fontSize;
 
 /**
@@ -20,7 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setButtonTitleSize:(CGFloat)fontSize;
 
 
+/**
+ 隐藏下划线
+ */
 -(void)hideLineView;
+
 @property(nonatomic,strong)void(^btnClickBlock)(void * title);
 
 @end

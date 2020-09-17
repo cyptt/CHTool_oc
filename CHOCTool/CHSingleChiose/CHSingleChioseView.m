@@ -84,6 +84,8 @@ NSInteger SigleChioseTAG = 10000;
         [self.buttonArr addObject:button];
         button.tag =SigleChioseTAG +i;
         
+        
+        
         CGFloat lineW = [self getWidthWithString:titleArr[i] font:[UIFont systemFontOfSize:fontSize]] +4;
         UIView * lineView = [[UILabel alloc]initWithFrame:CGRectMake(0, selfH-10+2, lineW, 2)];
     
