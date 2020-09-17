@@ -34,6 +34,7 @@
 		857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857022E72480E07E000C8D82 /* CHDelegateNextViewController.xib */; };
 		857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022EE2480F848000C8D82 /* CHDelegateManage.m */; };
 		858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55DD251357B300C1F503 /* NSObject+LogUtils.m */; };
+		858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55E32513635E00C1F503 /* ExtendNSDictionary.m */; };
 		858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C8CED246D444E00738236 /* CHLabelViewController.m */; };
 		858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858C8CEE246D444E00738236 /* CHLabelViewController.xib */; };
 		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
@@ -103,6 +104,8 @@
 		857022EE2480F848000C8D82 /* CHDelegateManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDelegateManage.m; sourceTree = "<group>"; };
 		858A55DD251357B300C1F503 /* NSObject+LogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LogUtils.m"; sourceTree = "<group>"; };
 		858A55DE251357B300C1F503 /* NSObject+LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LogUtils.h"; sourceTree = "<group>"; };
+		858A55E32513635E00C1F503 /* ExtendNSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendNSDictionary.m; sourceTree = "<group>"; };
+		858A55E42513635E00C1F503 /* ExtendNSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendNSDictionary.h; sourceTree = "<group>"; };
 		858C8CEC246D444E00738236 /* CHLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLabelViewController.h; sourceTree = "<group>"; };
 		858C8CED246D444E00738236 /* CHLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLabelViewController.m; sourceTree = "<group>"; };
 		858C8CEE246D444E00738236 /* CHLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHLabelViewController.xib; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 		858A55DC251357B300C1F503 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				858A55E42513635E00C1F503 /* ExtendNSDictionary.h */,
+				858A55E32513635E00C1F503 /* ExtendNSDictionary.m */,
 				858A55DD251357B300C1F503 /* NSObject+LogUtils.m */,
 				858A55DE251357B300C1F503 /* NSObject+LogUtils.h */,
 			);
@@ -456,6 +461,7 @@
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
 				85DBD5A12463A386007922A0 /* CHButton.m in Sources */,
 				858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */,
+				858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
 				857022E42480DF48000C8D82 /* CHDelegateViewController.m in Sources */,
