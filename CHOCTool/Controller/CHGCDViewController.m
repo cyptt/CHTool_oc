@@ -25,6 +25,22 @@
    
 }
 
+-(void)testcompletionHandler:(void (^)(id responseBody))sucessHandler{
+        [NSThread sleepForTimeInterval:3];
+       NSLog(@"进来了");
+        dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue1", DISPATCH_QUEUE_CONCURRENT);
+         
+         dispatch_async(queue, ^{
+             // 追加任务 1
+             [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+              if (sucessHandler) {
+                   sucessHandler(@"ddd");
+               }
+         });
+  
+ 
+}
+
 //同步执行 + 串行队列
 //在当前线程执行任务。任务是串行的，执行完一个任务，再执行下一个任务。
 - (IBAction)btn1:(UIButton *)sender {
@@ -32,7 +48,11 @@
     NSLog(@"1---%@",[NSThread currentThread]);
     dispatch_queue_t queue =  dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_SERIAL);
        dispatch_sync(queue, ^{
-            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            [NSThread sleepForTimeInterval:2];// 模拟耗时操作
+           [self testcompletionHandler:^(id responseBody) {
+                [NSThread sleepForTimeInterval:2];
+                NSLog(@"回调");
+           }];
            
             NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
        });
@@ -44,6 +64,8 @@
              
               NSLog(@"4---%@",[NSThread currentThread]);      // 打印当前线程
          });
+    
+       NSLog(@"5---%@",[NSThread currentThread]);
 }
 /**
 * 同步执行 + 并发队列
@@ -206,6 +228,7 @@
            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
            NSLog(@"4---%@",[NSThread currentThread]);      // 打印当前线程
        });
+    NSLog(@"dddd");
      
 }
 /**
@@ -277,7 +300,12 @@
        dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
            // 追加任务 1
            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-           NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+           NSLog(@"1---%@",[NSThread currentThread]);// 打印当前线程
+           
+           [self testcompletionHandler:^(id responseBody) {
+                  [NSThread sleepForTimeInterval:2];
+               NSLog(@"回调");
+           }];
        });
        
        dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -306,10 +334,16 @@
       dispatch_group_enter(group);
       dispatch_async(queue, ^{
           // 追加任务 1
+          
           [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
           NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
 
-          dispatch_group_leave(group);
+          [self testcompletionHandler:^(id responseBody) {
+                [NSThread sleepForTimeInterval:5];
+              NSLog(@"回调");
+                  dispatch_group_leave(group);
+          }];
+      
       });
       
       dispatch_group_enter(group);
@@ -328,6 +362,8 @@
       
           NSLog(@"group---end");
       });
+    
+    NSLog(@"ddddddd");
 }
 /**
  Dispatch Semaphore 线程同步

@@ -13,6 +13,7 @@
 		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
 		851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD1D250E4BCD007A806E /* CHScrolleTestViewController.m */; };
 		851DDD20250E4BCD007A806E /* CHScrolleTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD1E250E4BCD007A806E /* CHScrolleTestViewController.xib */; };
+		85206F6F2514471C007AE0A8 /* CHDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85206F6E2514471C007AE0A8 /* CHDeviceInfo.m */; };
 		8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8523323B244AF7380008048A /* CHCenterAlertController.m */; };
 		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
 		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
@@ -67,6 +68,8 @@
 		851DDD1C250E4BCD007A806E /* CHScrolleTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHScrolleTestViewController.h; sourceTree = "<group>"; };
 		851DDD1D250E4BCD007A806E /* CHScrolleTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHScrolleTestViewController.m; sourceTree = "<group>"; };
 		851DDD1E250E4BCD007A806E /* CHScrolleTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHScrolleTestViewController.xib; sourceTree = "<group>"; };
+		85206F6D2514471C007AE0A8 /* CHDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDeviceInfo.h; sourceTree = "<group>"; };
+		85206F6E2514471C007AE0A8 /* CHDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDeviceInfo.m; sourceTree = "<group>"; };
 		8523323A244AF7380008048A /* CHCenterAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCenterAlertController.h; sourceTree = "<group>"; };
 		8523323B244AF7380008048A /* CHCenterAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCenterAlertController.m; sourceTree = "<group>"; };
 		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +175,15 @@
 			path = CHOCTool/CHSingleChiose;
 			sourceTree = SOURCE_ROOT;
 		};
+		85206F6C2514470A007AE0A8 /* CHDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				85206F6D2514471C007AE0A8 /* CHDeviceInfo.h */,
+				85206F6E2514471C007AE0A8 /* CHDeviceInfo.m */,
+			);
+			path = CHDeviceInfo;
+			sourceTree = "<group>";
+		};
 		8542B20123C5D7CF0052E441 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +228,7 @@
 				85DBD59E2463A379007922A0 /* CHButton */,
 				857022DF2480DF05000C8D82 /* CHDelegate */,
 				851DDD10250E10AE007A806E /* CHSingleChiose */,
+				85206F6C2514470A007AE0A8 /* CHDeviceInfo */,
 				8545D8162436D2B00083091A /* PrefixHeader.pch */,
 			);
 			path = CHOCTool;
@@ -479,6 +492,7 @@
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
 				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
+				85206F6F2514471C007AE0A8 /* CHDeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

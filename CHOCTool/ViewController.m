@@ -18,6 +18,7 @@
 #import "CHDelegateViewController.h"
 #import "CHSingleChioseViewController.h"
 #import "CHScrolleTestViewController.h"
+#import "CHDeviceInfo.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -30,13 +31,14 @@
 @end
 
 NSString * LOGCHNESE = @"打印中文";
+NSString * DeviceInfo = @"设备info";
 
 
 @implementation ViewController
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE];
+        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo];
     }
     return _dataSourceArr;
 }
@@ -144,6 +146,13 @@ NSString * LOGCHNESE = @"打印中文";
     }
     if ([name isEqualToString:LOGCHNESE]) {
       //NSObject+Logutils
+    }
+    if ([name isEqualToString:DeviceInfo]) {
+        NSLog(@"%@",CHDeviceInfo.deviceId);
+        NSLog(@"%@",CHDeviceInfo.osVersion);
+              NSLog(@"%@",CHDeviceInfo.osName);
+        NSLog(@"%@",CHDeviceInfo.deviceName);
+        NSLog(@"%@",CHDeviceInfo.deviceModel);
     }
 }
 
