@@ -19,6 +19,9 @@
 #import "CHSingleChioseViewController.h"
 #import "CHScrolleTestViewController.h"
 #import "CHDeviceInfo.h"
+#import "RuntimeViewController.h"
+#import "MVPViewController.h"
+#import "MVVMViewController.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -32,23 +35,28 @@
 
 NSString * LOGCHNESE = @"打印中文";
 NSString * DeviceInfo = @"设备info";
-
+NSString * RUNTIME = @"RUNTIME";
+NSString * MVP = @"MVP";
+NSString * MVVM = @"MVVM";
 
 @implementation ViewController
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo];
+        _dataSourceArr = @[MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,RUNTIME];
     }
     return _dataSourceArr;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
+  
     
     NSLog(@"%s",__func__);
+    
     
 //   self.view.backgroundColor = [UIColor redColor];
 
@@ -153,6 +161,18 @@ NSString * DeviceInfo = @"设备info";
               NSLog(@"%@",CHDeviceInfo.osName);
         NSLog(@"%@",CHDeviceInfo.deviceName);
         NSLog(@"%@",CHDeviceInfo.deviceModel);
+    }
+    if ([name isEqualToString:RUNTIME]) {
+        RuntimeViewController *VC  =[[RuntimeViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:MVP]) {
+        MVPViewController *VC  =[[MVPViewController alloc]init];
+               [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:MVVM]) {
+        MVVMViewController *VC  =[[MVVMViewController alloc]init];
+               [self.navigationController pushViewController:VC animated:YES];
     }
 }
 
