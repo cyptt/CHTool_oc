@@ -22,6 +22,7 @@
 #import "RuntimeViewController.h"
 #import "MVPViewController.h"
 #import "MVVMViewController.h"
+#import "NULL_NILViewController.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -38,12 +39,12 @@ NSString * DeviceInfo = @"设备info";
 NSString * RUNTIME = @"RUNTIME";
 NSString * MVP = @"MVP";
 NSString * MVVM = @"MVVM";
-
+NSString * NULL_NIL = @"NULL_NIL";
 @implementation ViewController
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,RUNTIME];
+        _dataSourceArr = @[MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,RUNTIME,NULL_NIL];
     }
     return _dataSourceArr;
 }
@@ -173,6 +174,10 @@ NSString * MVVM = @"MVVM";
     if ([name isEqualToString:MVVM]) {
         MVVMViewController *VC  =[[MVVMViewController alloc]init];
                [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:NULL_NIL]) {
+        NULL_NILViewController * VC = [[NULL_NILViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }
 }
 

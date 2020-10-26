@@ -7,26 +7,40 @@
 //
 
 #import "MVVMViewController.h"
+#import "MVVMTestView.h"
+#import "ViewModule.h"
 
 @interface MVVMViewController ()
-
+@property(nonatomic,strong)ViewModule * viewModel;
+@property(nonatomic,strong)MVVMTestView * mvvmTestView;
 @end
 
 @implementation MVVMViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.viewModel = [[ViewModule alloc]init];
+    
+
+}
+-(void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+  
+    [self.view addSubview:self.mvvmTestView];
+  
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark--lazy
+-(MVVMTestView *)mvvmTestView{
+    if (!_mvvmTestView) {
+        _mvvmTestView = [[NSBundle mainBundle]loadNibNamed:NSStringFromClass([MVVMTestView class]) owner:self options:nil].lastObject;
+        _mvvmTestView.frame =CGRectMake(0, 100, 200, 100);
+        _mvvmTestView.backgroundColor = [UIColor redColor];
+        [_mvvmTestView setViewModule:self.viewModel];
+    }
+    return _mvvmTestView;
 }
-*/
-
 @end
