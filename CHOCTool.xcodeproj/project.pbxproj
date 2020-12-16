@@ -72,6 +72,10 @@
 		85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */; };
 		85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEE2427824F003B91E3 /* CHClassInfo.m */; };
 		85C67CF224278289003B91E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C67CF124278289003B91E3 /* README.md */; };
+		85D992622589EACF00C689C0 /* CHScrollewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D992602589EACF00C689C0 /* CHScrollewVController.m */; };
+		85D992632589EACF00C689C0 /* CHScrollewVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D992612589EACF00C689C0 /* CHScrollewVController.xib */; };
+		85D992672589F9AA00C689C0 /* CHOrgScrollewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D992652589F9AA00C689C0 /* CHOrgScrollewVController.m */; };
+		85D992682589F9AA00C689C0 /* CHOrgScrollewVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D992662589F9AA00C689C0 /* CHOrgScrollewVController.xib */; };
 		85DBD5A12463A386007922A0 /* CHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBD5A02463A386007922A0 /* CHButton.m */; };
 		85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBD5A92463A43F007922A0 /* CHButtonController.m */; };
 		85DFD0732514DB2600F66F52 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFD0712514DB2600F66F52 /* RuntimeViewController.m */; };
@@ -193,6 +197,12 @@
 		85C67CED2427824F003B91E3 /* NSObject+CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHModel.h"; sourceTree = "<group>"; };
 		85C67CEE2427824F003B91E3 /* CHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHClassInfo.m; sourceTree = "<group>"; };
 		85C67CF124278289003B91E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		85D9925F2589EACF00C689C0 /* CHScrollewVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHScrollewVController.h; sourceTree = "<group>"; };
+		85D992602589EACF00C689C0 /* CHScrollewVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHScrollewVController.m; sourceTree = "<group>"; };
+		85D992612589EACF00C689C0 /* CHScrollewVController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHScrollewVController.xib; sourceTree = "<group>"; };
+		85D992642589F9AA00C689C0 /* CHOrgScrollewVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHOrgScrollewVController.h; sourceTree = "<group>"; };
+		85D992652589F9AA00C689C0 /* CHOrgScrollewVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHOrgScrollewVController.m; sourceTree = "<group>"; };
+		85D992662589F9AA00C689C0 /* CHOrgScrollewVController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHOrgScrollewVController.xib; sourceTree = "<group>"; };
 		85DBD59F2463A386007922A0 /* CHButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHButton.h; sourceTree = "<group>"; };
 		85DBD5A02463A386007922A0 /* CHButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHButton.m; sourceTree = "<group>"; };
 		85DBD5A82463A43F007922A0 /* CHButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHButtonController.h; sourceTree = "<group>"; };
@@ -425,6 +435,12 @@
 		85C54F7123C7073E00518820 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				85D992642589F9AA00C689C0 /* CHOrgScrollewVController.h */,
+				85D992652589F9AA00C689C0 /* CHOrgScrollewVController.m */,
+				85D992662589F9AA00C689C0 /* CHOrgScrollewVController.xib */,
+				85D9925F2589EACF00C689C0 /* CHScrollewVController.h */,
+				85D992602589EACF00C689C0 /* CHScrollewVController.m */,
+				85D992612589EACF00C689C0 /* CHScrollewVController.xib */,
 				85C54F7723C708A200518820 /* FileManageViewController.h */,
 				85C54F7823C708A200518820 /* FileManageViewController.m */,
 				85C54F7923C708A200518820 /* FileManageViewController.xib */,
@@ -566,6 +582,7 @@
 				855B3BB62525F1940095C42E /* MVPViewController.xib in Resources */,
 				85C54F8223C7108800518820 /* 小知识点.docx in Resources */,
 				8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */,
+				85D992632589EACF00C689C0 /* CHScrollewVController.xib in Resources */,
 				8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */,
 				858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */,
 				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
@@ -583,6 +600,7 @@
 				85C67CF224278289003B91E3 /* README.md in Resources */,
 				85631E54246B98FF00AC6F74 /* CHGCDViewController.xib in Resources */,
 				85DFD0742514DB2600F66F52 /* RuntimeViewController.xib in Resources */,
+				85D992682589F9AA00C689C0 /* CHOrgScrollewVController.xib in Resources */,
 				857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */,
 				8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */,
 			);
@@ -609,6 +627,7 @@
 				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
 				85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */,
 				85C54F7023C7069600518820 /* CHFileManage.m in Sources */,
+				85D992622589EACF00C689C0 /* CHScrollewVController.m in Sources */,
 				8545D8102436CF520083091A /* CHAlertController.m in Sources */,
 				855B3BB52525F1940095C42E /* MVPViewController.m in Sources */,
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
@@ -621,6 +640,7 @@
 				857022E42480DF48000C8D82 /* CHDelegateViewController.m in Sources */,
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				850AC5E125270C7B00109292 /* ViewModule.m in Sources */,
+				85D992672589F9AA00C689C0 /* CHOrgScrollewVController.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				855B3BC32525F5770095C42E /* MVPModel.m in Sources */,
 				855B3BBF2525F5130095C42E /* MVPTableViewCell.m in Sources */,
@@ -786,7 +806,7 @@
 				DEVELOPMENT_TEAM = SAJ95MG23S;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CHOCTool/PrefixHeader.pch";
 				INFOPLIST_FILE = CHOCTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -805,7 +825,7 @@
 				DEVELOPMENT_TEAM = SAJ95MG23S;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CHOCTool/PrefixHeader.pch";
 				INFOPLIST_FILE = CHOCTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

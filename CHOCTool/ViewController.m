@@ -23,6 +23,8 @@
 #import "MVPViewController.h"
 #import "MVVMViewController.h"
 #import "NULL_NILViewController.h"
+#import "CHScrollewVController.h"
+#import "CHOrgScrollewVController.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -30,7 +32,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property(nonatomic,strong)NSArray * dataSourceArr;;
-
 
 @end
 
@@ -40,11 +41,13 @@ NSString * RUNTIME = @"RUNTIME";
 NSString * MVP = @"MVP";
 NSString * MVVM = @"MVVM";
 NSString * NULL_NIL = @"NULL_NIL";
+NSString * CHUIScrollView = @"CHUIScrollView";
+NSString * CHOrgScroll = @"CHOrgScroll";
 @implementation ViewController
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,RUNTIME,NULL_NIL];
+        _dataSourceArr = @[CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,RUNTIME,NULL_NIL];
     }
     return _dataSourceArr;
 }
@@ -101,6 +104,14 @@ NSString * NULL_NIL = @"NULL_NIL";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString * name = self.dataSourceArr[indexPath.row];
+    if ([name isEqualToString:CHUIScrollView]) {
+        CHScrollewVController * VC = [[CHScrollewVController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:CHOrgScroll]) {
+        CHOrgScrollewVController * VC  = [[CHOrgScrollewVController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
     if ([name isEqualToString:@"FileManage"]) {
         FileManageViewController * VC = [[FileManageViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
@@ -159,7 +170,7 @@ NSString * NULL_NIL = @"NULL_NIL";
     if ([name isEqualToString:DeviceInfo]) {
         NSLog(@"%@",CHDeviceInfo.deviceId);
         NSLog(@"%@",CHDeviceInfo.osVersion);
-              NSLog(@"%@",CHDeviceInfo.osName);
+        NSLog(@"%@",CHDeviceInfo.osName);
         NSLog(@"%@",CHDeviceInfo.deviceName);
         NSLog(@"%@",CHDeviceInfo.deviceModel);
     }
