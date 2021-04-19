@@ -9,6 +9,7 @@
 #import "MVVMViewController.h"
 #import "MVVMTestView.h"
 #import "ViewModule.h"
+#import "MVVM2ControllerViewController.h"
 
 @interface MVVMViewController ()
 @property(nonatomic,strong)ViewModule * viewModel;
@@ -32,7 +33,10 @@
     
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    MVVM2ControllerViewController * VC = [[MVVM2ControllerViewController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
+}
 #pragma mark--lazy
 -(MVVMTestView *)mvvmTestView{
     if (!_mvvmTestView) {

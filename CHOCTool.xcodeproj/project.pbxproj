@@ -55,6 +55,11 @@
 		85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BB242AFCA600D96524 /* CHKVStorage.m */; };
 		85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */; };
 		85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BF242AFCA600D96524 /* CHDiskCache.m */; };
+		85BC1A90262D48A2009F1BCC /* MVVM2ControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A8F262D48A2009F1BCC /* MVVM2ControllerViewController.m */; };
+		85BC1A94262D4C39009F1BCC /* Viewmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A93262D4C39009F1BCC /* Viewmodel.m */; };
+		85BC1A98262D4C41009F1BCC /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A97262D4C41009F1BCC /* Model.m */; };
+		85BC1A9D262D4D23009F1BCC /* MVVMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A9B262D4D23009F1BCC /* MVVMTableViewCell.m */; };
+		85BC1A9E262D4D23009F1BCC /* MVVMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85BC1A9C262D4D23009F1BCC /* MVVMTableViewCell.xib */; };
 		85BDAC4F246A71E500B9E5B8 /* CHTitleAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BDAC4E246A71E500B9E5B8 /* CHTitleAlertController.m */; };
 		85BF77492546680E007E2A67 /* NULL_NILViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BF77472546680E007E2A67 /* NULL_NILViewController.m */; };
 		85BF774A2546680E007E2A67 /* NULL_NILViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85BF77482546680E007E2A67 /* NULL_NILViewController.xib */; };
@@ -168,6 +173,15 @@
 		85A4F3BF242AFCA600D96524 /* CHDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDiskCache.m; sourceTree = "<group>"; };
 		85A4F3C0242AFCA600D96524 /* CHKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKVStorage.h; sourceTree = "<group>"; };
 		85A4F3C1242AFCA600D96524 /* CHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCache.h; sourceTree = "<group>"; };
+		85BC1A8E262D48A2009F1BCC /* MVVM2ControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVM2ControllerViewController.h; sourceTree = "<group>"; };
+		85BC1A8F262D48A2009F1BCC /* MVVM2ControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM2ControllerViewController.m; sourceTree = "<group>"; };
+		85BC1A92262D4C38009F1BCC /* Viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Viewmodel.h; sourceTree = "<group>"; };
+		85BC1A93262D4C39009F1BCC /* Viewmodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Viewmodel.m; sourceTree = "<group>"; };
+		85BC1A96262D4C41009F1BCC /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		85BC1A97262D4C41009F1BCC /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		85BC1A9A262D4D23009F1BCC /* MVVMTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTableViewCell.h; sourceTree = "<group>"; };
+		85BC1A9B262D4D23009F1BCC /* MVVMTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewCell.m; sourceTree = "<group>"; };
+		85BC1A9C262D4D23009F1BCC /* MVVMTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMTableViewCell.xib; sourceTree = "<group>"; };
 		85BDAC4D246A71E500B9E5B8 /* CHTitleAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTitleAlertController.h; sourceTree = "<group>"; };
 		85BDAC4E246A71E500B9E5B8 /* CHTitleAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTitleAlertController.m; sourceTree = "<group>"; };
 		85BF77462546680E007E2A67 /* NULL_NILViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NULL_NILViewController.h; sourceTree = "<group>"; };
@@ -350,6 +364,7 @@
 		855B3BB12525F1510095C42E /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				85BC1A8C262D487A009F1BCC /* mvvm2 */,
 				850AC5DF25270C7B00109292 /* ViewModule.h */,
 				850AC5E025270C7B00109292 /* ViewModule.m */,
 				850AC5DC25270C5700109292 /* BaseViewModule.h */,
@@ -407,6 +422,22 @@
 				85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */,
 			);
 			path = CHCache;
+			sourceTree = "<group>";
+		};
+		85BC1A8C262D487A009F1BCC /* mvvm2 */ = {
+			isa = PBXGroup;
+			children = (
+				85BC1A8E262D48A2009F1BCC /* MVVM2ControllerViewController.h */,
+				85BC1A8F262D48A2009F1BCC /* MVVM2ControllerViewController.m */,
+				85BC1A92262D4C38009F1BCC /* Viewmodel.h */,
+				85BC1A93262D4C39009F1BCC /* Viewmodel.m */,
+				85BC1A96262D4C41009F1BCC /* Model.h */,
+				85BC1A97262D4C41009F1BCC /* Model.m */,
+				85BC1A9A262D4D23009F1BCC /* MVVMTableViewCell.h */,
+				85BC1A9B262D4D23009F1BCC /* MVVMTableViewCell.m */,
+				85BC1A9C262D4D23009F1BCC /* MVVMTableViewCell.xib */,
+			);
+			path = mvvm2;
 			sourceTree = "<group>";
 		};
 		85BF774B25466BB3007E2A67 /* NULL */ = {
@@ -592,6 +623,7 @@
 				857022E32480DF48000C8D82 /* CHDelegateViewController.xib in Resources */,
 				851DDD20250E4BCD007A806E /* CHScrolleTestViewController.xib in Resources */,
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
+				85BC1A9E262D4D23009F1BCC /* MVVMTableViewCell.xib in Resources */,
 				85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */,
 				851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */,
 				8542B22723C5D8370052E441 /* readme.md in Resources */,
@@ -618,6 +650,7 @@
 				85631E53246B98FF00AC6F74 /* CHGCDViewController.m in Sources */,
 				850AC5D62526F57600109292 /* MVVMTestView.m in Sources */,
 				850AC5DE25270C5800109292 /* BaseViewModule.m in Sources */,
+				85BC1A90262D48A2009F1BCC /* MVVM2ControllerViewController.m in Sources */,
 				85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */,
 				85BF77492546680E007E2A67 /* NULL_NILViewController.m in Sources */,
 				85C54F8623C7134800518820 /* CHHash.m in Sources */,
@@ -633,6 +666,7 @@
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
 				85DBD5A12463A386007922A0 /* CHButton.m in Sources */,
 				858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */,
+				85BC1A9D262D4D23009F1BCC /* MVVMTableViewCell.m in Sources */,
 				858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
@@ -655,6 +689,7 @@
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
 				851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */,
+				85BC1A98262D4C41009F1BCC /* Model.m in Sources */,
 				850AC5DB252709D000109292 /* MVVMModel.m in Sources */,
 				85BF77592546783D007E2A67 /* CHNull.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
@@ -662,6 +697,7 @@
 				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
 				855B3BC625260AC30095C42E /* Present.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
+				85BC1A94262D4C39009F1BCC /* Viewmodel.m in Sources */,
 				85206F6F2514471C007AE0A8 /* CHDeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
