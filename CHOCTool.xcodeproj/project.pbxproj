@@ -13,6 +13,13 @@
 		850AC5DB252709D000109292 /* MVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 850AC5DA252709D000109292 /* MVVMModel.m */; };
 		850AC5DE25270C5800109292 /* BaseViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 850AC5DD25270C5800109292 /* BaseViewModule.m */; };
 		850AC5E125270C7B00109292 /* ViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 850AC5E025270C7B00109292 /* ViewModule.m */; };
+		851C80E72648E00600C731AA /* RuntimeSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C80E62648E00600C731AA /* RuntimeSon.m */; };
+		851C80EB2648F74D00C731AA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C80EA2648F74D00C731AA /* Person.m */; };
+		851C80FA2648FC5100C731AA /* ExPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C80F92648FC5100C731AA /* ExPerson.m */; };
+		851C80FF2648FD7500C731AA /* CHExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C80FD2648FD7500C731AA /* CHExtensionViewController.m */; };
+		851C81002648FD7500C731AA /* CHExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C80FE2648FD7500C731AA /* CHExtensionViewController.xib */; };
+		851C81092649096B00C731AA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C81072649096B00C731AA /* CategoryViewController.m */; };
+		851C810A2649096B00C731AA /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C81082649096B00C731AA /* CategoryViewController.xib */; };
 		851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */; };
 		851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */; };
 		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
@@ -47,10 +54,17 @@
 		857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022E62480E07E000C8D82 /* CHDelegateNextViewController.m */; };
 		857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857022E72480E07E000C8D82 /* CHDelegateNextViewController.xib */; };
 		857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 857022EE2480F848000C8D82 /* CHDelegateManage.m */; };
+		8572CC6E264CB99600D6DA23 /* ArchiveAndDicVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572CC6C264CB99600D6DA23 /* ArchiveAndDicVController.m */; };
+		8572CC6F264CB99600D6DA23 /* ArchiveAndDicVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8572CC6D264CB99600D6DA23 /* ArchiveAndDicVController.xib */; };
+		8572CC73264CBBBF00D6DA23 /* ArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572CC72264CBBBF00D6DA23 /* ArchiveModel.m */; };
+		8572CC7C264CD4E600D6DA23 /* RuntimeDicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572CC7B264CD4E600D6DA23 /* RuntimeDicModel.m */; };
 		858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55DD251357B300C1F503 /* NSObject+LogUtils.m */; };
 		858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55E32513635E00C1F503 /* ExtendNSDictionary.m */; };
 		858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C8CED246D444E00738236 /* CHLabelViewController.m */; };
 		858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858C8CEE246D444E00738236 /* CHLabelViewController.xib */; };
+		859026232632603500747683 /* CHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 859026222632603500747683 /* CHObject.m */; };
+		859026272632605400747683 /* CHObject+Obj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 859026262632605400747683 /* CHObject+Obj1.m */; };
+		8590262B2632606400747683 /* CHObject+Obj2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590262A2632606400747683 /* CHObject+Obj2.m */; };
 		85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BA242AFCA600D96524 /* CHCache.m */; };
 		85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BB242AFCA600D96524 /* CHKVStorage.m */; };
 		85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */; };
@@ -100,6 +114,22 @@
 		850AC5DD25270C5800109292 /* BaseViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModule.m; sourceTree = "<group>"; };
 		850AC5DF25270C7B00109292 /* ViewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModule.h; sourceTree = "<group>"; };
 		850AC5E025270C7B00109292 /* ViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModule.m; sourceTree = "<group>"; };
+		851C80E52648E00600C731AA /* RuntimeSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeSon.h; sourceTree = "<group>"; };
+		851C80E62648E00600C731AA /* RuntimeSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeSon.m; sourceTree = "<group>"; };
+		851C80E92648F74D00C731AA /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		851C80EA2648F74D00C731AA /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		851C80EE2648F9E800C731AA /* Person+CHPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CHPerson.h"; sourceTree = "<group>"; };
+		851C80F02648FA7800C731AA /* NSObject+CHExObjct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHExObjct.h"; sourceTree = "<group>"; };
+		851C80F82648FC5100C731AA /* ExPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExPerson.h; sourceTree = "<group>"; };
+		851C80F92648FC5100C731AA /* ExPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExPerson.m; sourceTree = "<group>"; };
+		851C80FC2648FD7500C731AA /* CHExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHExtensionViewController.h; sourceTree = "<group>"; };
+		851C80FD2648FD7500C731AA /* CHExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHExtensionViewController.m; sourceTree = "<group>"; };
+		851C80FE2648FD7500C731AA /* CHExtensionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHExtensionViewController.xib; sourceTree = "<group>"; };
+		851C81032648FED200C731AA /* ExPerson+Experson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExPerson+Experson2.h"; sourceTree = "<group>"; };
+		851C81042648FEE900C731AA /* ExPerson+ExPerson3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExPerson+ExPerson3.h"; sourceTree = "<group>"; };
+		851C81062649096B00C731AA /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		851C81072649096B00C731AA /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		851C81082649096B00C731AA /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseViewController.h; sourceTree = "<group>"; };
 		851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseViewController.m; sourceTree = "<group>"; };
 		851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHSingleChioseViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +188,13 @@
 		857022EA2480F34F000C8D82 /* CHDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegate.h; sourceTree = "<group>"; };
 		857022ED2480F848000C8D82 /* CHDelegateManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDelegateManage.h; sourceTree = "<group>"; };
 		857022EE2480F848000C8D82 /* CHDelegateManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDelegateManage.m; sourceTree = "<group>"; };
+		8572CC6B264CB99600D6DA23 /* ArchiveAndDicVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiveAndDicVController.h; sourceTree = "<group>"; };
+		8572CC6C264CB99600D6DA23 /* ArchiveAndDicVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveAndDicVController.m; sourceTree = "<group>"; };
+		8572CC6D264CB99600D6DA23 /* ArchiveAndDicVController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveAndDicVController.xib; sourceTree = "<group>"; };
+		8572CC71264CBBBF00D6DA23 /* ArchiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiveModel.h; sourceTree = "<group>"; };
+		8572CC72264CBBBF00D6DA23 /* ArchiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveModel.m; sourceTree = "<group>"; };
+		8572CC7A264CD4E600D6DA23 /* RuntimeDicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeDicModel.h; sourceTree = "<group>"; };
+		8572CC7B264CD4E600D6DA23 /* RuntimeDicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeDicModel.m; sourceTree = "<group>"; };
 		858A55DD251357B300C1F503 /* NSObject+LogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LogUtils.m"; sourceTree = "<group>"; };
 		858A55DE251357B300C1F503 /* NSObject+LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LogUtils.h"; sourceTree = "<group>"; };
 		858A55E32513635E00C1F503 /* ExtendNSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendNSDictionary.m; sourceTree = "<group>"; };
@@ -165,6 +202,12 @@
 		858C8CEC246D444E00738236 /* CHLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLabelViewController.h; sourceTree = "<group>"; };
 		858C8CED246D444E00738236 /* CHLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLabelViewController.m; sourceTree = "<group>"; };
 		858C8CEE246D444E00738236 /* CHLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHLabelViewController.xib; sourceTree = "<group>"; };
+		859026212632603500747683 /* CHObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHObject.h; sourceTree = "<group>"; };
+		859026222632603500747683 /* CHObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHObject.m; sourceTree = "<group>"; };
+		859026252632605400747683 /* CHObject+Obj1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHObject+Obj1.h"; sourceTree = "<group>"; };
+		859026262632605400747683 /* CHObject+Obj1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CHObject+Obj1.m"; sourceTree = "<group>"; };
+		859026292632606400747683 /* CHObject+Obj2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHObject+Obj2.h"; sourceTree = "<group>"; };
+		8590262A2632606400747683 /* CHObject+Obj2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CHObject+Obj2.m"; sourceTree = "<group>"; };
 		85A4F3BA242AFCA600D96524 /* CHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCache.m; sourceTree = "<group>"; };
 		85A4F3BB242AFCA600D96524 /* CHKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKVStorage.m; sourceTree = "<group>"; };
 		85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMemoryCache.m; sourceTree = "<group>"; };
@@ -248,6 +291,17 @@
 			path = CHToast;
 			sourceTree = "<group>";
 		};
+		851C80F22648FC2800C731AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				851C80F82648FC5100C731AA /* ExPerson.h */,
+				851C80F92648FC5100C731AA /* ExPerson.m */,
+				851C81032648FED200C731AA /* ExPerson+Experson2.h */,
+				851C81042648FEE900C731AA /* ExPerson+ExPerson3.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		851DDD10250E10AE007A806E /* CHSingleChiose */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,8 +352,10 @@
 				8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */,
 				8542B21E23C5D7D00052E441 /* Info.plist */,
 				8542B21F23C5D7D00052E441 /* main.m */,
+				8572CC6A264CB96F00D6DA23 /* ArchiveAndDic */,
 				85C54F7C23C70B0600518820 /* Resources */,
 				858A55DC251357B300C1F503 /* Category */,
+				851C80F22648FC2800C731AA /* Extension */,
 				85C54F7123C7073E00518820 /* Controller */,
 				855B3BB02525F1500095C42E /* MVP */,
 				855B3BB12525F1510095C42E /* MVVM */,
@@ -398,6 +454,20 @@
 			path = CHOCTool/CHDelegate;
 			sourceTree = SOURCE_ROOT;
 		};
+		8572CC6A264CB96F00D6DA23 /* ArchiveAndDic */ = {
+			isa = PBXGroup;
+			children = (
+				8572CC71264CBBBF00D6DA23 /* ArchiveModel.h */,
+				8572CC72264CBBBF00D6DA23 /* ArchiveModel.m */,
+				8572CC6B264CB99600D6DA23 /* ArchiveAndDicVController.h */,
+				8572CC6C264CB99600D6DA23 /* ArchiveAndDicVController.m */,
+				8572CC6D264CB99600D6DA23 /* ArchiveAndDicVController.xib */,
+				8572CC7A264CD4E600D6DA23 /* RuntimeDicModel.h */,
+				8572CC7B264CD4E600D6DA23 /* RuntimeDicModel.m */,
+			);
+			path = ArchiveAndDic;
+			sourceTree = "<group>";
+		};
 		858A55DC251357B300C1F503 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +475,12 @@
 				858A55E32513635E00C1F503 /* ExtendNSDictionary.m */,
 				858A55DD251357B300C1F503 /* NSObject+LogUtils.m */,
 				858A55DE251357B300C1F503 /* NSObject+LogUtils.h */,
+				859026212632603500747683 /* CHObject.h */,
+				859026222632603500747683 /* CHObject.m */,
+				859026252632605400747683 /* CHObject+Obj1.h */,
+				859026262632605400747683 /* CHObject+Obj1.m */,
+				859026292632606400747683 /* CHObject+Obj2.h */,
+				8590262A2632606400747683 /* CHObject+Obj2.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -466,6 +542,12 @@
 		85C54F7123C7073E00518820 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				851C80FC2648FD7500C731AA /* CHExtensionViewController.h */,
+				851C80FD2648FD7500C731AA /* CHExtensionViewController.m */,
+				851C80FE2648FD7500C731AA /* CHExtensionViewController.xib */,
+				851C81062649096B00C731AA /* CategoryViewController.h */,
+				851C81072649096B00C731AA /* CategoryViewController.m */,
+				851C81082649096B00C731AA /* CategoryViewController.xib */,
 				85D992642589F9AA00C689C0 /* CHOrgScrollewVController.h */,
 				85D992652589F9AA00C689C0 /* CHOrgScrollewVController.m */,
 				85D992662589F9AA00C689C0 /* CHOrgScrollewVController.xib */,
@@ -549,6 +631,12 @@
 			children = (
 				85DFD0762514DF8500F66F52 /* TestRuntime.h */,
 				85DFD0772514DF8500F66F52 /* TestRuntime.m */,
+				851C80E52648E00600C731AA /* RuntimeSon.h */,
+				851C80E62648E00600C731AA /* RuntimeSon.m */,
+				851C80E92648F74D00C731AA /* Person.h */,
+				851C80EA2648F74D00C731AA /* Person.m */,
+				851C80EE2648F9E800C731AA /* Person+CHPerson.h */,
+				851C80F02648FA7800C731AA /* NSObject+CHExObjct.h */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -611,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				855B3BB62525F1940095C42E /* MVPViewController.xib in Resources */,
+				851C81002648FD7500C731AA /* CHExtensionViewController.xib in Resources */,
 				85C54F8223C7108800518820 /* 小知识点.docx in Resources */,
 				8545D8152436D0050083091A /* TestAlertViewController.xib in Resources */,
 				85D992632589EACF00C689C0 /* CHScrollewVController.xib in Resources */,
@@ -632,6 +721,8 @@
 				85C67CF224278289003B91E3 /* README.md in Resources */,
 				85631E54246B98FF00AC6F74 /* CHGCDViewController.xib in Resources */,
 				85DFD0742514DB2600F66F52 /* RuntimeViewController.xib in Resources */,
+				8572CC6F264CB99600D6DA23 /* ArchiveAndDicVController.xib in Resources */,
+				851C810A2649096B00C731AA /* CategoryViewController.xib in Resources */,
 				85D992682589F9AA00C689C0 /* CHOrgScrollewVController.xib in Resources */,
 				857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */,
 				8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */,
@@ -654,6 +745,8 @@
 				85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */,
 				85BF77492546680E007E2A67 /* NULL_NILViewController.m in Sources */,
 				85C54F8623C7134800518820 /* CHHash.m in Sources */,
+				8572CC6E264CB99600D6DA23 /* ArchiveAndDicVController.m in Sources */,
+				851C80E72648E00600C731AA /* RuntimeSon.m in Sources */,
 				857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */,
 				85BDAC4F246A71E500B9E5B8 /* CHTitleAlertController.m in Sources */,
 				85DFD0782514DF8500F66F52 /* TestRuntime.m in Sources */,
@@ -671,6 +764,7 @@
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
 				85DFD0732514DB2600F66F52 /* RuntimeViewController.m in Sources */,
+				8572CC73264CBBBF00D6DA23 /* ArchiveModel.m in Sources */,
 				857022E42480DF48000C8D82 /* CHDelegateViewController.m in Sources */,
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				850AC5E125270C7B00109292 /* ViewModule.m in Sources */,
@@ -678,10 +772,13 @@
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				855B3BC32525F5770095C42E /* MVPModel.m in Sources */,
 				855B3BBF2525F5130095C42E /* MVPTableViewCell.m in Sources */,
+				859026232632603500747683 /* CHObject.m in Sources */,
 				851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */,
+				859026272632605400747683 /* CHObject+Obj1.m in Sources */,
 				855B3BBA2525F1A30095C42E /* MVVMViewController.m in Sources */,
 				85BF775125466C0D007E2A67 /* NSObject+CHNotNull.m in Sources */,
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
+				851C81092649096B00C731AA /* CategoryViewController.m in Sources */,
 				857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */,
 				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
 				85BF775625467420007E2A67 /* CHNullObject.m in Sources */,
@@ -691,14 +788,19 @@
 				851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */,
 				85BC1A98262D4C41009F1BCC /* Model.m in Sources */,
 				850AC5DB252709D000109292 /* MVVMModel.m in Sources */,
+				8572CC7C264CD4E600D6DA23 /* RuntimeDicModel.m in Sources */,
 				85BF77592546783D007E2A67 /* CHNull.m in Sources */,
+				8590262B2632606400747683 /* CHObject+Obj2.m in Sources */,
 				8542B22023C5D7D00052E441 /* main.m in Sources */,
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
 				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
 				855B3BC625260AC30095C42E /* Present.m in Sources */,
+				851C80FF2648FD7500C731AA /* CHExtensionViewController.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
 				85BC1A94262D4C39009F1BCC /* Viewmodel.m in Sources */,
+				851C80FA2648FC5100C731AA /* ExPerson.m in Sources */,
 				85206F6F2514471C007AE0A8 /* CHDeviceInfo.m in Sources */,
+				851C80EB2648F74D00C731AA /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

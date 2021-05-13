@@ -25,6 +25,15 @@
 #import "NULL_NILViewController.h"
 #import "CHScrollewVController.h"
 #import "CHOrgScrollewVController.h"
+#import "CHObject.h"
+#import "CHObject+Obj2.h"
+#import "CHObject+Obj1.h"
+#import "CHExtensionViewController.h"
+#import "CategoryViewController.h"
+#import "ArchiveAndDicVController.h"
+
+
+
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -43,11 +52,14 @@ NSString * MVVM = @"MVVM";
 NSString * NULL_NIL = @"NULL_NIL";
 NSString * CHUIScrollView = @"CHUIScrollView";
 NSString * CHOrgScroll = @"CHOrgScroll";
+NSString * EXTENSION = @"EXTENSION";
+NSString * CATEGORY = @"CATEGORY";
+NSString * ArchiveAndDic = @"ArchiveAndDic";
 @implementation ViewController
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,RUNTIME,NULL_NIL];
+        _dataSourceArr = @[EXTENSION,CATEGORY,RUNTIME,ArchiveAndDic,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,NULL_NIL];
     }
     return _dataSourceArr;
 }
@@ -85,6 +97,8 @@ NSString * CHOrgScroll = @"CHOrgScroll";
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
  
+ 
+    
 }
 #pragma mark -- UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -175,6 +189,7 @@ NSString * CHOrgScroll = @"CHOrgScroll";
         NSLog(@"%@",CHDeviceInfo.deviceModel);
     }
     if ([name isEqualToString:RUNTIME]) {
+        
         RuntimeViewController *VC  =[[RuntimeViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
@@ -188,6 +203,18 @@ NSString * CHOrgScroll = @"CHOrgScroll";
     }
     if ([name isEqualToString:NULL_NIL]) {
         NULL_NILViewController * VC = [[NULL_NILViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:EXTENSION]) {
+        CHExtensionViewController *VC = [[CHExtensionViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:CATEGORY]) {
+        CategoryViewController * VC = [[CategoryViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:ArchiveAndDic]) {
+        ArchiveAndDicVController * VC = [[ArchiveAndDicVController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

@@ -52,10 +52,6 @@
     if ([CHNull isNullAll:titleName]) {
         
     }
-    
-  
-    
-    
 
 }
 

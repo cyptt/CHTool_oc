@@ -11,8 +11,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestRuntime : NSObject
-
+{
+    NSString *  pubmTest;
+}
 -(void)test:(NSString *)msg;
+
+-(void)chagePrivateProperty;
+@property(nonatomic,strong)NSString * nametest;
+@property(nonatomic,assign)int  age;
+
+
+-(void)interfacePerson;
 
 @end
 
