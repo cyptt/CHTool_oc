@@ -1,8 +1,9 @@
 
 {
     "data":[
-        {"titleName":"实名注册","icon":"icon_register_password_scca.png","detailInfo":"填写证件号码、手机号码、密码等信息进行注册","btnTitle":"立即注册"},
-        {"titleName":"","icon":"icon_social_scca.png","detailInfo":"使用天府通办APP或电子社保卡扫一扫功能扫码授权，即可登录注册","btnTitle":"立即注册"},
-        {"titleName":null,"icon":,"detailInfo":"使用支付宝扫码授权，即可登录注册","btnTitle":"立即注册"},
-    ]
+        {"titleName":"实名注册","icon":"icon_register_password_scca.png","detailInfo":"填写证件号码手机号码密码等信息进行注册","btnTitle":"立即注册"},
+        {"titleName":"1234","icon":"icon_social_scca.png","detailInfo":"使用天府通办APP或电子社保卡扫一扫功能扫码授权，即可登录注册","btnTitle":"立即注册"},
+        {"titleName":"124","icon":"","detailInfo":"使用支付宝扫码授权，即可登录注册","btnTitle":"立即注册"},
+    ],
+    "message":null
 }

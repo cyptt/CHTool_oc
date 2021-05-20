@@ -31,7 +31,8 @@
 #import "CHExtensionViewController.h"
 #import "CategoryViewController.h"
 #import "ArchiveAndDicVController.h"
-
+#import "CHUIStudtyViewController.h"
+#import "VideoPicInPicViewController.h"
 
 
  NSString * testname2 = @"adsfdfsf";
@@ -55,11 +56,14 @@ NSString * CHOrgScroll = @"CHOrgScroll";
 NSString * EXTENSION = @"EXTENSION";
 NSString * CATEGORY = @"CATEGORY";
 NSString * ArchiveAndDic = @"ArchiveAndDic";
+NSString * UISTUDY = @"UISTUDY";
+NSString * VIDEODPICTUREINPIC = @"VIDEODPICTUREINPIC";
 @implementation ViewController
+
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[EXTENSION,CATEGORY,RUNTIME,ArchiveAndDic,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,NULL_NIL];
+        _dataSourceArr = @[EXTENSION,CATEGORY,RUNTIME,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo];
     }
     return _dataSourceArr;
 }
@@ -111,7 +115,7 @@ NSString * ArchiveAndDic = @"ArchiveAndDic";
     }
     cell.textLabel.text = self.dataSourceArr[indexPath.row];
     
-    NSLog(@"-----%lf---%lf",cell.textLabel.center.x,cell.textLabel.center.y);
+
     return cell;
 }
 #pragma mark --UITableViewDelegate
@@ -215,6 +219,15 @@ NSString * ArchiveAndDic = @"ArchiveAndDic";
     }
     if ([name isEqualToString:ArchiveAndDic]) {
         ArchiveAndDicVController * VC = [[ArchiveAndDicVController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    
+    if ([name isEqualToString:UISTUDY]) {
+        CHUIStudtyViewController * VC = [[CHUIStudtyViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:VIDEODPICTUREINPIC]) {
+        VideoPicInPicViewController * VC  = [[VideoPicInPicViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

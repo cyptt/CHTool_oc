@@ -11,7 +11,10 @@
 #import "CHModel.h"
 #import "CHNullObject.h"
 #import "CHNull.h"
+#import "CHProgressHUD.h"
+
 @interface NULL_NILViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *showMsgL;
 
 @end
 
@@ -23,6 +26,9 @@
     if ([test isEqualToString:@"dfddfd"]) {
         
     }
+    
+    //nil 打印 （null）
+    // NSNull  打印<null>   在ui上会导致carsh
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -30,28 +36,36 @@
    
 
     
-   NSArray * arr =  [self fileJsonforPathString:@"person_register_guide_introduce"];
-    NSDictionary * dic3 = arr[2];
+        NSDictionary * dic =  [self fileJsonforPathString:@"person_register_guide_introduce"];
+        
+        
+        
+        NSLog(@"-----dic%@",dic);
 
-    NSLog(@"titleName-----%@",dic3[@"titleName"]);
+        NSLog(@"dic_message%@",dic[@"message"]);
+        NSLog(@"dic_null%@",dic[@"null"]);
+        
+        NSString * message = dic[@"message"];
     
-    NSString * titleName = dic3[@"titleName"];
-    NSLog(@"titleName2222-------%@",titleName);
-  
+    NSLog(@"-----message---%@",message);
+        
+        NSString * dic_null = dic[@"null"];
+    
 
 
-    @try{
-        if([titleName isEqualToString:@"33333"]){
-              
-          }
-          
-    }@catch(NSException * expetion){
-        NSLog(@"expetion-----%@",expetion);
-    }
-  
-    if ([CHNull isNullAll:titleName]) {
+    self.showMsgL.text =message;
+    NSLog(@"----message2------%@",message);
+    
+    
+    
+    
+    
+    
+    if ([CHNull isNullAll:message]) {
         
     }
+
+
 
 }
 
@@ -90,19 +104,24 @@
     
     
 }
--(NSArray *)fileJsonforPathString:(NSString *)pathString{
+-(NSDictionary *)fileJsonforPathString:(NSString *)pathString{
     NSString * jpath  = [[NSBundle mainBundle] pathForResource:pathString ofType:@"json"];
+    NSLog(@"--filepath%@",jpath);
        NSDictionary * dic = [self dictionaryWithContentsOfFileString:jpath];
     
-      NSLog(@"-----%@",dic);
+          NSLog(@"-----%@",dic);
+    
+
     
      
-    NSArray * arr = dic[@"data"];
+    
+//    NSArray * arr = dic[@"data"];
    
+    
     
   
    
-    return arr;
+    return dic;
 }
 
 -(NSDictionary *)dictionaryWithContentsOfFileString:(NSString *)filePathString{

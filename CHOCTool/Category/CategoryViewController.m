@@ -32,6 +32,8 @@
     
     
 }
+
+//遇到一个问题，写了一个分类，但原先类的属性不够用。添加一个属性，调用的时候崩溃了，说是找不到getter、setter方法。查了下文档发现，OC的分类允许给分类添加属性，但不会自动生成getter、setter方法。有没有解决方案呢？有，通过运行时建立关联引用。
 - (IBAction)proprotyBtnClick:(UIButton *)sender {
     CHObject * obj = [[CHObject alloc]init];
     
@@ -39,13 +41,7 @@
     obj.name2 = @"dfdfd";
     NSLog(@"%@",obj.name2);
     
-    unsigned int count;
-    objc_property_t * pList = class_copyPropertyList([CHObject class],&count );
-    for (unsigned int i = 0; i<count; i++) {
-        const char *propertyName = property_getName(pList[i]);
-             NSLog(@"propertyName(%d) : %@", i, [NSString stringWithUTF8String:propertyName]);
-    }
-    free(pList);
+  
     
 }
 

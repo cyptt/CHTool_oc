@@ -11,7 +11,8 @@
 #import <objc/message.h>
 #import <objc/objc.h>
 #import "TestRuntime.h"
-#import "RuntimeSon.h"
+#import "NSObject+property.h"
+
 @interface RuntimeViewController ()
 
 @end
@@ -75,6 +76,10 @@
 }
 - (IBAction)protocolListClick:(UIButton *)sender {
 }
+
+/**
+ 改变私有属性
+ */
 - (IBAction)changSiyouProp:(id)sender {
     TestRuntime * tR = [[TestRuntime alloc]init];
     
@@ -91,6 +96,36 @@
     }
     [tR chagePrivateProperty];
 }
+/**
+ 方法交换
+ */
+- (IBAction)changMeth:(id)sender {
+    
+    
+    UIImage * image = [UIImage imageNamed:nil];
+    
+    
+    
+}
+
+/**
+ 动态添加方法
+ */
+//如果一个类方法非常多，加载类到内存的时候也比较耗费资源，需要给每个方法生成映射表，
+//可以使用动态给某个类，添加方法解决
+- (IBAction)addMedth:(id)sender {
+    
+    Class cls = objc_getClass("TestRuntime");
+    
+    [cls.new  performSelector:@selector(eat:) withObject:@"canshu"];
+  
+}
+- (IBAction)addProp:(id)sender {
+    
+    NSObject * obj = [[NSObject alloc]init];
+    obj.name = @"张三";
+    NSLog(@"%@",obj.name);
+}
 - (IBAction)kvcchangePrivateProperty:(id)sender {
     TestRuntime * tR = [[TestRuntime alloc]init];
     [tR setValue:@"私有属性改变了" forKey:@"neiName"];
@@ -98,13 +133,7 @@
 }
 - (IBAction)runtimeSun:(id)sender {
     
-    RuntimeSon * rSon = [[RuntimeSon alloc]init];
-    
- 
-
-
-//    [rSon setValue:@"私有属性改变了" forKey:@"neiName"];
-    [rSon chagePrivateProperty];
+   
     
 
 }

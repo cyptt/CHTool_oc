@@ -8,20 +8,14 @@
 
 #import "TestRuntime.h"
 #import <objc/runtime.h>
-#import "Person.h"
+
 @interface TestRuntime(){
    @public NSString * pubName;
 
 }
 
 @end
-@interface Person(){
- 
-  @public  NSString * personName;
-    
-}
 
-@end
 @implementation TestRuntime{
     
     @private NSString * neiName;
@@ -52,13 +46,31 @@
 }
 
 -(void)interfacePerson{
-    
-    Person * person = [[Person alloc]init];
-    
+  
+}
 
-   
-    
-    
-    
+
+void eat(id self, SEL _cmd,NSString * str) {
+
+    NSLog(@"进来来%@",str);
+}
+
+/**
+ 动态添加方法 
+ */
+//+(BOOL)resolveInstanceMethod:(SEL)sel{
+//    if (sel ==@selector(eat:)) {
+//        class_addMethod(self, sel,(IMP)eat, "v@:@");
+//    }
+//    return [super resolveInstanceMethod:sel];
+//}
+
+//-(void)eat:(NSString *)dd{
+//    
+//}
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+    NSString *sel = NSStringFromSelector(aSelector);
+    NSLog(@"%@",sel);
+        return [NSMethodSignature signatureWithObjCTypes:"v@:@"];;
 }
 @end

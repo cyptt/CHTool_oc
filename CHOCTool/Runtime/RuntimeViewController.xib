@@ -76,7 +76,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8t-vc-X6T">
-                    <rect key="frame" x="55" y="274" width="79" height="30"/>
+                    <rect key="frame" x="32" y="410" width="79" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="runtimeSon"/>
                     <connections>
@@ -84,11 +84,35 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOv-jr-w9N">
-                    <rect key="frame" x="162" y="274" width="61" height="30"/>
+                    <rect key="frame" x="162" y="410" width="61" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="interface"/>
                     <connections>
                         <action selector="interfaceEx:" destination="-1" eventType="touchUpInside" id="rGo-VG-vjc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwv-7b-0yg">
+                    <rect key="frame" x="34" y="271" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="方法交换"/>
+                    <connections>
+                        <action selector="changMeth:" destination="-1" eventType="touchUpInside" id="Ete-XT-tTp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-cD-P0k">
+                    <rect key="frame" x="139" y="271" width="92" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="动态添加方法"/>
+                    <connections>
+                        <action selector="addMedth:" destination="-1" eventType="touchUpInside" id="Nda-UY-IAQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G6-D2-bJA">
+                    <rect key="frame" x="247" y="271" width="92" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="动态添加属性"/>
+                    <connections>
+                        <action selector="addProp:" destination="-1" eventType="touchUpInside" id="7KF-9u-udS"/>
                     </connections>
                 </button>
             </subviews>
