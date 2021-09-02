@@ -33,12 +33,19 @@
 #import "ArchiveAndDicVController.h"
 #import "CHUIStudtyViewController.h"
 #import "VideoPicInPicViewController.h"
-
-
+#import "CHRunloopViewController.h"
+#import "ImagePickerViewController.h"
+#import "TestViewController.h"
+#import "CHNSCacheViewController.h"
+#import "TestVideoViewController.h"
+#import "BaseViewController.h"
+#import <objc/objc.h>
+#import "CHQRCodeViewController.h"
  NSString * testname2 = @"adsfdfsf";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
 }
+
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property(nonatomic,strong)NSArray * dataSourceArr;;
@@ -58,12 +65,20 @@ NSString * CATEGORY = @"CATEGORY";
 NSString * ArchiveAndDic = @"ArchiveAndDic";
 NSString * UISTUDY = @"UISTUDY";
 NSString * VIDEODPICTUREINPIC = @"VIDEODPICTUREINPIC";
+NSString * CHRUNLOOP = @"CHRUNLOOP";
+NSString * IMAGEPICKER = @"IMAGEPICKER";
+NSString * TESTVC = @"TESTVC";
+NSString * CHNSCache = @"NSCache";
+NSString * VIDEO = @"TestVideoViewController";
+NSString * Base = @"Base";
+NSString * QRCode = @"QRCode";
 @implementation ViewController
+
 
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[EXTENSION,CATEGORY,RUNTIME,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo];
+        _dataSourceArr = @[Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
     }
     return _dataSourceArr;
 }
@@ -74,19 +89,7 @@ NSString * VIDEODPICTUREINPIC = @"VIDEODPICTUREINPIC";
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
   
-    
-    NSLog(@"%s",__func__);
-    
-    
-//   self.view.backgroundColor = [UIColor redColor];
 
-//
-   
-    
-//      UIBarButtonItem * bar1 = [[UIBarButtonItem alloc]init];
-//
-//      [bar1 setImage:[UIImage imageNamed:@"back_grey_scca"]];
-//      self.navigationItem.backBarButtonItem = bar1;
     
     [self.navigationController.navigationBar setBackIndicatorImage:[UIImage new]];
     [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
@@ -228,6 +231,36 @@ NSString * VIDEODPICTUREINPIC = @"VIDEODPICTUREINPIC";
     }
     if ([name isEqualToString:VIDEODPICTUREINPIC]) {
         VideoPicInPicViewController * VC  = [[VideoPicInPicViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:CHRUNLOOP]) {
+        CHRunloopViewController * VC = [[CHRunloopViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    
+    if ([name isEqualToString:IMAGEPICKER]) {
+        ImagePickerViewController * imagePicker = [[ImagePickerViewController alloc]init];
+        [self.navigationController pushViewController:imagePicker animated:YES];
+    }
+    if ([name isEqualToString:TESTVC]) {
+        TestViewController * VC = [[TestViewController alloc]init];
+        
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:CHNSCache]) {
+        CHNSCacheViewController * VC = [[CHNSCacheViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:VIDEO]) {
+        TestVideoViewController * VC = [[TestVideoViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if ([name isEqualToString:Base]) {
+        BaseViewController * VC = [[BaseViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    else if([name isEqualToString:QRCode]){
+        CHQRCodeViewController * VC = [[CHQRCodeViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

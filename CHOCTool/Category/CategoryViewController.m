@@ -19,9 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
-   
+    
 }
 - (IBAction)btnClick:(id)sender {
     CHObject * obj = [CHObject new];
