@@ -10,7 +10,8 @@
 #import "MoreStatusViewController.h"
 #import "D_Person.h"
 #import "WeakPerson.h"
-
+#import "CHKVOViewController.h"
+#import "DellocTest.h"
 typedef void(^CHBlock)(void);
 @interface BaseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -21,6 +22,7 @@ typedef void(^CHBlock)(void);
 @property(nonatomic,strong)WeakPerson * selfStrongPerson;
 @property(nonatomic,strong)WeakPerson * selfWeakPerson;
 
+@property(nonatomic,strong)DellocTest * dellocTest ;
 
 @property(nonatomic,copy)CHBlock chblock;
 @end
@@ -30,6 +32,8 @@ NSString * yuanlei = @"元类";
 NSString * COPY = @"copy和mucopy";
 NSString * WEAK_TEST = @"WEAK_TEST";
 NSString * BLOCK_XUNHUAN = @"BLOCK_XUNHUAN"; //block循环引用
+NSString * CHKVO = @"CHKVO";
+NSString * DEALLOC = @"DEALLOC";
 @implementation BaseViewController
 
 - (void)viewDidLoad {
@@ -42,7 +46,7 @@ NSString * BLOCK_XUNHUAN = @"BLOCK_XUNHUAN"; //block循环引用
 }
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[MORESTATUS,yuanlei,COPY,WEAK_TEST,BLOCK_XUNHUAN];
+        _dataSourceArr = @[MORESTATUS,yuanlei,COPY,WEAK_TEST,BLOCK_XUNHUAN,CHKVO,DEALLOC];
     }
     return _dataSourceArr;
 }
@@ -75,9 +79,27 @@ NSString * BLOCK_XUNHUAN = @"BLOCK_XUNHUAN"; //block循环引用
         [self weakTest];
     }else if([name isEqualToString:BLOCK_XUNHUAN]){
         [self blockXunhuan];
+    }else if([name isEqualToString:CHKVO]){
+        CHKVOViewController * VC = [[CHKVOViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if([name isEqualToString:DEALLOC]){
+        [self deallocTest];
     }
 }
-
+-(void)dealloc{
+    NSLog(@"%@",self);
+    NSLog(@"----%s",__func__);
+}
+-(void)deallocTest{
+//    self.dellocTest = [[DellocTest alloc]initWithFrame:CGRectMake(0, 100, 100, 100) controller:self];
+//    self.dellocTest.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:self.dellocTest];
+   
+    DellocTest  * dellocTest = [[DellocTest alloc]initWithFrame:CGRectMake(0, 100, 100, 100) controller:self];
+    dellocTest.backgroundColor = [UIColor redColor];
+    [self.view addSubview:dellocTest];
+   
+}
 -(void)yuanleiFuc{
     Class pClass= [D_Person  class];
     NSLog(@"%p",pClass);
@@ -132,6 +154,7 @@ NSString * BLOCK_XUNHUAN = @"BLOCK_XUNHUAN"; //block循环引用
     
     {
         WeakPerson * person = [[WeakPerson alloc]init];
+
         person.name = @"1234";
 //        strongPerson = person;
         weakPerson = person;
@@ -155,8 +178,5 @@ NSString * BLOCK_XUNHUAN = @"BLOCK_XUNHUAN"; //block循环引用
     self.chblock();
 }
 
-- (void)dealloc
-{
-    NSLog(@"----");
-}
+
 @end

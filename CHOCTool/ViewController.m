@@ -41,7 +41,10 @@
 #import "BaseViewController.h"
 #import <objc/objc.h>
 #import "CHQRCodeViewController.h"
+#import "WeakPerson.h"
+#import "NETViewController.h"
  NSString * testname2 = @"adsfdfsf";
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
 }
@@ -72,13 +75,14 @@ NSString * CHNSCache = @"NSCache";
 NSString * VIDEO = @"TestVideoViewController";
 NSString * Base = @"Base";
 NSString * QRCode = @"QRCode";
+NSString * CHNET = @"CHNET";
 @implementation ViewController
 
 
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
+        _dataSourceArr = @[@"TESTCLICK",@"TESTCLICK2",CHNET,Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
     }
     return _dataSourceArr;
 }
@@ -96,11 +100,49 @@ NSString * QRCode = @"QRCode";
      self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back_grey_scca"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(didClick)];
 
      
+
     
 }
 
 -(void)didClick{
     NSLog(@"%@",@"ddfd");
+}
+
+-(void)testClick{
+   
+
+//     WeakPerson * person ;
+//    NSLog(@"---start--%p,%@",person,person.name);
+//    person = [[WeakPerson alloc]init];
+//    person.name =[NSString stringWithFormat:@"zs%d",arc4random()] ;
+//    NSLog(@"----end%p",person);
+//
+
+  
+//     NSString * name1 ;
+//    NSLog(@"---start--%p---%@",name1,name1);
+//    name1 =  @"123333";
+//    NSLog(@"---end--%p---%@",name1,name1);
+    NSString * name2 = @"222333" ;
+    NSString * name3 = name2;
+
+    NSString * name4 = [name2 copy];
+    
+    NSString * name5 = [name2 mutableCopy];
+    NSLog(@"%p",name2);
+    NSLog(@"%p",&name2);
+    NSLog(@"%p",name3);
+    NSLog(@"%p",&name3);
+    NSLog(@"%p",name4);
+    NSLog(@"%p",name5);
+ 
+   
+ 
+  
+}
+-(void)testClick2{
+    NSString * name = @"222333";
+    NSLog(@"%p--%s",name,__func__);
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
  
@@ -261,6 +303,13 @@ NSString * QRCode = @"QRCode";
     }
     else if([name isEqualToString:QRCode]){
         CHQRCodeViewController * VC = [[CHQRCodeViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if([name isEqualToString:@"TESTCLICK"]){
+        [self testClick];
+    }else if([name isEqualToString:@"TESTCLICK2"]){
+        [self testClick2];
+    }else if([name isEqualToString:CHNET]){
+        NETViewController * VC = [[NETViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

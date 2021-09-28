@@ -22,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(void)stopScanning;
 
+/**
+ 生成二维码
+ */
++ (UIImage *)createQRCodeWithTargetString:(NSString *)targetString logoImage:(UIImage *)logoImage;
+
 @end
 
 NS_ASSUME_NONNULL_END

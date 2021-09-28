@@ -270,4 +270,7 @@
     [_preview removeFromSuperlayer];
     [self removeTimer];
 }
+
+
+
 @end

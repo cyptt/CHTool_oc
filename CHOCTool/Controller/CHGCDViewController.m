@@ -173,6 +173,11 @@
 * 同步执行 + 主队列
 * 特点(主线程调用)：互等卡主不执行。
 * 特点(其他线程调用)：不会开启新线程，执行完一个任务，再执行下一个任务。
+ 
+ 这是因为我们在主线程中执行 btn5 方法，相当于把 btn5 任务放到了主线程的队列中。而 同步执行 会等待当前队列中的任务执行完毕，才会接着执行。那么当我们把 任务 1 追加到主队列中，任务 1 就在等待主线程处理完 btn5 任务。而btn5 任务需要等待 任务 1 执行完毕，才能接着执行。
+
+ 那么，现在的情况就是 syncMain 任务和 任务 1 都在等对方执行完毕。这样大家互相等待，所以就卡住了，所以我们的任务执行不了，而且 btn5---end 也没有打印。
+
 */
 - (IBAction)btn5:(UIButton *)sender {
     
@@ -255,34 +260,36 @@
     dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
     
     dispatch_async(queue, ^{
-           // 追加任务 1
-           [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-           NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
-       });
-       dispatch_async(queue, ^{
-           // 追加任务 2
-           [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-           NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
-       });
-       
-       dispatch_barrier_async(queue, ^{
-           // 追加任务 barrier
-           [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-           NSLog(@"barrier---%@",[NSThread currentThread]);// 打印当前线程
-       });
-       
-       dispatch_async(queue, ^{
-           // 追加任务 3
-           [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-           NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
-       });
-       dispatch_async(queue, ^{
-           // 追加任务 4
-           [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-           NSLog(@"4---%@",[NSThread currentThread]);      // 打印当前线程
-       });
+        // 追加任务 1
+        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+        NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+    });
+    dispatch_async(queue, ^{
+        // 追加任务 2
+        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+        NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
+    });
+    
+    NSLog(@"外1");
+    dispatch_barrier_async(queue, ^{
+        // 追加任务 barrier
+        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+        NSLog(@"barrier---%@",[NSThread currentThread]);// 打印当前线程
+    });
+    
+    NSLog(@"外2");
+    dispatch_async(queue, ^{
+        // 追加任务 3
+        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+        NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
+    });
+    dispatch_async(queue, ^{
+        // 追加任务 4
+        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+        NSLog(@"4---%@",[NSThread currentThread]);      // 打印当前线程
+    });
     NSLog(@"dddd");
-     
+    
 }
 /**
  一次性代码（只执行一次）：dispatch_once

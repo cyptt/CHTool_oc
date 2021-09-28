@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85069D1526F1DEA300FCBCFB /* DellocTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85069D1426F1DEA300FCBCFB /* DellocTest.m */; };
 		850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850A206B240E3AEE0036E2FD /* JYTLoadingView.m */; };
 		850AC5D62526F57600109292 /* MVVMTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850AC5D52526F57600109292 /* MVVMTestView.m */; };
 		850AC5D82526F88000109292 /* MVVMTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850AC5D72526F88000109292 /* MVVMTestView.xib */; };
@@ -20,6 +21,9 @@
 		851C81002648FD7500C731AA /* CHExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C80FE2648FD7500C731AA /* CHExtensionViewController.xib */; };
 		851C81092649096B00C731AA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C81072649096B00C731AA /* CategoryViewController.m */; };
 		851C810A2649096B00C731AA /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C81082649096B00C731AA /* CategoryViewController.xib */; };
+		851CDE0B2702BF1A00BF50B6 /* face_scca.png in Resources */ = {isa = PBXBuildFile; fileRef = 851CDE0A2702BF1A00BF50B6 /* face_scca.png */; };
+		851CDE1F270306C400BF50B6 /* CHUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE1E270306C400BF50B6 /* CHUpload.m */; };
+		851CDE22270314C200BF50B6 /* chuqi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 851CDE21270314C200BF50B6 /* chuqi.mp4 */; };
 		851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */; };
 		851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */; };
 		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
@@ -59,6 +63,9 @@
 		855B3BC02525F5130095C42E /* MVPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855B3BBE2525F5130095C42E /* MVPTableViewCell.xib */; };
 		855B3BC32525F5770095C42E /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855B3BC22525F5770095C42E /* MVPModel.m */; };
 		855B3BC625260AC30095C42E /* Present.m in Sources */ = {isa = PBXBuildFile; fileRef = 855B3BC525260AC30095C42E /* Present.m */; };
+		855CCCA326E1F5DE0061B212 /* CHKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855CCCA126E1F5DE0061B212 /* CHKVOViewController.m */; };
+		855CCCA426E1F5DE0061B212 /* CHKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855CCCA226E1F5DE0061B212 /* CHKVOViewController.xib */; };
+		855CCCA826E1F6B10061B212 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855CCCA726E1F6B10061B212 /* KVOModel.m */; };
 		855DB676265CA546003CFC31 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855DB674265CA546003CFC31 /* ImagePickerViewController.m */; };
 		855DB677265CA546003CFC31 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855DB675265CA546003CFC31 /* ImagePickerViewController.xib */; };
 		85631E53246B98FF00AC6F74 /* CHGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85631E51246B98FF00AC6F74 /* CHGCDViewController.m */; };
@@ -83,6 +90,7 @@
 		8590262B2632606400747683 /* CHObject+Obj2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590262A2632606400747683 /* CHObject+Obj2.m */; };
 		8591853826E0C131000162B8 /* CHQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591853626E0C131000162B8 /* CHQRCodeView.m */; };
 		8591853C26E0C169000162B8 /* CHQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591853B26E0C169000162B8 /* CHQRCodeViewController.m */; };
+		8591854026E0C59F000162B8 /* GenerateQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591853F26E0C59F000162B8 /* GenerateQRCode.m */; };
 		85A2A9EC26562EBA00A6866C /* VideoPicInPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2A9EA26562EBA00A6866C /* VideoPicInPicViewController.m */; };
 		85A2A9ED26562EBA00A6866C /* VideoPicInPicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A2A9EB26562EBA00A6866C /* VideoPicInPicViewController.xib */; };
 		85A2AA71265640C500A6866C /* AVPlayerLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2AA70265640C500A6866C /* AVPlayerLayerViewController.m */; };
@@ -112,9 +120,13 @@
 		85C54F8623C7134800518820 /* CHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F8523C7134800518820 /* CHHash.m */; };
 		85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C54F8823C714B000518820 /* CHHashTableViewController.m */; };
 		85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C54F8923C714B000518820 /* CHHashTableViewController.xib */; };
+		85C5EB5226FAD9EB00B14CA5 /* CHDefaultAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C5EB5126FAD9EB00B14CA5 /* CHDefaultAlert.m */; };
 		85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */; };
 		85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEE2427824F003B91E3 /* CHClassInfo.m */; };
 		85C67CF224278289003B91E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C67CF124278289003B91E3 /* README.md */; };
+		85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29B26FF3617008641A9 /* CHNetWork.m */; };
+		85CAC2A126FF3704008641A9 /* NETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29F26FF3704008641A9 /* NETViewController.m */; };
+		85CAC2A226FF3704008641A9 /* NETViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CAC2A026FF3704008641A9 /* NETViewController.xib */; };
 		85D992622589EACF00C689C0 /* CHScrollewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D992602589EACF00C689C0 /* CHScrollewVController.m */; };
 		85D992632589EACF00C689C0 /* CHScrollewVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D992612589EACF00C689C0 /* CHScrollewVController.xib */; };
 		85D992672589F9AA00C689C0 /* CHOrgScrollewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D992652589F9AA00C689C0 /* CHOrgScrollewVController.m */; };
@@ -132,6 +144,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85069D1326F1DEA300FCBCFB /* DellocTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DellocTest.h; sourceTree = "<group>"; };
+		85069D1426F1DEA300FCBCFB /* DellocTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DellocTest.m; sourceTree = "<group>"; };
 		850A206A240E3AEE0036E2FD /* JYTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTLoadingView.h; sourceTree = "<group>"; };
 		850A206B240E3AEE0036E2FD /* JYTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTLoadingView.m; sourceTree = "<group>"; };
 		850AC5D42526F57600109292 /* MVVMTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestView.h; sourceTree = "<group>"; };
@@ -156,6 +170,10 @@
 		851C81062649096B00C731AA /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		851C81072649096B00C731AA /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		851C81082649096B00C731AA /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		851CDE0A2702BF1A00BF50B6 /* face_scca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face_scca.png; sourceTree = "<group>"; };
+		851CDE1D270306C400BF50B6 /* CHUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHUpload.h; sourceTree = "<group>"; };
+		851CDE1E270306C400BF50B6 /* CHUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHUpload.m; sourceTree = "<group>"; };
+		851CDE21270314C200BF50B6 /* chuqi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chuqi.mp4; sourceTree = "<group>"; };
 		851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseViewController.h; sourceTree = "<group>"; };
 		851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseViewController.m; sourceTree = "<group>"; };
 		851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHSingleChioseViewController.xib; sourceTree = "<group>"; };
@@ -222,6 +240,11 @@
 		855B3BC22525F5770095C42E /* MVPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPModel.m; sourceTree = "<group>"; };
 		855B3BC425260AC30095C42E /* Present.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Present.h; sourceTree = "<group>"; };
 		855B3BC525260AC30095C42E /* Present.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Present.m; sourceTree = "<group>"; };
+		855CCCA026E1F5DE0061B212 /* CHKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHKVOViewController.h; sourceTree = "<group>"; };
+		855CCCA126E1F5DE0061B212 /* CHKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHKVOViewController.m; sourceTree = "<group>"; };
+		855CCCA226E1F5DE0061B212 /* CHKVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHKVOViewController.xib; sourceTree = "<group>"; };
+		855CCCA626E1F6B10061B212 /* KVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
+		855CCCA726E1F6B10061B212 /* KVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
 		855DB673265CA546003CFC31 /* ImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
 		855DB674265CA546003CFC31 /* ImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
 		855DB675265CA546003CFC31 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
@@ -265,6 +288,8 @@
 		8591853726E0C131000162B8 /* CHQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHQRCodeView.h; sourceTree = "<group>"; };
 		8591853A26E0C169000162B8 /* CHQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHQRCodeViewController.h; sourceTree = "<group>"; };
 		8591853B26E0C169000162B8 /* CHQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHQRCodeViewController.m; sourceTree = "<group>"; };
+		8591853E26E0C59F000162B8 /* GenerateQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenerateQRCode.h; sourceTree = "<group>"; };
+		8591853F26E0C59F000162B8 /* GenerateQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateQRCode.m; sourceTree = "<group>"; };
 		85A2A9E926562EBA00A6866C /* VideoPicInPicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPicInPicViewController.h; sourceTree = "<group>"; };
 		85A2A9EA26562EBA00A6866C /* VideoPicInPicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPicInPicViewController.m; sourceTree = "<group>"; };
 		85A2A9EB26562EBA00A6866C /* VideoPicInPicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPicInPicViewController.xib; sourceTree = "<group>"; };
@@ -316,12 +341,19 @@
 		85C54F8723C714B000518820 /* CHHashTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHashTableViewController.h; sourceTree = "<group>"; };
 		85C54F8823C714B000518820 /* CHHashTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHashTableViewController.m; sourceTree = "<group>"; };
 		85C54F8923C714B000518820 /* CHHashTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHHashTableViewController.xib; sourceTree = "<group>"; };
+		85C5EB5026FAD9EB00B14CA5 /* CHDefaultAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDefaultAlert.h; sourceTree = "<group>"; };
+		85C5EB5126FAD9EB00B14CA5 /* CHDefaultAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDefaultAlert.m; sourceTree = "<group>"; };
 		85C67CEA2427824F003B91E3 /* CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHModel.h; sourceTree = "<group>"; };
 		85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CHModel.m"; sourceTree = "<group>"; };
 		85C67CEC2427824F003B91E3 /* CHClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHClassInfo.h; sourceTree = "<group>"; };
 		85C67CED2427824F003B91E3 /* NSObject+CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHModel.h"; sourceTree = "<group>"; };
 		85C67CEE2427824F003B91E3 /* CHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHClassInfo.m; sourceTree = "<group>"; };
 		85C67CF124278289003B91E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		85CAC29A26FF3617008641A9 /* CHNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNetWork.h; sourceTree = "<group>"; };
+		85CAC29B26FF3617008641A9 /* CHNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNetWork.m; sourceTree = "<group>"; };
+		85CAC29E26FF3704008641A9 /* NETViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETViewController.h; sourceTree = "<group>"; };
+		85CAC29F26FF3704008641A9 /* NETViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETViewController.m; sourceTree = "<group>"; };
+		85CAC2A026FF3704008641A9 /* NETViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NETViewController.xib; sourceTree = "<group>"; };
 		85D9925F2589EACF00C689C0 /* CHScrollewVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHScrollewVController.h; sourceTree = "<group>"; };
 		85D992602589EACF00C689C0 /* CHScrollewVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHScrollewVController.m; sourceTree = "<group>"; };
 		85D992612589EACF00C689C0 /* CHScrollewVController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHScrollewVController.xib; sourceTree = "<group>"; };
@@ -412,12 +444,15 @@
 		8523717026DE5CD000961195 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				855CCC9F26E1F5C50061B212 /* KVO */,
 				8523718326DE603500961195 /* MoreStatus */,
 				8523717726DE5D9D00961195 /* BaseViewController.h */,
 				8523717826DE5D9D00961195 /* BaseViewController.m */,
 				8523717926DE5D9D00961195 /* BaseViewController.xib */,
 				852E801A26DFB18800520528 /* WeakPerson.h */,
 				852E801B26DFB18800520528 /* WeakPerson.m */,
+				85069D1326F1DEA300FCBCFB /* DellocTest.h */,
+				85069D1426F1DEA300FCBCFB /* DellocTest.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -473,6 +508,7 @@
 				8542B21F23C5D7D00052E441 /* main.m */,
 				8591853526E0C0EB000162B8 /* QRCode */,
 				8523717026DE5CD000961195 /* Base */,
+				85CAC29926FF35DF008641A9 /* network */,
 				8518BD9426BE0D1300B3D09A /* CHVideo */,
 				85B7698B265F675E00E60F00 /* TestVC */,
 				855DB672265CA533003CFC31 /* ImagePicker */,
@@ -517,12 +553,17 @@
 		8545D80D2436CF520083091A /* CHAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				8545D8112436D0050083091A /* TestAlertViewController.h */,
+				8545D8122436D0050083091A /* TestAlertViewController.m */,
+				8545D8132436D0050083091A /* TestAlertViewController.xib */,
 				85BDAC4D246A71E500B9E5B8 /* CHTitleAlertController.h */,
 				85BDAC4E246A71E500B9E5B8 /* CHTitleAlertController.m */,
 				8523323A244AF7380008048A /* CHCenterAlertController.h */,
 				8523323B244AF7380008048A /* CHCenterAlertController.m */,
 				8545D80F2436CF520083091A /* CHAlertController.h */,
 				8545D80E2436CF520083091A /* CHAlertController.m */,
+				85C5EB5026FAD9EB00B14CA5 /* CHDefaultAlert.h */,
+				85C5EB5126FAD9EB00B14CA5 /* CHDefaultAlert.m */,
 			);
 			name = CHAlertController;
 			path = CHOCTool/CHAlertController;
@@ -589,6 +630,18 @@
 				850AC5DA252709D000109292 /* MVVMModel.m */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		855CCC9F26E1F5C50061B212 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				855CCCA026E1F5DE0061B212 /* CHKVOViewController.h */,
+				855CCCA126E1F5DE0061B212 /* CHKVOViewController.m */,
+				855CCCA226E1F5DE0061B212 /* CHKVOViewController.xib */,
+				855CCCA626E1F6B10061B212 /* KVOModel.h */,
+				855CCCA726E1F6B10061B212 /* KVOModel.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 		855DB672265CA533003CFC31 /* ImagePicker */ = {
@@ -659,6 +712,8 @@
 				8591853B26E0C169000162B8 /* CHQRCodeViewController.m */,
 				8591853726E0C131000162B8 /* CHQRCodeView.h */,
 				8591853626E0C131000162B8 /* CHQRCodeView.m */,
+				8591853E26E0C59F000162B8 /* GenerateQRCode.h */,
+				8591853F26E0C59F000162B8 /* GenerateQRCode.m */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -762,9 +817,6 @@
 				85C54F8723C714B000518820 /* CHHashTableViewController.h */,
 				85C54F8823C714B000518820 /* CHHashTableViewController.m */,
 				85C54F8923C714B000518820 /* CHHashTableViewController.xib */,
-				8545D8112436D0050083091A /* TestAlertViewController.h */,
-				8545D8122436D0050083091A /* TestAlertViewController.m */,
-				8545D8132436D0050083091A /* TestAlertViewController.xib */,
 				85DBD5A82463A43F007922A0 /* CHButtonController.h */,
 				85DBD5A92463A43F007922A0 /* CHButtonController.m */,
 				85631E50246B98FF00AC6F74 /* CHGCDViewController.h */,
@@ -811,6 +863,22 @@
 				85C67CF124278289003B91E3 /* README.md */,
 			);
 			path = CHModel;
+			sourceTree = "<group>";
+		};
+		85CAC29926FF35DF008641A9 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				851CDE21270314C200BF50B6 /* chuqi.mp4 */,
+				851CDE0A2702BF1A00BF50B6 /* face_scca.png */,
+				85CAC29A26FF3617008641A9 /* CHNetWork.h */,
+				85CAC29B26FF3617008641A9 /* CHNetWork.m */,
+				85CAC29E26FF3704008641A9 /* NETViewController.h */,
+				85CAC29F26FF3704008641A9 /* NETViewController.m */,
+				85CAC2A026FF3704008641A9 /* NETViewController.xib */,
+				851CDE1D270306C400BF50B6 /* CHUpload.h */,
+				851CDE1E270306C400BF50B6 /* CHUpload.m */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		85DBD59E2463A379007922A0 /* CHButton */ = {
@@ -931,7 +999,10 @@
 				855B3BBB2525F1A30095C42E /* MVVMViewController.xib in Resources */,
 				855B3BC02525F5130095C42E /* MVPTableViewCell.xib in Resources */,
 				8518BD9926BE0D6B00B3D09A /* TestVideoViewController.xib in Resources */,
+				855CCCA426E1F5DE0061B212 /* CHKVOViewController.xib in Resources */,
 				857022E32480DF48000C8D82 /* CHDelegateViewController.xib in Resources */,
+				851CDE0B2702BF1A00BF50B6 /* face_scca.png in Resources */,
+				851CDE22270314C200BF50B6 /* chuqi.mp4 in Resources */,
 				851DDD20250E4BCD007A806E /* CHScrolleTestViewController.xib in Resources */,
 				855DB677265CA546003CFC31 /* ImagePickerViewController.xib in Resources */,
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
@@ -947,6 +1018,7 @@
 				85631E54246B98FF00AC6F74 /* CHGCDViewController.xib in Resources */,
 				85DFD0742514DB2600F66F52 /* RuntimeViewController.xib in Resources */,
 				8572CC6F264CB99600D6DA23 /* ArchiveAndDicVController.xib in Resources */,
+				85CAC2A226FF3704008641A9 /* NETViewController.xib in Resources */,
 				851C810A2649096B00C731AA /* CategoryViewController.xib in Resources */,
 				85D992682589F9AA00C689C0 /* CHOrgScrollewVController.xib in Resources */,
 				857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */,
@@ -986,6 +1058,7 @@
 				8545D8102436CF520083091A /* CHAlertController.m in Sources */,
 				855B3BB52525F1940095C42E /* MVPViewController.m in Sources */,
 				85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */,
+				855CCCA826E1F6B10061B212 /* KVOModel.m in Sources */,
 				8523719126DE608A00961195 /* D_Teacher.m in Sources */,
 				85DBD5A12463A386007922A0 /* CHButton.m in Sources */,
 				854A6737264E408D00A5A77D /* CHUIStudtyViewController.m in Sources */,
@@ -997,6 +1070,7 @@
 				8543BF1E26D6639E0040FA7F /* CNFile.m in Sources */,
 				8591853C26E0C169000162B8 /* CHQRCodeViewController.m in Sources */,
 				85DFD0732514DB2600F66F52 /* RuntimeViewController.m in Sources */,
+				85069D1526F1DEA300FCBCFB /* DellocTest.m in Sources */,
 				8572CC73264CBBBF00D6DA23 /* ArchiveModel.m in Sources */,
 				857022E42480DF48000C8D82 /* CHDelegateViewController.m in Sources */,
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
@@ -1019,6 +1093,7 @@
 				854A6721264E1D9300A5A77D /* NullSafe.m in Sources */,
 				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
 				85BF775625467420007E2A67 /* CHNullObject.m in Sources */,
+				85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */,
 				858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
@@ -1026,6 +1101,7 @@
 				85BC1A98262D4C41009F1BCC /* Model.m in Sources */,
 				8518BD9826BE0D6B00B3D09A /* TestVideoViewController.m in Sources */,
 				850AC5DB252709D000109292 /* MVVMModel.m in Sources */,
+				8591854026E0C59F000162B8 /* GenerateQRCode.m in Sources */,
 				8572CC7C264CD4E600D6DA23 /* RuntimeDicModel.m in Sources */,
 				85BF77592546783D007E2A67 /* CHNull.m in Sources */,
 				8590262B2632606400747683 /* CHObject+Obj2.m in Sources */,
@@ -1037,10 +1113,14 @@
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
 				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
 				85A2A9EC26562EBA00A6866C /* VideoPicInPicViewController.m in Sources */,
+				851CDE1F270306C400BF50B6 /* CHUpload.m in Sources */,
 				8523717A26DE5D9D00961195 /* BaseViewController.m in Sources */,
 				852E801C26DFB18800520528 /* WeakPerson.m in Sources */,
 				855B3BC625260AC30095C42E /* Present.m in Sources */,
+				85C5EB5226FAD9EB00B14CA5 /* CHDefaultAlert.m in Sources */,
 				851C80FF2648FD7500C731AA /* CHExtensionViewController.m in Sources */,
+				85CAC2A126FF3704008641A9 /* NETViewController.m in Sources */,
+				855CCCA326E1F5DE0061B212 /* CHKVOViewController.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
 				85A2AA71265640C500A6866C /* AVPlayerLayerViewController.m in Sources */,
 				85BC1A94262D4C39009F1BCC /* Viewmodel.m in Sources */,
