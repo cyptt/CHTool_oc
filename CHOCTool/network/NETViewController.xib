@@ -51,6 +51,14 @@
                         <action selector="post2:" destination="-1" eventType="touchUpInside" id="PMw-GP-FjY"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xok-x1-y4l">
+                    <rect key="frame" x="87" y="363" width="38" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="down"/>
+                    <connections>
+                        <action selector="down:" destination="-1" eventType="touchUpInside" id="lwB-e6-Win"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CHUpload : NSObject
-
++(instancetype)shareInstance;
 /**
  上传图片
  @param url 路径

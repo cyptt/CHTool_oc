@@ -24,6 +24,8 @@
 		851CDE0B2702BF1A00BF50B6 /* face_scca.png in Resources */ = {isa = PBXBuildFile; fileRef = 851CDE0A2702BF1A00BF50B6 /* face_scca.png */; };
 		851CDE1F270306C400BF50B6 /* CHUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE1E270306C400BF50B6 /* CHUpload.m */; };
 		851CDE22270314C200BF50B6 /* chuqi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 851CDE21270314C200BF50B6 /* chuqi.mp4 */; };
+		851CDE29270324CB00BF50B6 /* CHDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE28270324CB00BF50B6 /* CHDown.m */; };
+		851CDE2D2703269B00BF50B6 /* NetCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE2C2703269B00BF50B6 /* NetCommonUtils.m */; };
 		851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */; };
 		851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */; };
 		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
@@ -174,6 +176,10 @@
 		851CDE1D270306C400BF50B6 /* CHUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHUpload.h; sourceTree = "<group>"; };
 		851CDE1E270306C400BF50B6 /* CHUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHUpload.m; sourceTree = "<group>"; };
 		851CDE21270314C200BF50B6 /* chuqi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chuqi.mp4; sourceTree = "<group>"; };
+		851CDE27270324CB00BF50B6 /* CHDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDown.h; sourceTree = "<group>"; };
+		851CDE28270324CB00BF50B6 /* CHDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDown.m; sourceTree = "<group>"; };
+		851CDE2B2703269B00BF50B6 /* NetCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetCommonUtils.h; sourceTree = "<group>"; };
+		851CDE2C2703269B00BF50B6 /* NetCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetCommonUtils.m; sourceTree = "<group>"; };
 		851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseViewController.h; sourceTree = "<group>"; };
 		851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseViewController.m; sourceTree = "<group>"; };
 		851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHSingleChioseViewController.xib; sourceTree = "<group>"; };
@@ -877,6 +883,10 @@
 				85CAC2A026FF3704008641A9 /* NETViewController.xib */,
 				851CDE1D270306C400BF50B6 /* CHUpload.h */,
 				851CDE1E270306C400BF50B6 /* CHUpload.m */,
+				851CDE27270324CB00BF50B6 /* CHDown.h */,
+				851CDE28270324CB00BF50B6 /* CHDown.m */,
+				851CDE2B2703269B00BF50B6 /* NetCommonUtils.h */,
+				851CDE2C2703269B00BF50B6 /* NetCommonUtils.m */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -1076,6 +1086,7 @@
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				850AC5E125270C7B00109292 /* ViewModule.m in Sources */,
 				85D992672589F9AA00C689C0 /* CHOrgScrollewVController.m in Sources */,
+				851CDE2D2703269B00BF50B6 /* NetCommonUtils.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				8591853826E0C131000162B8 /* CHQRCodeView.m in Sources */,
 				855B3BC32525F5770095C42E /* MVPModel.m in Sources */,
@@ -1101,6 +1112,7 @@
 				85BC1A98262D4C41009F1BCC /* Model.m in Sources */,
 				8518BD9826BE0D6B00B3D09A /* TestVideoViewController.m in Sources */,
 				850AC5DB252709D000109292 /* MVVMModel.m in Sources */,
+				851CDE29270324CB00BF50B6 /* CHDown.m in Sources */,
 				8591854026E0C59F000162B8 /* GenerateQRCode.m in Sources */,
 				8572CC7C264CD4E600D6DA23 /* RuntimeDicModel.m in Sources */,
 				85BF77592546783D007E2A67 /* CHNull.m in Sources */,

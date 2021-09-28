@@ -7,11 +7,25 @@
 //
 
 #import "CHUpload.h"
+#import "NetCommonUtils.h"
 @interface CHUpload ()<NSURLSessionTaskDelegate,NSURLSessionDelegate>
 
 @property(nonatomic,copy)void(^progressBock)(float precert);
 @end
+static CHUpload *_chUpload = nil;
 @implementation CHUpload
++(instancetype)shareInstance
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (_chUpload == nil) {
+            _chUpload = [[self alloc]init];
+            
+         
+        }
+    });
+    return _chUpload;
+}
 
 -(void)uploadFileWithUrl:(NSString *)url mutipartFilePaths:(NSArray *)mutipartFilePaths mutipartFileNames:(NSArray * __nullable)mutipartFileNames parameters:(NSDictionary * __nullable)parameters success:(void(^ __nullable)(id responseObj))success failure:(void(^ __nullable)(NSError * err))failure progress:(void(^)(float precent))progress{
     
@@ -79,7 +93,7 @@
           
         NSString *mimetype  =@"image/jpeg";
   
-        NSString * lastmimetype =[self getmMimeType:path].length?[self getmMimeType:path]:mimetype;
+        NSString * lastmimetype =[NetCommonUtils getmMimeType:path].length?[NetCommonUtils getmMimeType:path]:mimetype;
        
          
         [httpBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
@@ -130,12 +144,5 @@
 
 
 
--(NSString *)getmMimeType:(NSString *)path{
-    NSURL * url = [NSURL fileURLWithPath:path];
-    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
-    NSHTTPURLResponse * response = nil;
 
-    [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
-    return response.MIMEType;
-}
 @end
