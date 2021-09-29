@@ -29,8 +29,6 @@
                 }
             }
         }];
-        
-        
     }
     
     //    return [[[formStr substringWithRange:NSMakeRange(0, formStr.length-1)] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]] dataUsingEncoding:NSUTF8StringEncoding];

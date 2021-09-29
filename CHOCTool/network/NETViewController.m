@@ -15,8 +15,10 @@
 @interface NETViewController ()
 
 @end
-
-
+static NSString *  const Base_url = @"http://192.168.1.55:8080/";
+static NSString * const  GET_URL = @"user/test";
+static NSString * const POST_JSON_URL = @"user/testPost";
+static NSString * const POST_FROM_URL = @"user/testForm";
 @implementation NETViewController
 
 - (void)viewDidLoad {
@@ -26,78 +28,47 @@
 
 
 - (IBAction)get:(id)sender {
-    NSDictionary * parameters = @{@"userName":@"33",@"age":@"f51d665d9242ce03a07dde11280ae133"};
-    NSString * urlSting = @"http://192.168.1.74:8080/user/test";
-    NSMutableString *mutableUrl = [[NSMutableString alloc] initWithString:urlSting];
-    if ([parameters allKeys]) {
-        [mutableUrl appendString:@"?"];
-        for (id key in parameters) {
-            NSString *value = [[parameters objectForKey:key] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-            [mutableUrl appendString:[NSString stringWithFormat:@"%@=%@&", key, value]];
-        }
-    }
-  
 
-    NSURL * url = [NSURL URLWithString:urlSting];
-    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
-    request.HTTPMethod = @"GET";
-  
-    NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"---currentthread%@",[NSThread currentThread]);
-        NSLog(@"response-----%@",response);
-        NSLog(@"error----%@",error);
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        NSLog(@"dict-----%@",dict);
+    NSDictionary *parameters = @{@"userName":@"zs!..%.&.%333",@"age":@"23"};
+    NSString * urlSting = [NSString stringWithFormat:@"%@%@",Base_url,GET_URL];
+    [[CHNetWork shareInstance]get_Url:urlSting parameters:parameters success:^(id  _Nonnull responseObj) {
+        NSLog(@"%@",responseObj);
+        
+    } failure:^(NSError * _Nonnull err) {
+        NSLog(@"%@",err);
     }];
-    [task resume];
-}
-- (IBAction)post2:(id)sender {
-    NSDictionary * parameters = @{@"userName":@"33",@"age":@"f51d665d9242ce03a07dde11280ae133"};
-    NSString * urlSting = @"http://192.168.1.74:8080/user/testPost";
-   
-    
-    
-
-    
-    NSURL * url = [NSURL URLWithString:urlSting];
-    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
-    request.HTTPMethod = @"POST";
-
-    NSString * bodyString = [NetCommonUtils formString:parameters];
-    
-    request.HTTPBody = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
-    NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"response-----%@",response);
-        NSLog(@"error----%@",error);
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        NSLog(@"dict-----%@",dict);
-    }];
-    [task resume];
 }
 
 /**
  json
  */
-- (IBAction)post:(id)sender {
+- (IBAction)postJson:(id)sender {
     NSDictionary * parameters = @{@"userName":@"33",@"age":@"f51d665d9242ce03a07dde11280ae133"};
-    NSString * urlSting = @"http://192.168.1.74:8080/user/testJson";
+    NSString * urlSting = [NSString stringWithFormat:@"%@%@",Base_url,POST_JSON_URL];
   
-    NSURL * url = [NSURL URLWithString:urlSting];
-    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
-    [request setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
-    request.HTTPMethod = @"POST";
-
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:parameters options:NSJSONWritingPrettyPrinted error:nil];
     
-    request.HTTPBody = jsonData ;
-    NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"response-----%@",response);
-        NSLog(@"error----%@",error);
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        NSLog(@"dict-----%@",dict);
+    NSDictionary * headerDic = @{@"Content-Type":@"application/json;charset=UTF-8"};
+    [[CHNetWork shareInstance]post_Url:urlSting parameters:parameters headersDic:headerDic success:^(id  _Nonnull responseObj) {
+        NSLog(@"%@",responseObj);
+    } failure:^(NSError * _Nonnull err) {
+        NSLog(@"%@",err);
     }];
-    [task resume];
+
 }
+- (IBAction)postForm:(id)sender {
+    NSDictionary * parameters = @{@"userName":@"33",@"age":@"f51d665d9242ce03a07dde11280ae133"};
+   
+    NSString * urlSting = [NSString stringWithFormat:@"%@%@",Base_url,POST_FROM_URL];
+    
+
+    [[CHNetWork shareInstance]post_Url:urlSting parameters:parameters headersDic:nil success:^(id  _Nonnull responseObj) {
+        NSLog(@"%@",responseObj);
+    } failure:^(NSError * _Nonnull err) {
+        NSLog(@"%@",err);
+    }];
+}
+
+
 - (IBAction)upload:(id)sender {
 //    NSString * path = [[NSBundle mainBundle] pathForResource:@"face_scca" ofType:@"png"];
     NSString * path = [[NSBundle mainBundle] pathForResource:@"chuqi" ofType:@"mp4"];
@@ -127,9 +98,24 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+ 
+     
+    NSMutableString * mutableUrl = [[NSMutableString alloc]init];
+    NSDictionary *parameters = @{@"name":@"zs!&",@"age":@"23"};
+    if ([parameters allKeys]) {
+        [mutableUrl appendString:@"?"];
+        for (id key in parameters) {
+            NSString *value = [[parameters objectForKey:key] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+            [mutableUrl appendString:[NSString stringWithFormat:@"%@=%@&", key, value]];
+        }
+    }
     
-   
+    
+    NSLog(@"----001%@",mutableUrl);
+    NSLog(@"----002%@",[NetCommonUtils formString:parameters]);
 }
+
+
 
 
 
