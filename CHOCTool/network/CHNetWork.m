@@ -64,15 +64,11 @@ static CHNetWork *_chNetwork= nil;
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
     
     if (headersDic && [headersDic allKeys]) {
-    
-         
         for (id key in [headersDic allKeys]) {
             NSString * value = [headersDic objectForKey:key] ;
             [request setValue:value forHTTPHeaderField:key];
         }
     }
-    
-   
     NSData *bodyData ;
     if (headersDic && [headersDic[@"Content-Type"] containsString:@"application/json"]) {
         bodyData = [NSJSONSerialization dataWithJSONObject:parameters options:NSJSONWritingPrettyPrinted error:nil];
@@ -80,10 +76,7 @@ static CHNetWork *_chNetwork= nil;
         NSString * bodyString = [NetCommonUtils formString:parameters];
         bodyData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
     }
-    
     request.HTTPMethod = @"POST";
-  
-    
     request.HTTPBody = bodyData ;
     NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -96,7 +89,7 @@ static CHNetWork *_chNetwork= nil;
             }
         });
     }];
-    [task resume];
+   [task resume];
 }
 
 @end
