@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,9 @@
 		8523718D26DE607C00961195 /* D_Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8523718C26DE607C00961195 /* D_Person.m */; };
 		8523719126DE608A00961195 /* D_Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8523719026DE608A00961195 /* D_Teacher.m */; };
 		8523719526DE609900961195 /* D_Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8523719426DE609900961195 /* D_Student.m */; };
+		85266DF9271415980039D4E9 /* CHAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85266DF7271415980039D4E9 /* CHAnimationController.m */; };
+		85266DFA271415980039D4E9 /* CHAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85266DF8271415980039D4E9 /* CHAnimationController.xib */; };
+		85266DFE27141B6F0039D4E9 /* CHDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85266DFD27141B6F0039D4E9 /* CHDrawView.m */; };
 		852E801C26DFB18800520528 /* WeakPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 852E801B26DFB18800520528 /* WeakPerson.m */; };
 		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
 		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
@@ -129,6 +132,8 @@
 		85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29B26FF3617008641A9 /* CHNetWork.m */; };
 		85CAC2A126FF3704008641A9 /* NETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29F26FF3704008641A9 /* NETViewController.m */; };
 		85CAC2A226FF3704008641A9 /* NETViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CAC2A026FF3704008641A9 /* NETViewController.xib */; };
+		85D4D94B2719295200D975A8 /* CHDrawApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D4D94A2719295200D975A8 /* CHDrawApi.m */; };
+		85D4D9532719802C00D975A8 /* WechatIMG12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85D4D9522719802C00D975A8 /* WechatIMG12.jpg */; };
 		85D992622589EACF00C689C0 /* CHScrollewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D992602589EACF00C689C0 /* CHScrollewVController.m */; };
 		85D992632589EACF00C689C0 /* CHScrollewVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D992612589EACF00C689C0 /* CHScrollewVController.xib */; };
 		85D992672589F9AA00C689C0 /* CHOrgScrollewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D992652589F9AA00C689C0 /* CHOrgScrollewVController.m */; };
@@ -208,6 +213,11 @@
 		8523719026DE608A00961195 /* D_Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_Teacher.m; sourceTree = "<group>"; };
 		8523719326DE609900961195 /* D_Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D_Student.h; sourceTree = "<group>"; };
 		8523719426DE609900961195 /* D_Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_Student.m; sourceTree = "<group>"; };
+		85266DF6271415980039D4E9 /* CHAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAnimationController.h; sourceTree = "<group>"; };
+		85266DF7271415980039D4E9 /* CHAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAnimationController.m; sourceTree = "<group>"; };
+		85266DF8271415980039D4E9 /* CHAnimationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHAnimationController.xib; sourceTree = "<group>"; };
+		85266DFC27141B6F0039D4E9 /* CHDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDrawView.h; sourceTree = "<group>"; };
+		85266DFD27141B6F0039D4E9 /* CHDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDrawView.m; sourceTree = "<group>"; };
 		852E801A26DFB18800520528 /* WeakPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakPerson.h; sourceTree = "<group>"; };
 		852E801B26DFB18800520528 /* WeakPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakPerson.m; sourceTree = "<group>"; };
 		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -364,6 +374,9 @@
 		85CAC29E26FF3704008641A9 /* NETViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETViewController.h; sourceTree = "<group>"; };
 		85CAC29F26FF3704008641A9 /* NETViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETViewController.m; sourceTree = "<group>"; };
 		85CAC2A026FF3704008641A9 /* NETViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NETViewController.xib; sourceTree = "<group>"; };
+		85D4D9492719295200D975A8 /* CHDrawApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDrawApi.h; sourceTree = "<group>"; };
+		85D4D94A2719295200D975A8 /* CHDrawApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDrawApi.m; sourceTree = "<group>"; };
+		85D4D9522719802C00D975A8 /* WechatIMG12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG12.jpg; sourceTree = "<group>"; };
 		85D9925F2589EACF00C689C0 /* CHScrollewVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHScrollewVController.h; sourceTree = "<group>"; };
 		85D992602589EACF00C689C0 /* CHScrollewVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHScrollewVController.m; sourceTree = "<group>"; };
 		85D992612589EACF00C689C0 /* CHScrollewVController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHScrollewVController.xib; sourceTree = "<group>"; };
@@ -407,7 +420,6 @@
 				16E85D525C341F349BCCA461 /* Pods-CHOCTool.debug.xcconfig */,
 				5A70A0C0B3E3410FF9F9B751 /* Pods-CHOCTool.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -494,6 +506,20 @@
 			path = MoreStatus;
 			sourceTree = "<group>";
 		};
+		85266DF52714157A0039D4E9 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				85266DF6271415980039D4E9 /* CHAnimationController.h */,
+				85266DF7271415980039D4E9 /* CHAnimationController.m */,
+				85266DF8271415980039D4E9 /* CHAnimationController.xib */,
+				85266DFC27141B6F0039D4E9 /* CHDrawView.h */,
+				85266DFD27141B6F0039D4E9 /* CHDrawView.m */,
+				85D4D9492719295200D975A8 /* CHDrawApi.h */,
+				85D4D94A2719295200D975A8 /* CHDrawApi.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		8542B20123C5D7CF0052E441 = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +547,7 @@
 				8542B20E23C5D7CF0052E441 /* AppDelegate.m */,
 				8542B21023C5D7CF0052E441 /* SceneDelegate.h */,
 				8542B21123C5D7CF0052E441 /* SceneDelegate.m */,
+				85D4D9522719802C00D975A8 /* WechatIMG12.jpg */,
 				8542B21323C5D7CF0052E441 /* ViewController.h */,
 				8542B21423C5D7CF0052E441 /* ViewController.m */,
 				8542B21623C5D7CF0052E441 /* Main.storyboard */,
@@ -528,6 +555,7 @@
 				8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */,
 				8542B21E23C5D7D00052E441 /* Info.plist */,
 				8542B21F23C5D7D00052E441 /* main.m */,
+				85266DF52714157A0039D4E9 /* Animation */,
 				8591853526E0C0EB000162B8 /* QRCode */,
 				8523717026DE5CD000961195 /* Base */,
 				85CAC29926FF35DF008641A9 /* network */,
@@ -1023,6 +1051,7 @@
 				8542B21D23C5D7D00052E441 /* LaunchScreen.storyboard in Resources */,
 				858C8CF0246D444E00738236 /* CHLabelViewController.xib in Resources */,
 				8542B21A23C5D7D00052E441 /* Assets.xcassets in Resources */,
+				85266DFA271415980039D4E9 /* CHAnimationController.xib in Resources */,
 				85E2ABE2265B38E700B5B665 /* CHRunloopViewController.xib in Resources */,
 				850AC5D82526F88000109292 /* MVVMTestView.xib in Resources */,
 				855B3BBB2525F1A30095C42E /* MVVMViewController.xib in Resources */,
@@ -1052,6 +1081,7 @@
 				85D992682589F9AA00C689C0 /* CHOrgScrollewVController.xib in Resources */,
 				857022E92480E07E000C8D82 /* CHDelegateNextViewController.xib in Resources */,
 				8523717B26DE5D9D00961195 /* BaseViewController.xib in Resources */,
+				85D4D9532719802C00D975A8 /* WechatIMG12.jpg in Resources */,
 				854A6738264E408D00A5A77D /* CHUIStudtyViewController.xib in Resources */,
 				8542B21823C5D7CF0052E441 /* Main.storyboard in Resources */,
 				8523718726DE603500961195 /* MoreStatusViewController.xib in Resources */,
@@ -1158,13 +1188,16 @@
 				859026272632605400747683 /* CHObject+Obj1.m in Sources */,
 				855B3BBA2525F1A30095C42E /* MVVMViewController.m in Sources */,
 				85BF775125466C0D007E2A67 /* NSObject+CHNotNull.m in Sources */,
+				85266DF9271415980039D4E9 /* CHAnimationController.m in Sources */,
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
 				851C81092649096B00C731AA /* CategoryViewController.m in Sources */,
 				85F9CF832681DA0700E53714 /* CHNSCacheViewController.m in Sources */,
 				857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */,
 				854A6721264E1D9300A5A77D /* NullSafe.m in Sources */,
+				85D4D94B2719295200D975A8 /* CHDrawApi.m in Sources */,
 				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
 				85BF775625467420007E2A67 /* CHNullObject.m in Sources */,
+				85266DFE27141B6F0039D4E9 /* CHDrawView.m in Sources */,
 				85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */,
 				858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,

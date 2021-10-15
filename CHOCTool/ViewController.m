@@ -43,6 +43,7 @@
 #import "CHQRCodeViewController.h"
 #import "WeakPerson.h"
 #import "NETViewController.h"
+#import "CHAnimationController.h"
  NSString * testname2 = @"adsfdfsf";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -76,13 +77,14 @@ NSString * VIDEO = @"TestVideoViewController";
 NSString * Base = @"Base";
 NSString * QRCode = @"QRCode";
 NSString * CHNET = @"CHNET";
+NSString * CHANIMATION = @"CHANIMATION";
 @implementation ViewController
 
 
 
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"TESTCLICK",@"TESTCLICK2",CHNET,Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
+        _dataSourceArr = @[@"TESTCLICK",@"TESTCLICK2",CHANIMATION,CHNET,Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
     }
     return _dataSourceArr;
 }
@@ -311,6 +313,10 @@ NSString * CHNET = @"CHNET";
     }else if([name isEqualToString:CHNET]){
         NETViewController * VC = [[NETViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
+    }else if([name isEqualToString:CHANIMATION]){
+        CHAnimationController * VC = [[CHAnimationController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+        
     }
 }
 
