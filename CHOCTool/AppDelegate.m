@@ -7,9 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TestViewController.h"
+#import "ViewController.h"
+#import "TwoWindowViewController.h"
 @interface AppDelegate ()
 
+@property(nonatomic,strong)UIWindow * window2;
 @end
 
 @implementation AppDelegate
@@ -18,11 +21,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
 
+    self.window .backgroundColor = UIColor.redColor;
+    
+    UIViewController * VC = [[ViewController alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:VC];
+    
+    self.window .rootViewController = nav;
+    [self.window  makeKeyAndVisible];
+   
+
+    //window 2
+//    self.window2 = [[UIWindow alloc]initWithFrame:CGRectMake(200, 300, 100, 100)];
+//
+//    self.window2.rootViewController = TwoWindowViewController.new;
+//    [self.window2 makeKeyAndVisible];
+    
     return YES;
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s",__func__);
+}
 #pragma mark - UISceneSession lifecycle
 
 

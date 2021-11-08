@@ -16,7 +16,8 @@
     
 //    [self colorGradient:rect];
     
-    [self drawImage];
+//    [self drawImage];
+    [self saveAndRestore];
 
 }
 
@@ -185,5 +186,43 @@
     
     [CHFileManage writeToFile:path2 contents:data2];
     
+}
+
+/**
+ CGContextSaveGState/CGContextRestoreGState
+ 
+ 
+ 用于记录和/用于恢复已存储的绘图上下文.
+ 
+ 获取图形上下文之后,这时你开始画图的下一步准备工作,比如定画笔的颜色,文本的颜色,字体的大小/型号,然后开始作画.当你画到一半的时候,你需要更改这些配置,也就是用特定的颜色/字体等绘制一个特殊的图形,完成之后又回到最初的图形.
+
+ */
+-(void)saveAndRestore{
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    //第一条
+    CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
+    CGContextSetLineWidth(ctx, 2.0f);
+    CGContextMoveToPoint(ctx, 10, 30);
+    CGContextAddLineToPoint(ctx, 10, 199);
+    CGContextStrokePath(ctx);
+    
+    //第二条
+    CGContextSaveGState(ctx);
+    
+    CGContextSetStrokeColorWithColor(ctx, [UIColor purpleColor].CGColor);
+    CGContextSetLineWidth(ctx, 5.0);
+    CGContextMoveToPoint(ctx, 50, 30);
+    CGContextAddLineToPoint(ctx, 50, 199);
+    CGContextStrokePath(ctx);
+    
+    CGContextRestoreGState(ctx);
+    
+    
+    //第三条
+    
+    CGContextMoveToPoint(ctx, 110, 40);
+    CGContextAddLineToPoint(ctx, 110, 399);
+    CGContextStrokePath(ctx);
 }
 @end

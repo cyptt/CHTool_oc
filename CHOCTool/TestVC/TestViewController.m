@@ -18,25 +18,25 @@
     [super viewDidLoad];
   
     
-    self.view.backgroundColor  = [UIColor whiteColor];
-    
-    
-    CHSearchViewController * chsearchVC = [[CHSearchViewController alloc]init];
-
-    UISearchController * search = [[UISearchController alloc]initWithSearchResultsController:nil];
-    
-    search.searchResultsUpdater = self;
-    
-    search.searchBar.prompt = @"Please input the country name";
-    search.searchBar.placeholder = @"Search for country ...";
-
-    
-    search.searchBar.backgroundColor = [UIColor redColor];
-    [search.searchBar sizeToFit];
-    
-    
-   
-    [self.view addSubview:search.searchBar];
+    self.view.backgroundColor  = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+//
+//
+//    CHSearchViewController * chsearchVC = [[CHSearchViewController alloc]init];
+//
+//    UISearchController * search = [[UISearchController alloc]initWithSearchResultsController:nil];
+//
+//    search.searchResultsUpdater = self;
+//
+//    search.searchBar.prompt = @"Please input the country name";
+//    search.searchBar.placeholder = @"Search for country ...";
+//
+//
+//    search.searchBar.backgroundColor = [UIColor redColor];
+//    [search.searchBar sizeToFit];
+//
+//
+//
+//    [self.view addSubview:search.searchBar];
     
   
     

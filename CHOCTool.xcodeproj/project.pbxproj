@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850652072727931A001C8979 /* CHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850652062727931A001C8979 /* CHView.m */; };
 		85069D1526F1DEA300FCBCFB /* DellocTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85069D1426F1DEA300FCBCFB /* DellocTest.m */; };
 		850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850A206B240E3AEE0036E2FD /* JYTLoadingView.m */; };
 		850AC5D62526F57600109292 /* MVVMTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850AC5D52526F57600109292 /* MVVMTestView.m */; };
@@ -44,6 +45,8 @@
 		85266DFA271415980039D4E9 /* CHAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85266DF8271415980039D4E9 /* CHAnimationController.xib */; };
 		85266DFE27141B6F0039D4E9 /* CHDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85266DFD27141B6F0039D4E9 /* CHDrawView.m */; };
 		852E801C26DFB18800520528 /* WeakPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 852E801B26DFB18800520528 /* WeakPerson.m */; };
+		853E7E2C2726A5D0008DB651 /* CHTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853E7E2A2726A5D0008DB651 /* CHTouchViewController.m */; };
+		853E7E2D2726A5D0008DB651 /* CHTouchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853E7E2B2726A5D0008DB651 /* CHTouchViewController.xib */; };
 		8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B20E23C5D7CF0052E441 /* AppDelegate.m */; };
 		8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21123C5D7CF0052E441 /* SceneDelegate.m */; };
 		8542B21523C5D7CF0052E441 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542B21423C5D7CF0052E441 /* ViewController.m */; };
@@ -86,6 +89,9 @@
 		8572CC7C264CD4E600D6DA23 /* RuntimeDicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572CC7B264CD4E600D6DA23 /* RuntimeDicModel.m */; };
 		8572CC8B264CF61E00D6DA23 /* UIImage+CHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572CC8A264CF61E00D6DA23 /* UIImage+CHImage.m */; };
 		8572CC93264D06E700D6DA23 /* NSObject+property.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572CC92264D06E700D6DA23 /* NSObject+property.m */; };
+		85785DEB2733B49700476FC1 /* UIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85785DEA2733B49700476FC1 /* UIKitViewController.m */; };
+		85785DF82733B73E00476FC1 /* CHWTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85785DF72733B73E00476FC1 /* CHWTest.m */; };
+		85785DFC2733C17900476FC1 /* CHWView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 85785DFB2733C17900476FC1 /* CHWView2.m */; };
 		858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55DD251357B300C1F503 /* NSObject+LogUtils.m */; };
 		858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55E32513635E00C1F503 /* ExtendNSDictionary.m */; };
 		858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C8CED246D444E00738236 /* CHLabelViewController.m */; };
@@ -104,8 +110,11 @@
 		85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BB242AFCA600D96524 /* CHKVStorage.m */; };
 		85A4F3C4242AFCA600D96524 /* CHMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BC242AFCA600D96524 /* CHMemoryCache.m */; };
 		85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F3BF242AFCA600D96524 /* CHDiskCache.m */; };
+		85AB9A402734F6DE00618F46 /* TwoWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AB9A3F2734F6DE00618F46 /* TwoWindowViewController.m */; };
 		85B7698E265F678F00E60F00 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7698D265F678F00E60F00 /* TestViewController.m */; };
 		85B76993265F6A5200E60F00 /* CHSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B76992265F6A5200E60F00 /* CHSearchViewController.m */; };
+		85B7F72B2738C87100E00EBD /* SonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7F72A2738C87100E00EBD /* SonView.m */; };
+		85B7F7322738CBB000E00EBD /* SonSonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7F7312738CBB000E00EBD /* SonSonView.m */; };
 		85BC1A90262D48A2009F1BCC /* MVVM2ControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A8F262D48A2009F1BCC /* MVVM2ControllerViewController.m */; };
 		85BC1A94262D4C39009F1BCC /* Viewmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A93262D4C39009F1BCC /* Viewmodel.m */; };
 		85BC1A98262D4C41009F1BCC /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC1A97262D4C41009F1BCC /* Model.m */; };
@@ -129,6 +138,8 @@
 		85C67CEF2427824F003B91E3 /* NSObject+CHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEB2427824F003B91E3 /* NSObject+CHModel.m */; };
 		85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67CEE2427824F003B91E3 /* CHClassInfo.m */; };
 		85C67CF224278289003B91E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C67CF124278289003B91E3 /* README.md */; };
+		85CABE452721649C00847BA9 /* CHTransAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CABE432721649C00847BA9 /* CHTransAnimViewController.m */; };
+		85CABE462721649C00847BA9 /* CHTransAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CABE442721649C00847BA9 /* CHTransAnimViewController.xib */; };
 		85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29B26FF3617008641A9 /* CHNetWork.m */; };
 		85CAC2A126FF3704008641A9 /* NETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29F26FF3704008641A9 /* NETViewController.m */; };
 		85CAC2A226FF3704008641A9 /* NETViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CAC2A026FF3704008641A9 /* NETViewController.xib */; };
@@ -155,6 +166,8 @@
 		16E85D525C341F349BCCA461 /* Pods-CHOCTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHOCTool.debug.xcconfig"; path = "Target Support Files/Pods-CHOCTool/Pods-CHOCTool.debug.xcconfig"; sourceTree = "<group>"; };
 		440C96BFA70B5C189BD5F499 /* Pods_CHOCTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHOCTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A70A0C0B3E3410FF9F9B751 /* Pods-CHOCTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHOCTool.release.xcconfig"; path = "Target Support Files/Pods-CHOCTool/Pods-CHOCTool.release.xcconfig"; sourceTree = "<group>"; };
+		850652052727931A001C8979 /* CHView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHView.h; sourceTree = "<group>"; };
+		850652062727931A001C8979 /* CHView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHView.m; sourceTree = "<group>"; };
 		85069D1326F1DEA300FCBCFB /* DellocTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DellocTest.h; sourceTree = "<group>"; };
 		85069D1426F1DEA300FCBCFB /* DellocTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DellocTest.m; sourceTree = "<group>"; };
 		850A206A240E3AEE0036E2FD /* JYTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTLoadingView.h; sourceTree = "<group>"; };
@@ -220,6 +233,9 @@
 		85266DFD27141B6F0039D4E9 /* CHDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDrawView.m; sourceTree = "<group>"; };
 		852E801A26DFB18800520528 /* WeakPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakPerson.h; sourceTree = "<group>"; };
 		852E801B26DFB18800520528 /* WeakPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakPerson.m; sourceTree = "<group>"; };
+		853E7E292726A5D0008DB651 /* CHTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTouchViewController.h; sourceTree = "<group>"; };
+		853E7E2A2726A5D0008DB651 /* CHTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTouchViewController.m; sourceTree = "<group>"; };
+		853E7E2B2726A5D0008DB651 /* CHTouchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHTouchViewController.xib; sourceTree = "<group>"; };
 		8542B20A23C5D7CF0052E441 /* CHOCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHOCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8542B20D23C5D7CF0052E441 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8542B20E23C5D7CF0052E441 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -291,6 +307,12 @@
 		8572CC8A264CF61E00D6DA23 /* UIImage+CHImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CHImage.m"; sourceTree = "<group>"; };
 		8572CC91264D06E700D6DA23 /* NSObject+property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+property.h"; sourceTree = "<group>"; };
 		8572CC92264D06E700D6DA23 /* NSObject+property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+property.m"; sourceTree = "<group>"; };
+		85785DE92733B49700476FC1 /* UIKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitViewController.h; sourceTree = "<group>"; };
+		85785DEA2733B49700476FC1 /* UIKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitViewController.m; sourceTree = "<group>"; };
+		85785DF62733B73E00476FC1 /* CHWTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHWTest.h; sourceTree = "<group>"; };
+		85785DF72733B73E00476FC1 /* CHWTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHWTest.m; sourceTree = "<group>"; };
+		85785DFA2733C17900476FC1 /* CHWView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHWView2.h; sourceTree = "<group>"; };
+		85785DFB2733C17900476FC1 /* CHWView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHWView2.m; sourceTree = "<group>"; };
 		858A55DD251357B300C1F503 /* NSObject+LogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LogUtils.m"; sourceTree = "<group>"; };
 		858A55DE251357B300C1F503 /* NSObject+LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LogUtils.h"; sourceTree = "<group>"; };
 		858A55E32513635E00C1F503 /* ExtendNSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendNSDictionary.m; sourceTree = "<group>"; };
@@ -325,10 +347,16 @@
 		85A4F3BF242AFCA600D96524 /* CHDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDiskCache.m; sourceTree = "<group>"; };
 		85A4F3C0242AFCA600D96524 /* CHKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKVStorage.h; sourceTree = "<group>"; };
 		85A4F3C1242AFCA600D96524 /* CHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCache.h; sourceTree = "<group>"; };
+		85AB9A3E2734F6DE00618F46 /* TwoWindowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoWindowViewController.h; sourceTree = "<group>"; };
+		85AB9A3F2734F6DE00618F46 /* TwoWindowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoWindowViewController.m; sourceTree = "<group>"; };
 		85B7698C265F678F00E60F00 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		85B7698D265F678F00E60F00 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		85B76991265F6A5200E60F00 /* CHSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSearchViewController.h; sourceTree = "<group>"; };
 		85B76992265F6A5200E60F00 /* CHSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSearchViewController.m; sourceTree = "<group>"; };
+		85B7F7292738C87100E00EBD /* SonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonView.h; sourceTree = "<group>"; };
+		85B7F72A2738C87100E00EBD /* SonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonView.m; sourceTree = "<group>"; };
+		85B7F7302738CBB000E00EBD /* SonSonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonSonView.h; sourceTree = "<group>"; };
+		85B7F7312738CBB000E00EBD /* SonSonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonSonView.m; sourceTree = "<group>"; };
 		85BC1A8E262D48A2009F1BCC /* MVVM2ControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVM2ControllerViewController.h; sourceTree = "<group>"; };
 		85BC1A8F262D48A2009F1BCC /* MVVM2ControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM2ControllerViewController.m; sourceTree = "<group>"; };
 		85BC1A92262D4C38009F1BCC /* Viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Viewmodel.h; sourceTree = "<group>"; };
@@ -369,6 +397,9 @@
 		85C67CED2427824F003B91E3 /* NSObject+CHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHModel.h"; sourceTree = "<group>"; };
 		85C67CEE2427824F003B91E3 /* CHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHClassInfo.m; sourceTree = "<group>"; };
 		85C67CF124278289003B91E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		85CABE422721649C00847BA9 /* CHTransAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTransAnimViewController.h; sourceTree = "<group>"; };
+		85CABE432721649C00847BA9 /* CHTransAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTransAnimViewController.m; sourceTree = "<group>"; };
+		85CABE442721649C00847BA9 /* CHTransAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHTransAnimViewController.xib; sourceTree = "<group>"; };
 		85CAC29A26FF3617008641A9 /* CHNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNetWork.h; sourceTree = "<group>"; };
 		85CAC29B26FF3617008641A9 /* CHNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNetWork.m; sourceTree = "<group>"; };
 		85CAC29E26FF3704008641A9 /* NETViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETViewController.h; sourceTree = "<group>"; };
@@ -516,8 +547,23 @@
 				85266DFD27141B6F0039D4E9 /* CHDrawView.m */,
 				85D4D9492719295200D975A8 /* CHDrawApi.h */,
 				85D4D94A2719295200D975A8 /* CHDrawApi.m */,
+				85CABE422721649C00847BA9 /* CHTransAnimViewController.h */,
+				85CABE432721649C00847BA9 /* CHTransAnimViewController.m */,
+				85CABE442721649C00847BA9 /* CHTransAnimViewController.xib */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		853E7E282726A59B008DB651 /* CHTOUCH */ = {
+			isa = PBXGroup;
+			children = (
+				853E7E292726A5D0008DB651 /* CHTouchViewController.h */,
+				853E7E2A2726A5D0008DB651 /* CHTouchViewController.m */,
+				853E7E2B2726A5D0008DB651 /* CHTouchViewController.xib */,
+				850652052727931A001C8979 /* CHView.h */,
+				850652062727931A001C8979 /* CHView.m */,
+			);
+			path = CHTOUCH;
 			sourceTree = "<group>";
 		};
 		8542B20123C5D7CF0052E441 = {
@@ -550,12 +596,16 @@
 				85D4D9522719802C00D975A8 /* WechatIMG12.jpg */,
 				8542B21323C5D7CF0052E441 /* ViewController.h */,
 				8542B21423C5D7CF0052E441 /* ViewController.m */,
+				85AB9A3E2734F6DE00618F46 /* TwoWindowViewController.h */,
+				85AB9A3F2734F6DE00618F46 /* TwoWindowViewController.m */,
 				8542B21623C5D7CF0052E441 /* Main.storyboard */,
 				8542B21923C5D7D00052E441 /* Assets.xcassets */,
 				8542B21B23C5D7D00052E441 /* LaunchScreen.storyboard */,
 				8542B21E23C5D7D00052E441 /* Info.plist */,
 				8542B21F23C5D7D00052E441 /* main.m */,
+				85785DE82733B47F00476FC1 /* UI_kit */,
 				85266DF52714157A0039D4E9 /* Animation */,
+				853E7E282726A59B008DB651 /* CHTOUCH */,
 				8591853526E0C0EB000162B8 /* QRCode */,
 				8523717026DE5CD000961195 /* Base */,
 				85CAC29926FF35DF008641A9 /* network */,
@@ -733,6 +783,23 @@
 				8572CC7B264CD4E600D6DA23 /* RuntimeDicModel.m */,
 			);
 			path = ArchiveAndDic;
+			sourceTree = "<group>";
+		};
+		85785DE82733B47F00476FC1 /* UI_kit */ = {
+			isa = PBXGroup;
+			children = (
+				85785DE92733B49700476FC1 /* UIKitViewController.h */,
+				85785DEA2733B49700476FC1 /* UIKitViewController.m */,
+				85785DF62733B73E00476FC1 /* CHWTest.h */,
+				85785DF72733B73E00476FC1 /* CHWTest.m */,
+				85785DFA2733C17900476FC1 /* CHWView2.h */,
+				85785DFB2733C17900476FC1 /* CHWView2.m */,
+				85B7F7292738C87100E00EBD /* SonView.h */,
+				85B7F72A2738C87100E00EBD /* SonView.m */,
+				85B7F7302738CBB000E00EBD /* SonSonView.h */,
+				85B7F7312738CBB000E00EBD /* SonSonView.m */,
+			);
+			path = UI_kit;
 			sourceTree = "<group>";
 		};
 		858A55DC251357B300C1F503 /* Category */ = {
@@ -1063,11 +1130,13 @@
 				851CDE22270314C200BF50B6 /* chuqi.mp4 in Resources */,
 				851DDD20250E4BCD007A806E /* CHScrolleTestViewController.xib in Resources */,
 				855DB677265CA546003CFC31 /* ImagePickerViewController.xib in Resources */,
+				85CABE462721649C00847BA9 /* CHTransAnimViewController.xib in Resources */,
 				85C54F8B23C714B000518820 /* CHHashTableViewController.xib in Resources */,
 				85BC1A9E262D4D23009F1BCC /* MVVMTableViewCell.xib in Resources */,
 				85F9CF842681DA0700E53714 /* CHNSCacheViewController.xib in Resources */,
 				85C54F7B23C708A200518820 /* FileManageViewController.xib in Resources */,
 				851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */,
+				853E7E2D2726A5D0008DB651 /* CHTouchViewController.xib in Resources */,
 				8542B22723C5D8370052E441 /* readme.md in Resources */,
 				85BF774A2546680E007E2A67 /* NULL_NILViewController.xib in Resources */,
 				85BF7753254671FF007E2A67 /* person_register_guide_introduce.json in Resources */,
@@ -1142,6 +1211,7 @@
 				85631E53246B98FF00AC6F74 /* CHGCDViewController.m in Sources */,
 				850AC5D62526F57600109292 /* MVVMTestView.m in Sources */,
 				850AC5DE25270C5800109292 /* BaseViewModule.m in Sources */,
+				85AB9A402734F6DE00618F46 /* TwoWindowViewController.m in Sources */,
 				85BC1A90262D48A2009F1BCC /* MVVM2ControllerViewController.m in Sources */,
 				85B7698E265F678F00E60F00 /* TestViewController.m in Sources */,
 				85A4F3C3242AFCA600D96524 /* CHKVStorage.m in Sources */,
@@ -1150,6 +1220,7 @@
 				8572CC6E264CB99600D6DA23 /* ArchiveAndDicVController.m in Sources */,
 				857022EF2480F848000C8D82 /* CHDelegateManage.m in Sources */,
 				85BDAC4F246A71E500B9E5B8 /* CHTitleAlertController.m in Sources */,
+				85B7F72B2738C87100E00EBD /* SonView.m in Sources */,
 				85DFD0782514DF8500F66F52 /* TestRuntime.m in Sources */,
 				8542B20F23C5D7CF0052E441 /* AppDelegate.m in Sources */,
 				85C67CF02427824F003B91E3 /* CHClassInfo.m in Sources */,
@@ -1165,7 +1236,9 @@
 				854A6737264E408D00A5A77D /* CHUIStudtyViewController.m in Sources */,
 				858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */,
 				85BC1A9D262D4D23009F1BCC /* MVVMTableViewCell.m in Sources */,
+				85B7F7322738CBB000E00EBD /* SonSonView.m in Sources */,
 				858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */,
+				850652072727931A001C8979 /* CHView.m in Sources */,
 				850A206C240E3AEE0036E2FD /* JYTLoadingView.m in Sources */,
 				85C54F8A23C714B000518820 /* CHHashTableViewController.m in Sources */,
 				8543BF1E26D6639E0040FA7F /* CNFile.m in Sources */,
@@ -1190,6 +1263,7 @@
 				85BF775125466C0D007E2A67 /* NSObject+CHNotNull.m in Sources */,
 				85266DF9271415980039D4E9 /* CHAnimationController.m in Sources */,
 				8545D80C2436CD160083091A /* CHProgressHUD.m in Sources */,
+				85785DF82733B73E00476FC1 /* CHWTest.m in Sources */,
 				851C81092649096B00C731AA /* CategoryViewController.m in Sources */,
 				85F9CF832681DA0700E53714 /* CHNSCacheViewController.m in Sources */,
 				857022E82480E07E000C8D82 /* CHDelegateNextViewController.m in Sources */,
@@ -1202,7 +1276,9 @@
 				858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
+				853E7E2C2726A5D0008DB651 /* CHTouchViewController.m in Sources */,
 				851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */,
+				85785DEB2733B49700476FC1 /* UIKitViewController.m in Sources */,
 				85BC1A98262D4C41009F1BCC /* Model.m in Sources */,
 				8518BD9826BE0D6B00B3D09A /* TestVideoViewController.m in Sources */,
 				850AC5DB252709D000109292 /* MVVMModel.m in Sources */,
@@ -1218,6 +1294,7 @@
 				85B76993265F6A5200E60F00 /* CHSearchViewController.m in Sources */,
 				8542B21223C5D7CF0052E441 /* SceneDelegate.m in Sources */,
 				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
+				85CABE452721649C00847BA9 /* CHTransAnimViewController.m in Sources */,
 				85A2A9EC26562EBA00A6866C /* VideoPicInPicViewController.m in Sources */,
 				851CDE1F270306C400BF50B6 /* CHUpload.m in Sources */,
 				8523717A26DE5D9D00961195 /* BaseViewController.m in Sources */,
@@ -1228,6 +1305,7 @@
 				85CAC2A126FF3704008641A9 /* NETViewController.m in Sources */,
 				855CCCA326E1F5DE0061B212 /* CHKVOViewController.m in Sources */,
 				85A4F3C2242AFCA600D96524 /* CHCache.m in Sources */,
+				85785DFC2733C17900476FC1 /* CHWView2.m in Sources */,
 				85A2AA71265640C500A6866C /* AVPlayerLayerViewController.m in Sources */,
 				85BC1A94262D4C39009F1BCC /* Viewmodel.m in Sources */,
 				85E2ABE1265B38E700B5B665 /* CHRunloopViewController.m in Sources */,

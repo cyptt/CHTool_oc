@@ -27,6 +27,70 @@
                         <action selector="drawapi:" destination="-1" eventType="touchUpInside" id="yS0-CC-n6Z"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvV-36-ONb">
+                    <rect key="frame" x="47" y="199" width="91" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="cashapelayer"/>
+                    <connections>
+                        <action selector="shapelayer:" destination="-1" eventType="touchUpInside" id="YAv-z6-0lN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-ly-qla">
+                    <rect key="frame" x="32" y="99" width="77" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="chdrawtest"/>
+                    <connections>
+                        <action selector="chdrawtest:" destination="-1" eventType="touchUpInside" id="VbG-oh-1T2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTg-vG-WxK">
+                    <rect key="frame" x="33" y="253" width="75" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="catextlayer"/>
+                    <connections>
+                        <action selector="catextlayer:" destination="-1" eventType="touchUpInside" id="zxL-CF-U4Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22d-U4-hmj">
+                    <rect key="frame" x="47" y="302" width="33" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="layer"/>
+                    <connections>
+                        <action selector="layer:" destination="-1" eventType="touchUpInside" id="Ubp-Ld-edo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTs-hq-Utg">
+                    <rect key="frame" x="29" y="360" width="109" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="yinshiAnimation"/>
+                    <connections>
+                        <action selector="yinshiAnimation:" destination="-1" eventType="touchUpInside" id="M5n-zX-KmD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oB-H0-kEb">
+                    <rect key="frame" x="30" y="398" width="88" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="shuxingAnim"/>
+                    <connections>
+                        <action selector="shuxingAnim:" destination="-1" eventType="touchUpInside" id="kRK-Ps-Hx7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz5-GX-koK">
+                    <rect key="frame" x="36" y="436" width="76" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="animGroup"/>
+                    <connections>
+                        <action selector="anmiGroup:" destination="-1" eventType="touchUpInside" id="8zh-1Q-D8r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-je-sST">
+                    <rect key="frame" x="32" y="474" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="转场过度"/>
+                    <connections>
+                        <action selector="transAnim:" destination="-1" eventType="touchUpInside" id="OKX-NT-y4M"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

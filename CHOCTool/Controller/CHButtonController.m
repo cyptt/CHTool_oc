@@ -20,7 +20,8 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    CHButton * btn = [CHButton buttonWithType:UIButtonTypeCustom];;
+//    CHButton * btn = [CHButton buttonWithType:UIButtonTypeCustom];;
+    CHButton * btn = [[CHButton alloc]init];;
     [btn setBackgroundColor:[UIColor redColor]];
     
     

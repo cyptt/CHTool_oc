@@ -44,6 +44,8 @@
 #import "WeakPerson.h"
 #import "NETViewController.h"
 #import "CHAnimationController.h"
+#import "CHTouchViewController.h"
+#import "UIKitViewController.h"
  NSString * testname2 = @"adsfdfsf";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -51,9 +53,9 @@
 }
 
 
-@property (weak, nonatomic) IBOutlet UITableView *tableview;
+@property (strong, nonatomic) UITableView *tableview;
 @property(nonatomic,strong)NSArray * dataSourceArr;;
-
+@property(nonatomic,strong)UIWindow * selfWindow;
 @end
 
 NSString * LOGCHNESE = @"打印中文";
@@ -78,19 +80,32 @@ NSString * Base = @"Base";
 NSString * QRCode = @"QRCode";
 NSString * CHNET = @"CHNET";
 NSString * CHANIMATION = @"CHANIMATION";
+NSString * CHTOUCH = @"CHTOUCH";
+NSString * UI_KIT = @"UI_KIT";
+
+
 @implementation ViewController
 
 
-
+-(UITableView *)tableview{
+    if (!_tableview) {
+        _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        _tableview.delegate = self;
+        _tableview.dataSource = self;
+        [self.view addSubview:_tableview];
+    }
+    return  _tableview;
+}
 -(NSArray *)dataSourceArr{
     if (!_dataSourceArr) {
-        _dataSourceArr = @[@"TESTCLICK",@"TESTCLICK2",CHANIMATION,CHNET,Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
+        _dataSourceArr = @[@"TESTCLICK",@"TESTCLICK2",UI_KIT,CHTOUCH,CHANIMATION,CHNET,Base,QRCode,VIDEO,TESTVC,CHNSCache,EXTENSION,CATEGORY,RUNTIME,CHRUNLOOP,ArchiveAndDic,UISTUDY,VIDEODPICTUREINPIC,NULL_NIL,CHUIScrollView,CHOrgScroll,MVP,MVVM,@"FileManage",@"CHHash",@"JYTLoding",@"CHProgressHUD",@"CHAlert",@"CHButton",@"GCD",@"LableStyle",@"Delegate",@"CHSingleChiose",@"ScrollTest",LOGCHNESE,DeviceInfo,IMAGEPICKER];
     }
     return _dataSourceArr;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    self.view.backgroundColor = [UIColor whiteColor];
 
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
@@ -138,8 +153,8 @@ NSString * CHANIMATION = @"CHANIMATION";
     NSLog(@"%p",name4);
     NSLog(@"%p",name5);
  
-   
- 
+    
+    
   
 }
 -(void)testClick2{
@@ -317,6 +332,12 @@ NSString * CHANIMATION = @"CHANIMATION";
         CHAnimationController * VC = [[CHAnimationController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
         
+    }else if([name isEqualToString:CHTOUCH]){
+        CHTouchViewController * VC = [[CHTouchViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if([name isEqualToString:UI_KIT]){
+        UIKitViewController * VC =  [[UIKitViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }
 }
 
