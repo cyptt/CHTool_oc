@@ -15,7 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CHUpload : NSObject
+@interface CHNativeUpload : NSObject
 +(instancetype)shareInstance;
 /**
  上传图片

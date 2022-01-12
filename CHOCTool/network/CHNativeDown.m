@@ -6,9 +6,9 @@
 //  Copyright © 2021 com.qingtiantree. All rights reserved.
 //
 
-#import "CHDown.h"
-#import "NetCommonUtils.h"
-@interface CHDown()<NSURLSessionDownloadDelegate>
+#import "CHNativeDown.h"
+#import "CHNativeCommonUtils.h"
+@interface CHNativeDown()<NSURLSessionDownloadDelegate>
 @property (nonatomic, strong) NSURLSessionDownloadTask *downloadTask;
 @property (nonatomic, strong) NSData *resumData;
 @property (nonatomic, strong) NSURLSession *session;
@@ -18,8 +18,8 @@
 @property(nonatomic,copy)void(^failureB) (NSError * error);
 @property(nonatomic,strong) NSString *fullPath ;
 @end
-static CHDown *_chDown = nil;
-@implementation CHDown
+static CHNativeDown *_chDown = nil;
+@implementation CHNativeDown
 
 +(instancetype)shareInstance
 {
@@ -39,7 +39,7 @@ static CHDown *_chDown = nil;
     self.successB = success;
     self.failureB = failure;
     self.progressBock = progress;
-    NSString * paramsStr = [NetCommonUtils formString:params];
+    NSString * paramsStr = [CHNativeCommonUtils formString:params];
     
     NSString * lastUrlStr = [NSString stringWithFormat:@"%@?%@",urlStr,paramsStr];
     NSURL *url = [NSURL URLWithString:lastUrlStr];

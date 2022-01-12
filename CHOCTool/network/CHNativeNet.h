@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CHNetWork : NSObject
+@interface CHNativeNet : NSObject
 +(instancetype)shareInstance;
 
 /**

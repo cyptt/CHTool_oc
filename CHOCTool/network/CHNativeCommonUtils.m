@@ -6,12 +6,12 @@
 //  Copyright © 2021 com.qingtiantree. All rights reserved.
 //
 
-#import "NetCommonUtils.h"
+#import "CHNativeCommonUtils.h"
 
-@implementation NetCommonUtils
+@implementation CHNativeCommonUtils
 
 +(NSString*)formString:(NSDictionary*)formDict {
-    NSLog(@"-formDict------%@",formDict);
+   
     if (!formDict || [formDict allKeys].count==0) {
         return @"";
     }

@@ -7,17 +7,17 @@
 //
 
 #import "NETViewController.h"
-#import "CHNetWork.h"
-#import "CHUpload.h"
+#import "CHNativeNet.h"
+#import "CHNativeUpload.h"
 #import "CHFileManage.h"
-#import "NetCommonUtils.h"
-#import "CHDown.h"
+#import "CHNativeCommonUtils.h"
+#import "CHNativeDown.h"
 #import "AFNetworking.h"
 
 @interface NETViewController ()
 
 @end
-static NSString *  const Base_url = @"http://192.168.1.53:8080/";
+static NSString *  const Base_url = @"http://172.18.89.50:7772/tenface/";
 static NSString * const  GET_URL = @"user/test";
 static NSString * const POST_JSON_URL = @"user/testPost";
 static NSString * const POST_FROM_URL = @"user/testForm";
@@ -97,7 +97,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
     NSDictionary * params = @{@"fileName":@"1633923502145001.png"};
     
     
-    NSString * lastUrlStr = [NSString stringWithFormat:@"%@?%@",[NSString stringWithFormat:@"%@user/down",Base_url],[NetCommonUtils formString:params]];
+    NSString * lastUrlStr = [NSString stringWithFormat:@"%@?%@",[NSString stringWithFormat:@"%@user/down",Base_url],[CHNativeCommonUtils formString:params]];
     NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:lastUrlStr]];
  
     [[manage downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -125,7 +125,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
 
     NSDictionary *parameters = @{@"userName":@"zs!..%.&.%333",@"age":@"23"};
     NSString * urlSting = [NSString stringWithFormat:@"%@%@",Base_url,GET_URL];
-    [[CHNetWork shareInstance]get_Url:urlSting parameters:parameters success:^(id  _Nonnull responseObj) {
+    [[CHNativeNet shareInstance]get_Url:urlSting parameters:parameters success:^(id  _Nonnull responseObj) {
         NSLog(@"%@",responseObj);
         
     } failure:^(NSError * _Nonnull err) {
@@ -143,7 +143,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
     
     NSDictionary * headerDic = @{@"Content-Type":@"application/json;charset=UTF-8"};
     
-    [[CHNetWork shareInstance]post_Url:urlSting parameters:parameters headersDic:headerDic success:^(id  _Nonnull responseObj) {
+    [[CHNativeNet shareInstance]post_Url:urlSting parameters:parameters headersDic:headerDic success:^(id  _Nonnull responseObj) {
         NSLog(@"%@",responseObj);
     } failure:^(NSError * _Nonnull err) {
         NSLog(@"%@",err);
@@ -156,7 +156,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
     NSString * urlSting = [NSString stringWithFormat:@"%@%@",Base_url,POST_FROM_URL];
     
 
-    [[CHNetWork shareInstance]post_Url:urlSting parameters:parameters headersDic:nil success:^(id  _Nonnull responseObj) {
+    [[CHNativeNet shareInstance]post_Url:urlSting parameters:parameters headersDic:nil success:^(id  _Nonnull responseObj) {
         NSLog(@"%@",responseObj);
     } failure:^(NSError * _Nonnull err) {
         NSLog(@"%@",err);
@@ -171,7 +171,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
     NSArray * fileNames = @[@"image1.png"];
     NSDictionary * params = @{@"name":@"dddd"};
 
-    [[CHUpload shareInstance] uploadFileWithUrl:[NSString stringWithFormat:@"%@user/upload",Base_url] mutipartFilePaths:files mutipartFileNames:nil parameters:params success:^(id  _Nonnull reponseObj) {
+    [[CHNativeUpload shareInstance] uploadFileWithUrl:[NSString stringWithFormat:@"%@user/upload",Base_url] mutipartFilePaths:files mutipartFileNames:nil parameters:params success:^(id  _Nonnull reponseObj) {
         NSLog(@"%@",reponseObj);
     } failure:^(NSError * _Nonnull err) {
         
@@ -183,7 +183,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
 - (IBAction)down:(id)sender {
     
     NSDictionary * params = @{@"fileName":@"1633923502145001.png"};
-    [[CHDown shareInstance] downWithUrl:[NSString stringWithFormat:@"%@user/down",Base_url] params:params success:^(id  _Nonnull responseObj) {
+    [[CHNativeDown shareInstance] downWithUrl:[NSString stringWithFormat:@"%@user/down",Base_url] params:params success:^(id  _Nonnull responseObj) {
         NSLog(@"%@",responseObj);
     } failure:^(NSError * _Nonnull err) {
         
@@ -207,7 +207,7 @@ static NSString * const POST_FROM_URL = @"user/testForm";
     
     
     NSLog(@"----001%@",mutableUrl);
-    NSLog(@"----002%@",[NetCommonUtils formString:parameters]);
+    NSLog(@"----002%@",[CHNativeCommonUtils formString:parameters]);
 }
 
 

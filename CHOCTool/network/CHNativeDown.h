@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CHDown : NSObject
+@interface CHNativeDown : NSObject
 +(instancetype)shareInstance;
 -(void)downWithUrl:(NSString *)urlStr params:( NSDictionary * __nullable)params success:(void(^ __nullable)(id responseObj))success failure:(void(^ __nullable)(NSError * err))failure progress:(void(^ __nullable)(float precent))progress;
 @end

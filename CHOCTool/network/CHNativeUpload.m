@@ -6,14 +6,14 @@
 //  Copyright © 2021 com.qingtiantree. All rights reserved.
 //
 
-#import "CHUpload.h"
-#import "NetCommonUtils.h"
-@interface CHUpload ()<NSURLSessionTaskDelegate,NSURLSessionDelegate>
+#import "CHNativeUpload.h"
+#import "CHNativeCommonUtils.h"
+@interface CHNativeUpload ()<NSURLSessionTaskDelegate,NSURLSessionDelegate>
 
 @property(nonatomic,copy)void(^progressBock)(float precert);
 @end
-static CHUpload *_chUpload = nil;
-@implementation CHUpload
+static CHNativeUpload *_chUpload = nil;
+@implementation CHNativeUpload
 +(instancetype)shareInstance
 {
     static dispatch_once_t onceToken;
@@ -93,7 +93,7 @@ static CHUpload *_chUpload = nil;
           
         NSString *mimetype  =@"image/jpeg";
   
-        NSString * lastmimetype =[NetCommonUtils getmMimeType:path].length?[NetCommonUtils getmMimeType:path]:mimetype;
+        NSString * lastmimetype =[CHNativeCommonUtils getmMimeType:path].length?[CHNativeCommonUtils getmMimeType:path]:mimetype;
        
          
         [httpBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];

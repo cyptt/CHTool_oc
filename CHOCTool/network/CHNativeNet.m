@@ -6,53 +6,73 @@
 //  Copyright © 2021 com.qingtiantree. All rights reserved.
 //
 
-#import "CHNetWork.h"
-#import "NetCommonUtils.h"
+#import "CHNativeNet.h"
+#import "CHNativeCommonUtils.h"
+#import "CHNattiveError.h"
 
-@interface CHNetWork ()
+@interface CHNativeNet ()<NSURLSessionDelegate,NSURLSessionTaskDelegate>
 
 @end
-@implementation CHNetWork
+@implementation CHNativeNet
 
-static CHNetWork *_chNetwork= nil;
+static CHNativeNet *_chNetwork= nil;
 +(instancetype)shareInstance
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (_chNetwork == nil) {
             _chNetwork = [[self alloc]init];
-            
-         
+        
         }
     });
     return _chNetwork;
 }
 
+
+-(void)netCallBack:(NSData *)data response:(NSURLResponse *)response error:(NSError *)error success:(void(^ __nullable)(id responseObj))success failure:(void(^ __nullable)(NSError * err))failure{
+    NSInteger statusCode = [(NSHTTPURLResponse *)response  statusCode];
+    
+    if (statusCode == 200) {
+        id  responseObject = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+
+        if (responseObject) {
+            success(responseObject);
+        }
+     
+    }else{
+  
+        if (error != nil) {
+            failure(error);
+        }else{
+            NSLog(@"%@",response);
+            NSError * error2 = [CHNattiveError error:nil code:statusCode];
+            failure(error2);
+            
+        }
+
+    }
+}
 -(void)get_Url:(NSString *)urlStr parameters:(NSDictionary *)parameters success:(void(^ __nullable)(id responseObj))success failure:(void(^ __nullable)(NSError * err))failure{
   
     NSString * urlSting =urlStr;
     NSMutableString *mutableUrl = [[NSMutableString alloc] initWithString:urlSting];
  
     [mutableUrl appendString:@"?"];
-    [mutableUrl appendString:[NetCommonUtils formString:parameters]];
+    [mutableUrl appendString:[CHNativeCommonUtils formString:parameters]];
     
     
     NSURL * url = [NSURL URLWithString:mutableUrl];
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPMethod = @"GET";
-    NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-      
+    
+    NSURLSession * session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    NSURLSessionDataTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (error != nil) {
-                failure(error);
-            }else{
-                NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-                NSLog(@"dict-----%@",dict);
-                if (dict) {
-                    success(dict);
-                }
-            }
+            [self netCallBack:data response:response error:error success:success failure:failure];
+         
         });
+
     }];
     [task resume];
 }
@@ -73,23 +93,22 @@ static CHNetWork *_chNetwork= nil;
     if (headersDic && [headersDic[@"Content-Type"] containsString:@"application/json"]) {
         bodyData = [NSJSONSerialization dataWithJSONObject:parameters options:NSJSONWritingPrettyPrinted error:nil];
     }else{
-        NSString * bodyString = [NetCommonUtils formString:parameters];
+        NSString * bodyString = [CHNativeCommonUtils formString:parameters];
         bodyData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
     }
     request.HTTPMethod = @"POST";
     request.HTTPBody = bodyData ;
     NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (error != nil) {
-                failure(error);
-            }else{
-                NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-                NSLog(@"dict-----%@",dict);
-                success(dict);
-            }
-        });
-    }];
-   [task resume];
+            [self netCallBack:data response:response error:error success:success failure:failure];
+            
+        });    }];
+    
+    [task resume];
 }
+
+
+
 
 @end

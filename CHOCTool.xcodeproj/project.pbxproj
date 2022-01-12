@@ -23,10 +23,10 @@
 		851C81092649096B00C731AA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C81072649096B00C731AA /* CategoryViewController.m */; };
 		851C810A2649096B00C731AA /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851C81082649096B00C731AA /* CategoryViewController.xib */; };
 		851CDE0B2702BF1A00BF50B6 /* face_scca.png in Resources */ = {isa = PBXBuildFile; fileRef = 851CDE0A2702BF1A00BF50B6 /* face_scca.png */; };
-		851CDE1F270306C400BF50B6 /* CHUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE1E270306C400BF50B6 /* CHUpload.m */; };
+		851CDE1F270306C400BF50B6 /* CHNativeUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE1E270306C400BF50B6 /* CHNativeUpload.m */; };
 		851CDE22270314C200BF50B6 /* chuqi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 851CDE21270314C200BF50B6 /* chuqi.mp4 */; };
-		851CDE29270324CB00BF50B6 /* CHDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE28270324CB00BF50B6 /* CHDown.m */; };
-		851CDE2D2703269B00BF50B6 /* NetCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE2C2703269B00BF50B6 /* NetCommonUtils.m */; };
+		851CDE29270324CB00BF50B6 /* CHNativeDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE28270324CB00BF50B6 /* CHNativeDown.m */; };
+		851CDE2D2703269B00BF50B6 /* CHNativeCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CDE2C2703269B00BF50B6 /* CHNativeCommonUtils.m */; };
 		851DDD14250E10E6007A806E /* CHSingleChioseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */; };
 		851DDD15250E10E6007A806E /* CHSingleChioseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */; };
 		851DDD18250E114B007A806E /* CHSingleChioseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DDD17250E114B007A806E /* CHSingleChioseView.m */; };
@@ -92,6 +92,7 @@
 		85785DEB2733B49700476FC1 /* UIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85785DEA2733B49700476FC1 /* UIKitViewController.m */; };
 		85785DF82733B73E00476FC1 /* CHWTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85785DF72733B73E00476FC1 /* CHWTest.m */; };
 		85785DFC2733C17900476FC1 /* CHWView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 85785DFB2733C17900476FC1 /* CHWView2.m */; };
+		857DB8AE278E7EAF00FB5A05 /* CHNattiveError.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DB8AD278E7EAF00FB5A05 /* CHNattiveError.m */; };
 		858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55DD251357B300C1F503 /* NSObject+LogUtils.m */; };
 		858A55E52513635E00C1F503 /* ExtendNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A55E32513635E00C1F503 /* ExtendNSDictionary.m */; };
 		858C8CEF246D444E00738236 /* CHLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C8CED246D444E00738236 /* CHLabelViewController.m */; };
@@ -140,7 +141,7 @@
 		85C67CF224278289003B91E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C67CF124278289003B91E3 /* README.md */; };
 		85CABE452721649C00847BA9 /* CHTransAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CABE432721649C00847BA9 /* CHTransAnimViewController.m */; };
 		85CABE462721649C00847BA9 /* CHTransAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CABE442721649C00847BA9 /* CHTransAnimViewController.xib */; };
-		85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29B26FF3617008641A9 /* CHNetWork.m */; };
+		85CAC29C26FF3617008641A9 /* CHNativeNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29B26FF3617008641A9 /* CHNativeNet.m */; };
 		85CAC2A126FF3704008641A9 /* NETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CAC29F26FF3704008641A9 /* NETViewController.m */; };
 		85CAC2A226FF3704008641A9 /* NETViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CAC2A026FF3704008641A9 /* NETViewController.xib */; };
 		85D4D94B2719295200D975A8 /* CHDrawApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D4D94A2719295200D975A8 /* CHDrawApi.m */; };
@@ -195,13 +196,13 @@
 		851C81072649096B00C731AA /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		851C81082649096B00C731AA /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		851CDE0A2702BF1A00BF50B6 /* face_scca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face_scca.png; sourceTree = "<group>"; };
-		851CDE1D270306C400BF50B6 /* CHUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHUpload.h; sourceTree = "<group>"; };
-		851CDE1E270306C400BF50B6 /* CHUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHUpload.m; sourceTree = "<group>"; };
+		851CDE1D270306C400BF50B6 /* CHNativeUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNativeUpload.h; sourceTree = "<group>"; };
+		851CDE1E270306C400BF50B6 /* CHNativeUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNativeUpload.m; sourceTree = "<group>"; };
 		851CDE21270314C200BF50B6 /* chuqi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chuqi.mp4; sourceTree = "<group>"; };
-		851CDE27270324CB00BF50B6 /* CHDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDown.h; sourceTree = "<group>"; };
-		851CDE28270324CB00BF50B6 /* CHDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDown.m; sourceTree = "<group>"; };
-		851CDE2B2703269B00BF50B6 /* NetCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetCommonUtils.h; sourceTree = "<group>"; };
-		851CDE2C2703269B00BF50B6 /* NetCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetCommonUtils.m; sourceTree = "<group>"; };
+		851CDE27270324CB00BF50B6 /* CHNativeDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNativeDown.h; sourceTree = "<group>"; };
+		851CDE28270324CB00BF50B6 /* CHNativeDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNativeDown.m; sourceTree = "<group>"; };
+		851CDE2B2703269B00BF50B6 /* CHNativeCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNativeCommonUtils.h; sourceTree = "<group>"; };
+		851CDE2C2703269B00BF50B6 /* CHNativeCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNativeCommonUtils.m; sourceTree = "<group>"; };
 		851DDD11250E10E6007A806E /* CHSingleChioseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSingleChioseViewController.h; sourceTree = "<group>"; };
 		851DDD12250E10E6007A806E /* CHSingleChioseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSingleChioseViewController.m; sourceTree = "<group>"; };
 		851DDD13250E10E6007A806E /* CHSingleChioseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHSingleChioseViewController.xib; sourceTree = "<group>"; };
@@ -313,6 +314,8 @@
 		85785DF72733B73E00476FC1 /* CHWTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHWTest.m; sourceTree = "<group>"; };
 		85785DFA2733C17900476FC1 /* CHWView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHWView2.h; sourceTree = "<group>"; };
 		85785DFB2733C17900476FC1 /* CHWView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHWView2.m; sourceTree = "<group>"; };
+		857DB8AC278E7EAF00FB5A05 /* CHNattiveError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNattiveError.h; sourceTree = "<group>"; };
+		857DB8AD278E7EAF00FB5A05 /* CHNattiveError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNattiveError.m; sourceTree = "<group>"; };
 		858A55DD251357B300C1F503 /* NSObject+LogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LogUtils.m"; sourceTree = "<group>"; };
 		858A55DE251357B300C1F503 /* NSObject+LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LogUtils.h"; sourceTree = "<group>"; };
 		858A55E32513635E00C1F503 /* ExtendNSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendNSDictionary.m; sourceTree = "<group>"; };
@@ -400,8 +403,8 @@
 		85CABE422721649C00847BA9 /* CHTransAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTransAnimViewController.h; sourceTree = "<group>"; };
 		85CABE432721649C00847BA9 /* CHTransAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTransAnimViewController.m; sourceTree = "<group>"; };
 		85CABE442721649C00847BA9 /* CHTransAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHTransAnimViewController.xib; sourceTree = "<group>"; };
-		85CAC29A26FF3617008641A9 /* CHNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNetWork.h; sourceTree = "<group>"; };
-		85CAC29B26FF3617008641A9 /* CHNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNetWork.m; sourceTree = "<group>"; };
+		85CAC29A26FF3617008641A9 /* CHNativeNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHNativeNet.h; sourceTree = "<group>"; };
+		85CAC29B26FF3617008641A9 /* CHNativeNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHNativeNet.m; sourceTree = "<group>"; };
 		85CAC29E26FF3704008641A9 /* NETViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETViewController.h; sourceTree = "<group>"; };
 		85CAC29F26FF3704008641A9 /* NETViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETViewController.m; sourceTree = "<group>"; };
 		85CAC2A026FF3704008641A9 /* NETViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NETViewController.xib; sourceTree = "<group>"; };
@@ -991,14 +994,16 @@
 				85CAC29E26FF3704008641A9 /* NETViewController.h */,
 				85CAC29F26FF3704008641A9 /* NETViewController.m */,
 				85CAC2A026FF3704008641A9 /* NETViewController.xib */,
-				85CAC29A26FF3617008641A9 /* CHNetWork.h */,
-				85CAC29B26FF3617008641A9 /* CHNetWork.m */,
-				851CDE1D270306C400BF50B6 /* CHUpload.h */,
-				851CDE1E270306C400BF50B6 /* CHUpload.m */,
-				851CDE27270324CB00BF50B6 /* CHDown.h */,
-				851CDE28270324CB00BF50B6 /* CHDown.m */,
-				851CDE2B2703269B00BF50B6 /* NetCommonUtils.h */,
-				851CDE2C2703269B00BF50B6 /* NetCommonUtils.m */,
+				85CAC29A26FF3617008641A9 /* CHNativeNet.h */,
+				85CAC29B26FF3617008641A9 /* CHNativeNet.m */,
+				851CDE1D270306C400BF50B6 /* CHNativeUpload.h */,
+				851CDE1E270306C400BF50B6 /* CHNativeUpload.m */,
+				851CDE27270324CB00BF50B6 /* CHNativeDown.h */,
+				851CDE28270324CB00BF50B6 /* CHNativeDown.m */,
+				851CDE2B2703269B00BF50B6 /* CHNativeCommonUtils.h */,
+				851CDE2C2703269B00BF50B6 /* CHNativeCommonUtils.m */,
+				857DB8AC278E7EAF00FB5A05 /* CHNattiveError.h */,
+				857DB8AD278E7EAF00FB5A05 /* CHNattiveError.m */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -1211,6 +1216,7 @@
 				85631E53246B98FF00AC6F74 /* CHGCDViewController.m in Sources */,
 				850AC5D62526F57600109292 /* MVVMTestView.m in Sources */,
 				850AC5DE25270C5800109292 /* BaseViewModule.m in Sources */,
+				857DB8AE278E7EAF00FB5A05 /* CHNattiveError.m in Sources */,
 				85AB9A402734F6DE00618F46 /* TwoWindowViewController.m in Sources */,
 				85BC1A90262D48A2009F1BCC /* MVVM2ControllerViewController.m in Sources */,
 				85B7698E265F678F00E60F00 /* TestViewController.m in Sources */,
@@ -1250,7 +1256,7 @@
 				8545D8142436D0050083091A /* TestAlertViewController.m in Sources */,
 				850AC5E125270C7B00109292 /* ViewModule.m in Sources */,
 				85D992672589F9AA00C689C0 /* CHOrgScrollewVController.m in Sources */,
-				851CDE2D2703269B00BF50B6 /* NetCommonUtils.m in Sources */,
+				851CDE2D2703269B00BF50B6 /* CHNativeCommonUtils.m in Sources */,
 				85C54F7A23C708A200518820 /* FileManageViewController.m in Sources */,
 				8591853826E0C131000162B8 /* CHQRCodeView.m in Sources */,
 				855B3BC32525F5770095C42E /* MVPModel.m in Sources */,
@@ -1272,7 +1278,7 @@
 				85DBD5AA2463A43F007922A0 /* CHButtonController.m in Sources */,
 				85BF775625467420007E2A67 /* CHNullObject.m in Sources */,
 				85266DFE27141B6F0039D4E9 /* CHDrawView.m in Sources */,
-				85CAC29C26FF3617008641A9 /* CHNetWork.m in Sources */,
+				85CAC29C26FF3617008641A9 /* CHNativeNet.m in Sources */,
 				858A55DF251357B300C1F503 /* NSObject+LogUtils.m in Sources */,
 				85A4F3C5242AFCA600D96524 /* CHDiskCache.m in Sources */,
 				8523323C244AF7380008048A /* CHCenterAlertController.m in Sources */,
@@ -1282,7 +1288,7 @@
 				85BC1A98262D4C41009F1BCC /* Model.m in Sources */,
 				8518BD9826BE0D6B00B3D09A /* TestVideoViewController.m in Sources */,
 				850AC5DB252709D000109292 /* MVVMModel.m in Sources */,
-				851CDE29270324CB00BF50B6 /* CHDown.m in Sources */,
+				851CDE29270324CB00BF50B6 /* CHNativeDown.m in Sources */,
 				8591854026E0C59F000162B8 /* GenerateQRCode.m in Sources */,
 				8572CC7C264CD4E600D6DA23 /* RuntimeDicModel.m in Sources */,
 				85BF77592546783D007E2A67 /* CHNull.m in Sources */,
@@ -1296,7 +1302,7 @@
 				851DDD1F250E4BCD007A806E /* CHScrolleTestViewController.m in Sources */,
 				85CABE452721649C00847BA9 /* CHTransAnimViewController.m in Sources */,
 				85A2A9EC26562EBA00A6866C /* VideoPicInPicViewController.m in Sources */,
-				851CDE1F270306C400BF50B6 /* CHUpload.m in Sources */,
+				851CDE1F270306C400BF50B6 /* CHNativeUpload.m in Sources */,
 				8523717A26DE5D9D00961195 /* BaseViewController.m in Sources */,
 				852E801C26DFB18800520528 /* WeakPerson.m in Sources */,
 				855B3BC625260AC30095C42E /* Present.m in Sources */,
